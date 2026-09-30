@@ -1,0 +1,24 @@
+﻿N,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Genere,Eta,Q11
+1,1,Simpatica,1,1,1,2,0,si,M,,si
+2,1,,1,1,1,2,1,si,M,11-14,no
+3,2,,2,2,2,2,2,no,F,Meno di 11,si
+4,2,,1,2,2,,,no,M,Meno di 11,si
+5,2,,2,1,2,2,1,no,F,Meno di 11,si
+6,1,,1,2,1,2,1,no,F,Meno di 11,si
+7,2,,2,2,1,2,1,si,M,11-14,si
+8,1,,1,1,0,2,0,no,M,11-14,no
+9,1,mi sono divertito,1,2,1,2,0,no,M,11-14,si
+10,2,,2,2,2,2,1,no,M,Meno di 11,no
+11,1,ingressi bello?,1,2,2,2,2,no,M,Meno di 11,si
+12,2,,1,2,1,2,0,no,M,Meno di 11,si
+13,2,,2,2,1,2,0,no,M,Meno di 11,si
+14,1,molto bella,1,1,1,2,0,si,non risp,Meno di 11,si
+15,1,interessante,0,1,1,1,0,no,F,Meno di 11,si
+16,1,,1,1,2,1,1,si,F,Meno di 11,si
+17,2,mi e' piaciuta tantissimo bellissima esperienza,2,2,2,2,0,no,F,11-14,no
+18,2,carina e ben organizzata,1,2,2,2,0,si,F,19-25,no
+19,1,,2,1,1,2,0,no,M,Meno di 11,si
+20,2,carina e ben organizzata,1,2,2,2,0,si,F,19-25,no
+21,2,interessante scientifico,2,1,1,2,1,no,M,11-14,si
+22,1,buffa,1,1,1,2,0,si,M,Meno di 11,si
+23,2,bello,2,1,2,,,no,M,Meno di 11,si

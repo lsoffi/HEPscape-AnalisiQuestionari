@@ -1,0 +1,1527 @@
+{
+  "version": 1,
+  "event": "Evento ERNEST - ERN 2026",
+  "records": [
+    {
+      "id": "PISA-ERN2026-001",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=1",
+      "answers": {
+        "Q1": 1,
+        "Q2": "SIMPATICA",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": null,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "Simpatica",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "si",
+        "Q9": "M",
+        "Q10": "",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 1,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-002",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=2",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "si",
+        "Q9": "M",
+        "Q10": "11-14",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 2,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-003",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=3",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 0,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "2",
+        "Q8": "no",
+        "Q9": "F",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 3,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-004",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=4",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": null,
+        "Q7": null,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "",
+        "Q7": "",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 4,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-005",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=5",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "1",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "no",
+        "Q9": "F",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 5,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-006",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=6",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "no",
+        "Q9": "F",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 6,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-007",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=7",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "2",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "si",
+        "Q9": "M",
+        "Q10": "11-14",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 7,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-008",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=8",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 2,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "0",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "11-14",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 8,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-009",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=9",
+      "answers": {
+        "Q1": 1,
+        "Q2": "MI SONO DIVERTITO",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "mi sono divertito",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "11-14",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 9,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-010",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=10",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 10,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-011",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=11",
+      "answers": {
+        "Q1": 1,
+        "Q2": "INGRESSI BELLO?",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 0,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "ingressi bello?",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "2",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel.",
+        "Q2": "Trascrizione fornita dall’utente: punto interrogativo conservato; nessuna verifica su fotografia."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 11,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-012",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=12",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 12,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-013",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=13",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "2",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 13,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-014",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=14",
+      "answers": {
+        "Q1": 1,
+        "Q2": "MOLTO BELLA",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 3,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "molto bella",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "si",
+        "Q9": "non risp",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 14,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-015",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=15",
+      "answers": {
+        "Q1": 1,
+        "Q2": "INTERESSANTE",
+        "Q3": 2,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "interessante",
+        "Q3": "0",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "1",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "F",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 15,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-016",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=16",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 1,
+        "Q8": 1,
+        "Q9": 0,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "2",
+        "Q6": "1",
+        "Q7": "1",
+        "Q8": "si",
+        "Q9": "F",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 16,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-017",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=17",
+      "answers": {
+        "Q1": 0,
+        "Q2": "MI E' PIACIUTA TANTISSIMO BELLISSIMA ESPERIENZA",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 1,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "mi e' piaciuta tantissimo bellissima esperienza",
+        "Q3": "2",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "F",
+        "Q10": "11-14",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 17,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-018",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=18",
+      "answers": {
+        "Q1": 0,
+        "Q2": "CARINA E BEN ORGANIZZATA",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 0,
+        "Q10": 3,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "carina e ben organizzata",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "si",
+        "Q9": "F",
+        "Q10": "19-25",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel.",
+        "riga": "Le righe 18 e 20 della tabella sono identiche; mantenute come due schede distinte."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 18,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-019",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=19",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "",
+        "Q3": "2",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 19,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-020",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=20",
+      "answers": {
+        "Q1": 0,
+        "Q2": "CARINA E BEN ORGANIZZATA",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 0,
+        "Q10": 3,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "carina e ben organizzata",
+        "Q3": "1",
+        "Q4": "2",
+        "Q5": "2",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "si",
+        "Q9": "F",
+        "Q10": "19-25",
+        "Q11": "no"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel.",
+        "riga": "Le righe 18 e 20 della tabella sono identiche; mantenute come due schede distinte."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 20,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-021",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=21",
+      "answers": {
+        "Q1": 0,
+        "Q2": "INTERESSANTE SCIENTIFICO",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "interessante scientifico",
+        "Q3": "2",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "1",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "11-14",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 21,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-022",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=22",
+      "answers": {
+        "Q1": 1,
+        "Q2": "BUFFA",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "1",
+        "Q2": "buffa",
+        "Q3": "1",
+        "Q4": "1",
+        "Q5": "1",
+        "Q6": "2",
+        "Q7": "0",
+        "Q8": "si",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 22,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    },
+    {
+      "id": "PISA-ERN2026-023",
+      "city": "Pisa",
+      "kit": "Pisa",
+      "source": "pisa_tabella_originale.csv#N=23",
+      "answers": {
+        "Q1": 0,
+        "Q2": "BELLO",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": null,
+        "Q7": null,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "2",
+        "Q2": "bello",
+        "Q3": "2",
+        "Q4": "1",
+        "Q5": "2",
+        "Q6": "",
+        "Q7": "",
+        "Q8": "no",
+        "Q9": "M",
+        "Q10": "Meno di 11",
+        "Q11": "si"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "codifica": "Valori originali numerici Q1/Q3–Q7 nella scala Pisa: 2→0, 1→1, 0→2. Sì→1, No→0. Celle vuote→999 in Excel."
+      },
+      "provenance": {
+        "method": "Tabella fornita direttamente dall’utente in chat; conversione dei codici secondo sua istruzione. Non ricontrollata sulle foto.",
+        "original_row": 23,
+        "scale_conversion": {
+          "0": 2,
+          "1": 1,
+          "2": 0
+        },
+        "scale_questions": [
+          "Q1",
+          "Q3",
+          "Q4",
+          "Q5",
+          "Q6",
+          "Q7"
+        ]
+      }
+    }
+  ]
+}

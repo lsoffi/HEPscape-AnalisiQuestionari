@@ -4,7 +4,7 @@
 
 109 schede del questionario ERNEST relative all’attività HEPscape!, trascritte e verificate con le correzioni confermate dal titolare dei dati. Città: Avezzano; origine del kit: Roma. La denominazione generale delle figure è «HEPscape! · Evento ERNEST – ERN 2026».
 
-- `data/ern2026/questionari.xlsx` è ora il workbook unico dei lotti Roma e Bari (207 schede); conserva risposte e codici delle 109 schede Roma.
+- `data/ern2026/questionari.xlsx` è ora il workbook unico dei lotti Roma, Bari e Pisa (230 schede); conserva risposte e codici delle 109 schede Roma.
 - `data/ern2026/trascrizione_storica.json` conserva risposte, annotazioni e storia delle verifiche della sessione, con i percorsi personali ridotti ai soli nomi dei file.
 - `data/ern2026/lotti/roma.json` conserva il lotto Roma nel formato del nuovo programma. I codici provengono dal workbook verificato; non da una nuova interpretazione delle foto.
 - `kits/roma/HEPscape_ERN2026_slide_originali.pdf` è una copia della raccolta finale della sessione originale.
@@ -17,11 +17,19 @@ La raccolta rigenerata usa gli stessi dati e criteri di quella originale. Nei pa
 98 schede lette visivamente in chat dalla scansione `hepscape_bari_survey1.pdf`, una scheda per pagina. Kit Bari, location Bari, stesso Evento ERNEST - ERN 2026, confermati dall’utente. Gli 11 dubbi A–K sono stati risolti esplicitamente dall’utente il 30 settembre 2026; le altre risposte sono state controllate visivamente in chat, senza conferma umana individuale. Il campo `reviewed` indica il completamento di questo controllo: la provenienza distingue il metodo, e `review_log` conserva le 11 decisioni dell’utente.
 
 - `data/ern2026/lotti/bari.json`: 98 schede con pagina sorgente e storia delle correzioni.
-- `data/ern2026/questionari_verificati.json`: unione dei due lotti (207 schede).
+- `data/ern2026/questionari_verificati.json`: unione attuale dei tre lotti (230 schede).
 - `kits/bari/bari/ERN2026/`: report, grafici e tabelle filtrati sul kit Bari e location Bari.
 - Le risposte vuote confermate D (pagina 39, Q2) e J (pagina 74, Q8) sono `null` nel JSON e 999 nell’Excel. L’annotazione «PIÙ O MENO» della pagina 74 resta nelle note.
 
 La scansione e i ritagli usati per la revisione non sono pubblicati. I report preesistenti sotto `reports/ern2026/` restano riferiti alle sole 109 schede Roma.
+
+## Lotto Pisa
+
+23 schede da una tabella fornita direttamente dall’utente in chat, kit Pisa e città Pisa, stesso Evento ERNEST - ERN 2026. La fonte è conservata in `data/ern2026/lotti/pisa_tabella_originale.csv`; il dataset convertito è `data/ern2026/lotti/pisa.json`.
+
+Per Q1 e Q3–Q7 si applica esclusivamente la conversione 2→0, 1→1, 0→2. Q8 e Q11: sì→1, no→0. Genere ed età seguono la legenda comune; i vuoti diventano `null` nel JSON e 999 nel workbook. Q2 è convertita in maiuscolo, conservando il testo originale nel foglio delle risposte originali. Il campo `reviewed` indica il controllo della conversione della tabella fornita, non una verifica sulle fotografie.
+
+«INGRESSI BELLO?» (N=11) conserva il punto interrogativo della fonte. N=18 e N=20 sono identiche ma restano due schede distinte, come nella tabella. Sono disponibili il workbook Pisa in `kits/pisa/pisa/ERN2026/questionari_Pisa.xlsx` e il workbook unico in `data/ern2026/questionari.xlsx`. I report Roma/Bari già pubblicati conservano il proprio ambito e non includono Pisa.
 
 ## Nuove foto
 

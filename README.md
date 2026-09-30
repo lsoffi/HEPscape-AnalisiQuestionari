@@ -6,9 +6,10 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
-Il workbook unico contiene **207 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma e 98 a Bari con kit Bari. Le risposte dei due kit sono selezionabili separatamente.
+Il workbook unico contiene **230 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma, 98 a Bari con kit Bari e 23 a Pisa con kit Pisa. Le risposte dei tre kit sono selezionabili separatamente.
 
-- [Workbook unico Roma + Bari](data/ern2026/questionari.xlsx)
+- [Workbook unico Roma + Bari + Pisa](data/ern2026/questionari.xlsx)
+- [Workbook del solo kit Pisa](kits/pisa/pisa/ERN2026/questionari_Pisa.xlsx)
 - [Report Bari / Bari con copertina e word wall](kits/bari/bari/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [Report Roma / Avezzano con copertina](kits/roma/avezzano/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [PDF originale preparato insieme, nella cartella Roma](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
@@ -164,10 +165,10 @@ hepscape merge data/ern2026/questionari_verificati.json work/roma-avezzano-02/ve
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
-I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json` e `data/ern2026/lotti/bari.json`. Per ricreare il workbook unico:
+I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json`, `data/ern2026/lotti/bari.json` e `data/ern2026/lotti/pisa.json`. Per ricreare il workbook unico:
 
 ```sh
-hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json --out work/uniti.json
+hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json data/ern2026/lotti/pisa.json --out work/uniti.json
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
@@ -213,6 +214,6 @@ I test controllano codifiche, importazione CSV, risposte incerte, revisione, dup
 
 I programmi del repository lavorano in locale e non inviano foto o trascrizioni a servizi esterni. Quando alleghi foto in chat, le condividi con il servizio di chat secondo le condizioni del tuo account. Non sono caricate automaticamente su GitHub.
 
-Il repository contiene i lotti Roma e Bari autorizzati, senza fotografie originali né scansione PDF dei questionari. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
+Il repository contiene i lotti Roma, Bari e Pisa autorizzati, senza fotografie originali né scansione PDF dei questionari. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
 
 Il codice originale è distribuito con [licenza MIT](LICENSE). La licenza del codice non concede diritti aggiuntivi sui dati, sulle foto o sul marchio HEPscape!. La [provenienza](docs/PROVENIENZA.md) descrive il lotto iniziale.
