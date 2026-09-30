@@ -4,13 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "hepscape-questionari"
-version = "0.1.0"
+version = "0.2.0"
 description = "Foto, revisione, Excel e analisi dei questionari HEPscape!"
 requires-python = ">=3.10"
-dependencies = ["openpyxl>=3.1,<4", "Pillow>=10,<13", "matplotlib>=3.8,<4", "numpy>=1.26,<3", "reportlab>=4,<5", "pydantic>=2.8,<3"]
+dependencies = ["openpyxl>=3.1,<4", "Pillow>=10,<13", "matplotlib>=3.8,<4", "numpy>=1.26,<3", "reportlab>=4,<5"]
 
 [project.optional-dependencies]
-vision = ["openai>=2,<3"]
 test = ["pytest>=8,<10", "pypdf>=5,<7"]
 
 [project.scripts]

@@ -1,36 +1,22 @@
 # HEPscape! · Analisi dei questionari
 
-Dalle fotografie dei questionari all’Excel e ai grafici, con una revisione umana tracciabile.
+**Foto in chat → trascrizione CSV → revisione → workbook Excel → grafici e PDF.**
 
-Il repository include **109 questionari HEPscape! raccolti durante l’evento ERNEST – ERN 2026**, il workbook verificato e le tavole in palette HEPscape. Il lotto attuale ha `Città = Avezzano` e `Origine del kit = Roma`. Questi metadati restano nelle singole righe, così si possono aggiungere altri lotti e altre città. I risultati riguardano HEPscape!, non l’intero evento ERNEST.
+Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo fatto per il primo lotto. Questo repository importa la trascrizione e svolge le elaborazioni sul computer: **non richiede una chiave API, non chiama OpenAI e non legge autonomamente le fotografie**. L’uso della chat segue le funzionalità e i limiti del proprio account; il repository non fornisce accesso alla chat.
 
 ## Risultati già pronti
 
-- [Workbook verificato: 109 schede](data/ern2026/questionari.xlsx)
-- [PDF originale preparato insieme: kit Roma, evento ad Avezzano](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
-- [Raccolta rigenerata dal programma, con grafici e word wall](reports/ern2026/HEPscape_raccolta_grafici.pdf)
-- [Grafici PNG/SVG e tabelle CSV](reports/ern2026/grafici/)
-- [Trascrizioni e codici verificati, in JSON](data/ern2026/questionari_verificati.json)
-- [Storico delle trascrizioni e delle correzioni](data/ern2026/trascrizione_storica.json)
+Il lotto iniziale contiene 109 questionari HEPscape! dell’evento ERNEST – ERN 2026, raccolti ad Avezzano con kit Roma.
 
-![Word wall Q2](reports/ern2026/grafici/12b_word_wall.png)
-
-## Da dove cominciare
-
-Un **workbook** è semplicemente un file Excel con più fogli. Gli **script** sono i programmi Python che eseguono la lettura delle foto, la creazione dell’Excel e l’analisi. Si avviano con i comandi riportati qui sotto; al momento non c’è un’interfaccia con pulsanti.
-
-| Cosa vuoi fare? | Cosa serve? | Si usa l’API OpenAI? |
-| --- | --- | --- |
-| Consultare l’Excel, le slide e i grafici già pronti | Scaricare i file dai link sopra | No |
-| Rigenerare grafici e word wall dai dati verificati | Installare il programma e seguire il punto 1 | No |
-| Trascrivere nuovi questionari fotografati | Installare il lettore, configurare una chiave API e seguire il punto 2 | Sì, solo durante la lettura delle foto |
-| Correggere le letture, creare l’Excel e unire altre città | Seguire i punti 3 e 4 | No |
-
-Il percorso completo è **foto → bozza → controllo umano → Excel verificato → grafici e slide PDF**. Il programma propone le risposte; una persona le confronta con le fotografie prima di usarle nell’analisi.
+- [Workbook verificato](data/ern2026/questionari.xlsx)
+- [PDF originale preparato insieme, nella cartella Roma](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
+- [Grafici e word wall rigenerati](reports/ern2026/HEPscape_raccolta_grafici.pdf)
+- [PNG, SVG e tabelle](reports/ern2026/grafici/)
+- [Dati verificati e riutilizzabili](data/ern2026/questionari_verificati.json)
 
 ## Installazione
 
-Serve **Python 3.10 o successivo**. I comandi seguenti vanno eseguiti nel terminale, dalla cartella del repository.
+Serve Python 3.10 o successivo. Apri il terminale ed esegui:
 
 ```sh
 git clone https://github.com/lsoffi/HEPscape-AnalisiQuestionari.git
@@ -38,226 +24,123 @@ cd HEPscape-AnalisiQuestionari
 python -m venv .venv
 ```
 
-Attivare l’ambiente:
+Attiva l’ambiente su macOS/Linux:
 
 ```sh
-# macOS / Linux
 source .venv/bin/activate
-# Windows PowerShell (in alternativa al comando sopra)
+```
+
+Oppure su Windows PowerShell:
+
+```powershell
 .venv\Scripts\Activate.ps1
 ```
 
-Installare il programma, incluso il lettore di foto:
+Installa il programma:
 
 ```sh
-python -m pip install -e ".[vision]"
+python -m pip install -e .
 hepscape --help
 ```
 
-Per usare solo Excel e grafici, senza il lettore di immagini, basta `python -m pip install -e .`.
-Le versioni usate nella verifica iniziale sono riportate in [docs/versioni-verificate.txt](docs/versioni-verificate.txt); i requisiti ammettono anche versioni compatibili.
+Se hai già il repository, esegui `git pull` e ripeti l’installazione nell’ambiente attivato. La versione corrente sostituisce il vecchio comando `extract`: non servono più `OPENAI_API_KEY`, `OPENAI_MODEL` o il componente `vision`.
 
-## Guida pratica: come avviare i due script
+## 1. Leggere le fotografie nella chat
 
-Dopo l’installazione, apri il terminale nella cartella `HEPscape-AnalisiQuestionari` e attiva l’ambiente `.venv` come indicato sopra. Se hai già scaricato il repository, usa `git pull` da quella cartella per ricevere gli aggiornamenti. I comandi seguenti sono su una sola riga e si possono usare sia su macOS/Linux sia in PowerShell.
+1. Apri una conversazione con ChatGPT e allega fotografie leggibili, una scheda intera per foto. Puoi procedere in più lotti.
+2. Copia il testo di [istruzioni per la trascrizione in chat](docs/PROMPT_CHAT.md), indicando città dell’evento, origine del kit e un prefisso univoco per gli ID.
+3. Chiedi di elencare i dubbi e risolvili confrontando le foto. Controlla anche le risposte proposte come sicure e il numero totale delle schede.
+4. Chiedi il file **`trascrizione.csv`**, scaricalo e salvalo in `work/trascrizione.csv` dentro il repository, creando prima la cartella `work/`.
 
-### A. Dalle foto al workbook Excel
+Non basta rinominare un file Excel in CSV. Se la chat restituisce soltanto testo CSV, copialo in un file di testo UTF-8 senza le delimitazioni del blocco di codice. Il [modello CSV](examples/trascrizione_modello.csv) contiene solo l’intestazione corretta, senza dati fittizi da confondere con risposte reali.
 
-Esempio: **kit Roma**, evento ad **Avezzano**, nuovo lotto `ROMA-AVZ-2026-02`.
+Le colonne obbligatorie sono `ID,Foto,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11`. Il separatore è la virgola; testi che contengono virgole devono essere racchiusi tra virgolette. I codici sono nella legenda sotto. `999` significa risposta vuota; `DA_VERIFICARE` significa lettura incerta. Un campo CSV lasciato vuoto viene trattato come incerto. Ogni ID deve essere unico.
 
-1. Crea sul tuo computer la cartella `photos/roma/avezzano/` dentro il repository e mettici le nuove fotografie, una scheda per foto.
-2. Configura `OPENAI_API_KEY` e `OPENAI_MODEL` seguendo [le istruzioni per la chiave API](#che-cosè-una-chiave-api).
-3. Avvia la lettura delle foto:
+## 2. Dalla trascrizione al workbook
+
+Esempio: kit Roma, evento ad Avezzano. Avvia questo comando su una sola riga:
 
 ```sh
-hepscape extract photos/roma/avezzano --out work/roma-avezzano-02 --kit Roma --city Avezzano --prefix ROMA-AVZ-2026-02 --event "Evento ERNEST - ERN 2026" --send-to-openai
+hepscape import-chat work/trascrizione.csv --out work/roma-avezzano-02 --kit Roma --city Avezzano --event "Evento ERNEST - ERN 2026"
 ```
 
-Questo primo comando **non fa domande interattive**: origine del kit e città dell’evento sono specificate con `--kit` e `--city`. Per un altro caso sostituisci questi valori, la cartella delle foto, il prefisso e la destinazione. Il prefisso deve essere unico per ogni lotto e la destinazione deve essere nuova o vuota.
+Sostituisci città, kit, evento e percorsi per il tuo lotto. Il CSV deve contenere un solo lotto con questi metadati comuni; importa separatamente lotti di città, kit o eventi diversi. La destinazione deve essere nuova o vuota. L’importazione è interamente locale.
 
-4. Apri `work/roma-avezzano-02/bozza.xlsx` per vedere la proposta. Controlla anche `errori.json` per le foto escluse. Apri `revisione.csv` e confronta tutte le risposte con le foto: inserisci eventuali modifiche in `correzione` e scrivi `SI` in `confermato`. Per una risposta vuota confermata usa `__BLANK__`. Segui i dettagli del [punto 3](#3-risolvere-i-dubbi-e-confermare), mantenendo ID e colonna `controllo` come testo.
-5. Dopo aver salvato il CSV revisionato, applica le conferme:
+Il programma crea:
+
+| File | Scopo |
+| --- | --- |
+| `bozza.xlsx` | Proposta di workbook da consultare |
+| `bozza.json` | Dati di lavoro per i passaggi successivi |
+| `revisione.csv` | Risposte da confermare o correggere |
+
+Apri `revisione.csv` in Excel come CSV UTF-8, delimitatore virgola, mantenendo **ID e colonna `controllo` come testo**. Per ogni risposta:
+
+- Confronta `proposta` con la foto; non modificare direttamente questa colonna.
+- Metti il valore corretto in `correzione`, oppure lascia vuoto per mantenere la proposta.
+- Per una risposta effettivamente vuota scrivi `__BLANK__` in `correzione`.
+- Scrivi `SI` in `confermato` dopo aver controllato. Anche le risposte già chiarite in chat vanno confermate qui.
+- Non eliminare righe né cambiare ID, domanda o colonna `controllo`.
+
+Una risposta incerta senza proposta richiede un valore oppure `__BLANK__`; non viene trasformata automaticamente in 999. Salva il CSV e applica la revisione:
 
 ```sh
 hepscape review work/roma-avezzano-02/bozza.json --apply work/roma-avezzano-02/revisione.csv --out work/roma-avezzano-02/verificati.json
-```
-
-6. Crea il workbook finale:
-
-```sh
 hepscape workbook work/roma-avezzano-02/verificati.json --out work/roma-avezzano-02/questionari.xlsx
 ```
 
-Il risultato è **`work/roma-avezzano-02/questionari.xlsx`**. Se rimangono risposte non confermate, il programma chiede di completare la revisione prima di creare il file finale. La bozza viene generata automaticamente dalle foto; il controllo umano completa il passaggio all’Excel utilizzabile per l’analisi.
+Il secondo comando crea l’Excel finale solo quando tutte le risposte sono confermate. Per proseguire una revisione parziale, riesporta il CSV aggiornato:
 
-### B. Dal workbook ai grafici e al PDF
+```sh
+hepscape review work/roma-avezzano-02/verificati.json --export work/roma-avezzano-02/revisione-successiva.csv
+```
 
-Per analizzare il workbook appena creato:
+## 3. Dal workbook all’analisi
+
+Il programma può analizzare un **workbook unico con tutti gli eventi e tutti i kit**. Ogni scheda deve avere un ID unico e le colonne Q1–Q11, Città e Origine del kit. Le risposte vuote devono essere codificate come 999.
+
+Per analizzare il nuovo workbook:
 
 ```sh
 hepscape plots work/roma-avezzano-02/questionari.xlsx
 ```
 
-Il programma chiede **quale kit analizzare**: Roma, Bari, Perugia, Pisa, Padova oppure **tutti**. Non richiede più la città dell’evento: per impostazione predefinita considera tutte le città e tutti gli eventi presenti nel workbook.
+Il programma chiede quale kit analizzare: **Roma, Bari, Perugia, Pisa, Padova oppure tutti**. Include tutte le città e tutti gli eventi delle schede selezionate. Salva in `kits/roma/tutte-le-citta/<data-e-ora>/` per Roma, oppure in `reports/tutti-i-kit/tutte-le-citta/<data-e-ora>/` per tutti. Ogni esecuzione guidata ha una nuova cartella.
 
-Per il kit Roma i risultati vanno in `kits/roma/tutte-le-citta/<data-e-ora>/`. Scegliendo tutti i kit vanno in `reports/tutti-i-kit/tutte-le-citta/<data-e-ora>/`. Il programma stampa il percorso completo al termine. Ogni esecuzione ha una cartella nuova.
-
-La cartella contiene `HEPscape_raccolta_grafici.pdf`, grafici PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json`. Questa fase non richiede una chiave API. Il [PDF originale della prima analisi](kits/roma/HEPscape_ERN2026_slide_originali.pdf) resta in `kits/roma/`.
-
-## 1. Analizzare un workbook unico con tutti gli eventi e i kit
-
-Usa un solo workbook con una riga per questionario, ID univoci nell’intero file e le colonne Q1–Q11, **Città** (luogo dell’evento) e **Origine del kit**. Il lettore usa queste colonne per selezionare le schede. Non deduce l’evento dalla città: eventi diversi possono svolgersi nella stessa città.
-
-Negli esempi `work/questionari_completi.xlsx` indica il tuo workbook unico: sostituiscilo con il percorso reale. Il file incluso `data/ern2026/questionari.xlsx` contiene solo il lotto iniziale di 109 questionari, kit Roma, evento ad Avezzano.
-
-### Scegliere il kit con una domanda
-
-```sh
-hepscape plots work/questionari_completi.xlsx
-```
-
-Rispondi con il nome del kit oppure `tutti`. Il report di un kit include tutte le sue schede, anche raccolte in città ed eventi diversi. Il report di tutti i kit aggrega tutte le righe; ogni questionario pesa allo stesso modo, non ogni kit.
-
-### Scegliere direttamente nel comando
+Negli esempi seguenti sostituisci `work/questionari_completi.xlsx` con il tuo workbook unico:
 
 ```sh
 hepscape plots work/questionari_completi.xlsx --kit Roma
 hepscape plots work/questionari_completi.xlsx --kit tutti
-```
-
-La selezione non cambia l’Excel originale. Se non trova schede del kit richiesto, il programma segnala l’errore. Nel manifest sono registrati filtri e numero di schede analizzate.
-
-### Aggiungere i confronti tra kit, quando servono
-
-```sh
 hepscape plots work/questionari_completi.xlsx --kit tutti --compare-kits
 ```
 
-`--compare-kits` aggiunge tavole descrittive delle risposte a Q1, Q3, Q4 e Q5 per kit, con percentuali calcolate sulle risposte valide e numerosità dei gruppi. Servono almeno due kit presenti nei dati selezionati. Senza questa opzione il report aggregato non contiene queste tavole. Sono confronti descrittivi: differenze di pubblico, città o evento possono spiegare differenze tra kit; non misurano da sole l’efficacia del kit.
+`--compare-kits` aggiunge confronti descrittivi per Q1, Q3, Q4 e Q5 quando sono presenti almeno due kit. Senza questa opzione il report aggregato non contiene confronti tra kit. Ogni questionario pesa allo stesso modo; i kit non ricevono automaticamente lo stesso peso.
 
-### Filtrare facoltativamente una città
+Per limitare l’analisi a una città:
 
 ```sh
 hepscape plots work/questionari_completi.xlsx --kit Roma --city Avezzano
-hepscape plots work/questionari_completi.xlsx --kit tutti --city Avezzano --compare-kits
 ```
 
-Il filtro città include tutti gli eventi svolti lì. In questo caso la sottocartella è `avezzano` invece di `tutte-le-citta`. **Un filtro per singolo evento non è ancora previsto**: eventuali colonne aggiuntive sull’evento sono ignorate dall’analisi. Per ora il workbook unico viene aggregato per kit e, se richiesto, città.
-
-### Scegliere destinazione e titolo
-
-```sh
-hepscape plots work/questionari_completi.xlsx --kit tutti --out work/report-completo --event "Raccolta HEPscape - tutti gli eventi"
-```
-
-`--event` imposta soltanto il titolo del report, non filtra le schede. Il titolo predefinito è “Tutti gli eventi”. `--out` sceglie una destinazione esplicita: riutilizzarla sovrascrive i file con lo stesso nome. Usando soltanto `--out`, senza selezione, si analizza l’intero workbook senza domande.
-
-Per riprodurre il lotto storico:
+L’output va sotto `kits/roma/avezzano/`. Il filtro include tutti gli eventi svolti in quella città; non esiste ancora un filtro per singolo evento. Eventuali colonne aggiuntive sull’evento vengono ignorate dall’analisi. `--event` cambia soltanto il titolo del report:
 
 ```sh
 hepscape plots data/ern2026/questionari.xlsx --kit Roma --event "Evento ERNEST - ERN 2026"
 ```
 
-Per ricreare il workbook storico dai dati verificati:
+Questo comando permette di provare subito il lotto storico, senza foto né chat. Il titolo predefinito è “Tutti gli eventi”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
 
-```sh
-hepscape workbook data/ern2026/questionari_verificati.json --out work/questionari.xlsx
-```
-
-Il file ricreato conserva codici, risposte, città e kit; lo stile è simile all’originale. Tutte le 109 righe vengono confrontate nei test.
-
-## 2. Da nuove foto alla bozza Excel
-
-Mettere le foto in una cartella, per esempio `photos/roma/`. Serve **una scheda intera per foto**, ben leggibile: JPG/JPEG, PNG o WEBP. Raddrizzare fogli molto inclinati ed evitare riflessi e parti tagliate. HEIC e PDF vanno prima convertiti. Per questionari con domande o opzioni diverse bisogna adattare lo schema: questo programma riconosce il modello italiano a 11 domande presente nei dati.
-
-### Che cos’è una chiave API?
-
-Un’**API** è un modo con cui un programma comunica con un servizio online. Qui lo script invia una foto a OpenAI e riceve una proposta di trascrizione delle risposte.
-
-La **chiave API** è un codice segreto che autorizza queste richieste e le associa al tuo progetto OpenAI. È simile a una password per il programma: chi la possiede potrebbe utilizzare il servizio tramite il tuo account. Non è la password di ChatGPT e non va inserita nell’Excel, nel README o nei file pubblicati su GitHub. La [guida ufficiale OpenAI](https://developers.openai.com/api/docs/quickstart) spiega come crearla e renderla disponibile al programma.
-
-### Come procurarsi la chiave
-
-1. Accedi alla [piattaforma API OpenAI](https://platform.openai.com/), oppure crea un account.
-2. Seleziona il progetto da usare e apri la sezione **API keys** per creare una chiave segreta. Se usi un progetto del tuo gruppo, chiedi al suo responsabile l’accesso previsto.
-3. Conserva la chiave in un luogo privato. Rendila disponibile al programma sul tuo computer usando `OPENAI_API_KEY`, come nell’esempio sotto. Non inviarla in chat né condividerla nel repository.
-4. Scegli un modello disponibile nel tuo account che supporti immagini e output strutturati, e indica il suo nome in `OPENAI_MODEL`.
-
-Se una chiave viene pubblicata per errore, revocala nella piattaforma e creane una nuova: eliminarla dal file non basta a renderla nuovamente segreta. Le [indicazioni ufficiali sulla gestione delle chiavi](https://developers.openai.com/api/docs/guides/production-best-practices) approfondiscono questo punto.
-
-### Configurare la chiave ed eseguire la lettura
-
-`OPENAI_API_KEY` e `OPENAI_MODEL` sono **variabili d’ambiente**, cioè impostazioni che il programma legge dal terminale. Sostituisci i testi di esempio tra virgolette con la tua chiave e il nome del modello. Le impostazioni mostrate valgono per la sessione corrente del terminale; se lo chiudi, dovrai impostarle di nuovo. La chiave resta privata sul tuo computer, ma viene usata per autenticare le richieste a OpenAI.
-
-L’opzione `--send-to-openai` conferma esplicitamente l’invio delle foto selezionate. **Le foto lasciano quindi il computer durante questa fase.** Revisione, creazione dell’Excel, unione dei lotti e grafici funzionano invece in locale e non richiedono una chiave.
-
-```sh
-# macOS / Linux: impostare nel proprio ambiente; non salvare la chiave nel repository
-export OPENAI_API_KEY="la-propria-chiave"
-export OPENAI_MODEL="nome-del-modello-disponibile"
-
-hepscape extract photos/roma --out work/roma-01 \
-  --city "Roma" --kit "Roma" --prefix "ROMA-2026-01" \
-  --event "Evento ERNEST - ERN 2026" --send-to-openai
-```
-
-In PowerShell le variabili si impostano con `$env:OPENAI_API_KEY="..."` e `$env:OPENAI_MODEL="..."`. I comandi possono essere scritti su un’unica riga. Il modello è configurabile anche con `--model`: non è imposto un modello che potrebbe non essere disponibile nell’account.
-
-Si possono indicare anche singoli file, separati da spazi:
-
-```sh
-hepscape extract foto1.jpg foto2.jpg --out work/lotto-02 --city "Roma" --kit "Roma" --prefix "ROMA-2026-02" --send-to-openai
-```
-
-Il prefisso deve essere diverso per ogni lotto. La numerazione deriva dall’ordine dei file (alfabetico per una cartella), non dal numero scritto sul foglio; quest’ultimo viene conservato come informazione da verificare.
-
-La cartella di output deve essere nuova o vuota. Il risultato contiene:
-
-| File | Uso |
-| --- | --- |
-| `bozza.xlsx` | Prima lettura in Excel; non ancora ammessa all’analisi |
-| `bozza.json` | Risposte proposte, testo originale, dubbi, metadati e hash delle foto |
-| `revisione.csv` | File da aprire in Excel per correggere e confermare |
-| `letture/` | Output strutturato del modello per ciascuna foto |
-| `errori.json` | Foto non lette, non riconosciute o duplicate |
-
-Le foto identiche byte per byte vengono escluse; due scatti diversi della stessa scheda richiedono ancora un controllo umano. Gli errori non fermano il salvataggio delle schede già lette: il comando restituisce un codice di uscita diverso da zero e segnala il numero di foto escluse. **Controllare sempre `errori.json` e riconciliare il numero delle schede con quello atteso.** Per riprovare foto fallite usare un nuovo lotto e un nuovo prefisso, poi unire i risultati verificati.
-
-## 3. Risolvere i dubbi e confermare
-
-Aprire `revisione.csv` in Excel come CSV UTF-8, delimitatore virgola, mantenendo **ID e colonna `controllo` come testo**. Ogni riga corrisponde a una domanda di una scheda. Confrontarla con la foto originale.
-
-- `proposta` e `motivo` mostrano la lettura del modello. **Non modificare `proposta`: non è il campo di correzione.**
-- In `correzione` inserire il codice corretto; per Q2 il testo corretto. Lasciare vuoto per conservare la proposta.
-- Per dichiarare una risposta effettivamente vuota scrivere **`__BLANK__`** in `correzione`. In Excel diventerà 999.
-- Scrivere **`SI`** in `confermato` dopo aver controllato la risposta. Vanno verificate anche quelle che il modello considera chiare.
-- Non eliminare righe e non cambiare `id`, `domanda` o `controllo`. Un controllo automatico impedisce di applicare una revisione a una bozza diversa.
-
-Una lettura illeggibile o dubbia **non viene convertita automaticamente in 999**. In bozza è indicata come `DA VERIFICARE`. Se manca anche una proposta, occorre inserire esplicitamente una correzione oppure `__BLANK__`.
-
-Salvare il CSV e applicarlo:
-
-```sh
-hepscape review work/roma-01/bozza.json --apply work/roma-01/revisione.csv --out work/roma-01/verificati.json
-hepscape workbook work/roma-01/verificati.json --out work/roma-01/questionari.xlsx
-hepscape plots work/roma-01/questionari.xlsx --out work/roma-01/report
-```
-
-L’Excel finale viene creato solo quando tutte le risposte sono confermate. Per riprendere una revisione parziale, riesportare il CSV dal JSON aggiornato:
-
-```sh
-hepscape review work/roma-01/verificati.json --export work/roma-01/revisione-successiva.csv
-```
+L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 
 ## 4. Unire lotti verificati dello stesso evento
 
 ```sh
-hepscape merge data/ern2026/questionari_verificati.json work/roma-01/verificati.json --out work/tutte-le-citta.json
-hepscape workbook work/tutte-le-citta.json --out work/tutte-le-citta.xlsx
-hepscape plots work/tutte-le-citta.xlsx --out work/report-completo --event "Evento ERNEST - ERN 2026"
+hepscape merge data/ern2026/questionari_verificati.json work/roma-avezzano-02/verificati.json --out work/uniti.json
+hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
-Questo comando `merge` unisce lotti dello stesso evento; non costruisce automaticamente un archivio di eventi diversi. L’analisi `plots` può invece leggere il workbook unico già predisposto con tutti gli eventi. L’unione preserva città, origine del kit, ID e provenienza. Rifiuta ID duplicati, foto con hash duplicato ed eventi discordanti. Gli ID del lotto storico sono `1`–`109`; i nuovi usano il prefisso scelto.
+`merge` richiede lo stesso nome evento e ID univoci. Non costruisce automaticamente un archivio di eventi diversi: `plots` può invece analizzare il workbook unico già predisposto. Conserva i JSON verificati per mantenere la provenienza dei lotti.
 
 ## Codifica
 
@@ -286,27 +169,19 @@ Per Q2 si conta **in quante schede compare una parola**: “BELLA BELLA” conta
 
 La palette deriva dal [sito HEPscape!](https://web.infn.it/hepscape/): `#234A8C`, `#335BA6`, `#5F8FC4`, `#7BBA48`, con `#18304F` per testi e contrasto. Non vengono assegnati colori di sentiment alle parole.
 
-## Verifica e limiti
+## Verifiche e limiti
 
 ```sh
-python -m pip install -e ".[vision,test]"
+python -m pip install -e ".[test]"
 python -m pytest -q
 ```
 
-**Nella prima pubblicazione sono passati 17 test automatici**, sia in locale sia su GitHub con Python 3.10 e 3.12. Su GitHub è stata verificata anche la rigenerazione completa dei grafici dal workbook. Gli esiti delle esecuzioni successive sono consultabili nella [pagina dei test automatici](https://github.com/lsoffi/HEPscape-AnalisiQuestionari/actions).
-
-Un test automatico controlla che il programma produca il risultato previsto per un caso preparato. I test coprono la corrispondenza di tutte le righe dell’Excel storico, codifiche, mancanti, revisione, duplicati, unioni, testo che sembra una formula, richiesta API simulata e analisi di un lotto senza risposte valide. GitHub Actions ripete i test senza chiavi o chiamate API.
-
-**Il riconoscimento da foto non è stato validato con chiamate API reali in questa prima versione**, perché non era disponibile una chiave. La trascrizione dei 109 questionari è quella già verificata manualmente, non il risultato del nuovo estrattore. Nella prova simulata una risposta preparata sostituisce quella del servizio OpenAI: questo controlla il funzionamento del collegamento nel programma, senza inviare foto al servizio. Le prove simulate verificano il flusso software, non l’accuratezza della lettura. Il riconoscimento può sbagliare anche quando non segnala incertezza: controllare le schede prima dell’analisi. Variazioni di modello, versione e qualità delle foto possono cambiare le proposte.
-
-Per la prima prova reale, usa poche foto e confronta ogni risposta proposta con il foglio: caselle selezionate, parole della Q2 e risposte vuote. Completa la revisione del punto 3 prima di generare l’Excel finale. Il superamento dei test software non garantisce che una crocetta o una parola manoscritta siano state lette correttamente.
+I test controllano codifiche, importazione CSV, risposte incerte, revisione, duplicati, corrispondenza con le 109 schede storiche e analisi per uno o tutti i kit. [GitHub Actions](https://github.com/lsoffi/HEPscape-AnalisiQuestionari/actions) ripete i controlli e rigenera i grafici. Queste prove non misurano l’accuratezza della lettura delle fotografie in chat: verifica sempre le trascrizioni, anche quando non sono segnalati dubbi.
 
 ## Dati e pubblicazione
 
-Il repository pubblico contiene le risposte del lotto autorizzato e i risultati. Non contiene foto originali, chiavi API né percorsi personali del computer. Le cartelle `photos/` e `work/` sono escluse da Git per impostazione predefinita. L’estrazione invia soltanto le foto selezionate all’API OpenAI, ricodificate senza metadati EXIF, con `store=False`; ciò non equivale a garantire assenza di conservazione da parte del servizio. Applicare le condizioni del proprio account e verificare di poter trasmettere i nuovi questionari.
+I programmi del repository lavorano in locale e non inviano foto o trascrizioni a servizi esterni. Quando alleghi foto in chat, le condividi con il servizio di chat secondo le condizioni del tuo account. Non sono caricate automaticamente su GitHub.
 
-Prima di pubblicare nuovi lotti, controllare eventuali nomi o informazioni personali scritte nelle risposte libere e nelle note. La pubblicazione di questo lotto non autorizza automaticamente quella di altri lotti.
+Il repository contiene il lotto storico autorizzato, senza fotografie originali. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
 
-Il codice originale in `hepscape/` e `tests/` è distribuito con [licenza MIT](LICENSE). La licenza del codice non concede diritti aggiuntivi sui dati, sulle foto, sul marchio HEPscape! o sui contenuti dei siti citati.
-
-Documentazione tecnica dell’API: [immagini](https://developers.openai.com/api/docs/guides/images-vision), [output strutturati](https://developers.openai.com/api/docs/guides/structured-outputs).
+Il codice originale è distribuito con [licenza MIT](LICENSE). La licenza del codice non concede diritti aggiuntivi sui dati, sulle foto o sul marchio HEPscape!. La [provenienza](docs/PROVENIENZA.md) descrive il lotto iniziale.

@@ -1,9 +1,7 @@
-"""Command line entry point; no network except the explicit 'extract' command."""
+"""Local-only questionnaire import, review and analysis."""
 
 import argparse
 import json
-import os
-import re
 import sys
 from pathlib import Path
 from .schema import load, save, validate
@@ -16,31 +14,15 @@ def parser():
         description="HEPscape! - foto, revisione, Excel, grafici"
     )
     sub = p.add_subparsers(dest="command", required=True)
-    ex = sub.add_parser(
-        "extract", help="Legge le foto tramite OpenAI, produce bozza e revisione"
+    chat = sub.add_parser(
+        "import-chat",
+        help="CSV trascritto in chat -> bozza Excel e revisione, tutto in locale",
     )
-    ex.add_argument(
-        "images", nargs="+", help="File JPG/PNG/WEBP o cartelle (non ricorsive)"
-    )
-    ex.add_argument("--out", type=Path, required=True)
-    ex.add_argument("--city", required=True)
-    ex.add_argument("--kit", required=True)
-    ex.add_argument("--event", default="Evento ERNEST - ERN 2026")
-    ex.add_argument(
-        "--prefix",
-        required=True,
-        help="Prefisso univoco per il lotto, es. ROMA-2026-01",
-    )
-    ex.add_argument(
-        "--model",
-        default=os.getenv("OPENAI_MODEL"),
-        help="Modello con vision e structured outputs disponibile nel proprio account",
-    )
-    ex.add_argument(
-        "--send-to-openai",
-        action="store_true",
-        help="Autorizza invio delle foto all’API OpenAI e relativi costi",
-    )
+    chat.add_argument("source", type=Path)
+    chat.add_argument("--out", required=True, type=Path)
+    chat.add_argument("--city", required=True)
+    chat.add_argument("--kit", required=True)
+    chat.add_argument("--event", required=True)
     rev = sub.add_parser("review", help="Esporta o applica un CSV di revisione")
     rev.add_argument("dataset", type=Path)
     group = rev.add_mutually_exclusive_group(required=True)
@@ -106,53 +88,16 @@ def merge(datasets):
 
 
 def run(args):
-    if args.command == "extract":
-        from .photos import expand_paths, extract
+    if args.command == "import-chat":
+        from .chat_import import import_chat
 
-        if not all(v.strip() for v in (args.city, args.kit, args.event)):
-            raise ValueError("Città, kit ed evento non possono essere vuoti.")
-        if not args.send_to_openai:
-            raise ValueError(
-                "Per leggere le foto con l’API aggiungere --send-to-openai. Foto inviate a OpenAI; uso a pagamento."
-            )
-        if not re.fullmatch(r"[A-Za-z0-9][A-Za-z0-9._-]*", args.prefix):
-            raise ValueError(
-                "Il prefisso deve contenere solo lettere ASCII, numeri, punti, trattini o underscore, iniziando con lettera/numero."
-            )
-        if not args.model:
-            raise ValueError(
-                "Specificare --model oppure OPENAI_MODEL (vision + structured outputs)."
-            )
-        if not os.getenv("OPENAI_API_KEY"):
-            raise ValueError(
-                "Impostare OPENAI_API_KEY nel proprio ambiente; non inserirla nel repository."
-            )
-        paths = expand_paths(args.images)
-        try:
-            from openai import OpenAI
-        except ImportError as exc:
-            raise ValueError(
-                'Installare il supporto vision: pip install -e ".[vision]"'
-            ) from exc
-        # Bounded timeouts and standard SDK retries for transient network errors.
-        with OpenAI(timeout=120.0, max_retries=2) as client:
-            data, errors = extract(
-                client,
-                paths,
-                args.out,
-                city=args.city,
-                kit=args.kit,
-                event=args.event,
-                prefix=args.prefix,
-                model=args.model,
-            )
-        if data["records"]:
-            export_review(data, args.out / "revisione.csv")
-            export_workbook(data, args.out / "bozza.xlsx", draft=True)
-        print(
-            f"Trascritte {len(data['records'])} schede; {len(errors)} foto escluse/in errore. Controllare errori.json e revisione.csv."
+        data = import_chat(
+            args.source, args.out, city=args.city, kit=args.kit, event=args.event
         )
-        return 2 if errors else 0
+        print(
+            f"Importate {len(data['records'])} schede. Controllare bozza.xlsx e compilare revisione.csv."
+        )
+        return 0
     if args.command == "review":
         data = load(args.dataset)
         if args.export:

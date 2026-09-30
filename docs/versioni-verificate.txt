@@ -5,7 +5,5 @@ Pillow==12.3.0
 matplotlib==3.11.2
 numpy==2.5.3
 reportlab==4.5.1
-pydantic==2.13.5
-openai==2.54.0
 pytest==9.1.1
 pypdf==6.19.0

@@ -14,20 +14,18 @@ La raccolta rigenerata usa gli stessi dati e criteri di quella originale. Nei pa
 
 ## Nuove foto
 
-La lettura automatica è una proposta da rivedere, non una misura dell’accuratezza. I file JSON conservano modello dichiarato, nome della foto, hash SHA-256, testo letto, note, stato della lettura e correzioni. Nessuna risposta viene inferita in base ad altre risposte. Tutte le letture devono essere confermate prima di esportare l’Excel finale.
+Le foto vengono lette nella conversazione dell’utente, seguendo `docs/PROMPT_CHAT.md`. Il programma importa il CSV in locale e imposta tutte le risposte come da revisionare, anche se la chat le ha indicate come sicure. I JSON conservano il nome della foto, la trascrizione importata e la storia delle correzioni. L’importazione non calcola hash delle foto e non rileva automaticamente due scatti della stessa scheda: il controllo resta umano.
 
-Le prove API della prima versione sono simulate: verificano il formato della richiesta e la gestione di risposte incomplete o duplicate. Non sostituiscono una prova su foto reali con un modello e una chiave API. I 109 questionari inclusi non sono un risultato del nuovo estrattore.
-
-Per valutare il riconoscimento, scegliere un campione di foto, trascriverlo manualmente in modo indipendente e confrontare ogni domanda con le proposte, distinguendo errori su caselle, mancanti e testo libero. Non considerare la sola validità del JSON una prova della correttezza della lettura.
+Il CSV non conserva tutte le conversazioni: archivia separatamente eventuali annotazioni e chiarimenti. La correttezza dei codici non garantisce l’accuratezza della lettura; confronta ogni scheda con la fotografia.
 
 ## Organizzazione del codice
 
 - `schema.py`: domande, opzioni e validazione; unica fonte della codifica.
-- `photos.py`: invio immagini e interpretazione dello schema strutturato.
+- `chat_import.py`: importazione locale del CSV ottenuto in chat.
 - `review.py`: esportazione/applicazione delle correzioni con controllo della bozza di provenienza.
 - `workbook.py`: esportazione Excel e lettura rigorosa dell’Excel per l’analisi.
 - `plots.py`: tavole descrittive, conteggi e denominatori calcolati dal workbook.
 - `wordwall.py`: disposizione deterministica delle parole per frequenza per scheda.
-- `cli.py`: comandi `extract`, `review`, `workbook`, `merge`, `plots`.
+- `cli.py`: comandi `import-chat`, `review`, `workbook`, `merge`, `plots`.
 
 I file di lavoro nuovi vanno in `work/`, le foto in `photos/`. Entrambe le cartelle sono escluse da Git. Per una nuova pubblicazione verificata, copiare intenzionalmente solo i dati e i risultati da condividere in una nuova sottocartella di `data/` e `reports/`.

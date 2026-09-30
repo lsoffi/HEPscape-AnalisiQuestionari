@@ -2,14 +2,11 @@ import copy
 import csv
 import json
 from pathlib import Path
-from types import SimpleNamespace
 import pytest
-from PIL import Image
 from openpyxl import load_workbook
 from hepscape.schema import QUESTIONS, OPTIONS, load, validate, coded
 from hepscape.workbook import export_workbook, read_workbook
 from hepscape.review import export_review, apply_review
-from hepscape.photos import Reading, Answer, to_record, read_photo, extract
 from hepscape.cli import merge
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -148,114 +145,6 @@ def test_merge_multiple_cities_and_duplicate_detection(data):
         merge([data, second])
 
 
-def reading():
-    return Reading(
-        questionnaire_visible=True,
-        handwritten_id="42",
-        answers=[
-            Answer(
-                question=q,
-                status="selected",
-                value="interessante" if q == "Q2" else "1",
-                transcription="testo",
-                note="",
-            )
-            for q in QUESTIONS
-        ],
-    )
-
-
-def test_vision_mapping_and_review_gate():
-    parsed = reading()
-    parsed.answers[2] = Answer(
-        question="Q3", status="blank", value=None, transcription="", note=""
-    )
-    parsed.answers[3] = Answer(
-        question="Q4",
-        status="uncertain",
-        value=None,
-        transcription="",
-        note="due crocette",
-    )
-    record = to_record(
-        parsed,
-        identity="TEST-1",
-        city="Roma",
-        kit="Roma",
-        source="test.jpg",
-        digest="abc",
-        model="test-model",
-    )
-    assert record["answers"]["Q8"] == 1
-    assert record["answers"]["Q3"] is None
-    assert record["issues"]["Q4"] == "due crocette"
-    assert not any(record["reviewed"].values())
-
-
-def test_duplicate_questions_rejected():
-    parsed = reading()
-    parsed.answers[-1] = parsed.answers[0]
-    with pytest.raises(ValueError):
-        to_record(
-            parsed,
-            identity="TEST-1",
-            city="Roma",
-            kit="Roma",
-            source="test.jpg",
-            digest="abc",
-            model="test",
-        )
-
-
-def test_photo_request_contract_and_failure(tmp_path):
-    path = tmp_path / "sample.jpg"
-    Image.new("RGB", (400, 600), "white").save(path)
-    calls = []
-
-    def parse(**kwargs):
-        calls.append(kwargs)
-        return SimpleNamespace(status="completed", output_parsed=reading())
-
-    client = SimpleNamespace(responses=SimpleNamespace(parse=parse))
-    result = read_photo(client, path, "chosen-model")
-    assert len(result.answers) == 11
-    assert calls[0]["store"] is False
-    assert calls[0]["model"] == "chosen-model"
-    assert calls[0]["input"][1]["content"][1]["image_url"].startswith(
-        "data:image/jpeg;base64,"
-    )
-    client.responses.parse = lambda **kw: SimpleNamespace(
-        status="incomplete", output_parsed=None
-    )
-    with pytest.raises(ValueError, match="incompleta"):
-        read_photo(client, path, "chosen-model")
-
-
-def test_extract_identical_images_are_not_double_counted(tmp_path):
-    first, second = tmp_path / "a.jpg", tmp_path / "b.jpg"
-    Image.new("RGB", (100, 150), "white").save(first)
-    second.write_bytes(first.read_bytes())
-    client = SimpleNamespace(
-        responses=SimpleNamespace(
-            parse=lambda **kwargs: SimpleNamespace(
-                status="completed", output_parsed=reading()
-            )
-        )
-    )
-    data, errors = extract(
-        client,
-        [first, second],
-        tmp_path / "out",
-        city="Roma",
-        kit="Roma",
-        event="test",
-        prefix="T",
-        model="test",
-    )
-    assert len(data["records"]) == 1 and len(errors) == 1
-    assert (tmp_path / "out/bozza.json").exists()
-
-
 def test_analysis_empty_q2_small_and_all_missing_groups(data, tmp_path):
     from hepscape.plots import generate
     from pypdf import PdfReader
@@ -358,3 +247,69 @@ def test_all_kits_report_without_comparisons(data, tmp_path):
     assert report["compare_kits"] is False
     assert not any(name.startswith("16_kit") for name in report["figures"])
     assert report["event"] == "Tutti gli eventi"
+
+
+def test_chat_import_requires_review_and_preserves_uncertainty(tmp_path):
+    from hepscape.chat_import import import_chat
+
+    path = tmp_path / "chat.csv"
+    with path.open("w", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow(["ID", "Foto", *QUESTIONS])
+        writer.writerow(
+            [
+                "ROMA-01",
+                "foto.jpg",
+                0,
+                "bella, istruttiva",
+                "999",
+                "DA_VERIFICARE",
+                0,
+                0,
+                0,
+                1,
+                0,
+                0,
+                1,
+            ]
+        )
+    data = import_chat(
+        path, tmp_path / "out", city="Avezzano", kit="Roma", event="ERN 2026"
+    )
+    r = data["records"][0]
+    assert r["answers"]["Q2"] == "bella, istruttiva"
+    assert r["answers"]["Q3"] is None and "Q3" not in r["issues"]
+    assert "Q4" in r["issues"] and not any(r["reviewed"].values())
+    with pytest.raises(ValueError, match="revisione"):
+        export_workbook(data, tmp_path / "final.xlsx")
+    edit_review(
+        tmp_path / "out/revisione.csv",
+        lambda rows: [
+            row.update(
+                confermato="SI", correzione="1" if row["domanda"] == "Q4" else ""
+            )
+            for row in rows
+        ],
+    )
+    reviewed = apply_review(data, tmp_path / "out/revisione.csv")
+    export_workbook(reviewed, tmp_path / "final.xlsx")
+    assert read_workbook(tmp_path / "final.xlsx")[0][4] == 1
+    with pytest.raises(ValueError, match="nuova o vuota"):
+        import_chat(
+            path, tmp_path / "out", city="Avezzano", kit="Roma", event="ERN 2026"
+        )
+
+
+def test_chat_import_rejects_duplicate_ids_and_bad_codes(tmp_path):
+    from hepscape.chat_import import import_chat
+
+    path = tmp_path / "bad.csv"
+    header = "ID,Foto," + ",".join(QUESTIONS) + "\n"
+    row = "X,f.jpg,0,bella,0,0,0,0,0,1,0,0,1\n"
+    path.write_text(header + row + row)
+    with pytest.raises(ValueError, match="duplicati"):
+        import_chat(path, tmp_path / "out", city="Roma", kit="Roma", event="Test")
+    path.write_text(header + row.replace("0,bella", "9,bella"))
+    with pytest.raises(ValueError, match="codice"):
+        import_chat(path, tmp_path / "out", city="Roma", kit="Roma", event="Test")
+    assert not (tmp_path / "out").exists()
