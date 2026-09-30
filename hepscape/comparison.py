@@ -24,17 +24,7 @@ OUTCOMES = [
     (4, "Più curiosità"),
     (5, "Più interesse"),
 ]
-STOP = set(
-    "E È DI A DA IN CON PER CHE IL LO LA I GLI LE UN UNA UNO MOLTO STATA STATO ESPERIENZA ALLA HO MA NN NON PO TROPPO".split()
-)
-
-
-def tokens(text):
-    return {
-        t
-        for t in re.findall(r"[A-ZÀÈÉÌÒÙ]+", re.sub(r"\[[^]]*\]", "", text.upper()))
-        if t not in STOP and len(t) > 1
-    }
+from .words import grouped_tokens as tokens
 
 
 def wilson(x, n):
@@ -172,7 +162,7 @@ def generate(groups, kits, output, event):
                 fontsize=8,
             )
         for w in sorted(vocab):
-            table("parole", "Q2", "forme esatte", kit, w, c[w], len(ts))
+            table("parole", "Q2", "forme accorpate", kit, w, c[w], len(ts))
     ax.set_yticks(range(len(words)), words)
     ax.invert_yaxis()
     ax.set_xlim(
@@ -203,7 +193,7 @@ def generate(groups, kits, output, event):
         "06_parole",
         "Le 20 parole più frequenti",
         "Selezione per numero totale di schede; ogni parola conta una volta per scheda. Tra parentesi: conteggi.",
-        "Forme esatte; stopword escluse come nei report esistenti. Q2 vuote escluse, refusi non corretti.",
+        "Varianti di genere e numero accorpate; una presenza per gruppo e scheda. Q2 vuote escluse.",
     )
     if all(texts):
         frequencies = lambda w: [100 * c[w] / len(ts) for c, ts in zip(counters, texts)]
@@ -236,7 +226,7 @@ def generate(groups, kits, output, event):
             "16 maggiori scarti massimo-minimo tra kit; almeno 3 schede totali. Q2 valide: "
             + ", ".join(f"{k}={len(t)}" for k, t in zip(kits, texts))
             + ".",
-            "Selezione esplorativa, non test di significatività né misura di sentiment. Forme esatte separate.",
+            "Selezione esplorativa, non test di significatività né misura di sentiment. Varianti di genere e numero accorpate.",
         )
     fig, ax = plt.subplots(figsize=(16, 10))
     names = [

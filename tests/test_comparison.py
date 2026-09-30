@@ -24,7 +24,7 @@ def test_zero_difference_retains_uncertainty():
 
 
 def test_word_presence_and_editorial_exclusion():
-    assert tokens("Bella BELLA e curiosità [incerto]") == {"BELLA", "CURIOSITÀ"}
+    assert tokens("Bella BELLA e curiosità [incerto]") == {"BELLO/BELLA", "CURIOSITÀ"}
 
 
 def test_colors_follow_kit_identity():
@@ -46,3 +46,15 @@ def test_three_kit_wordwall_preserves_exclusive_words(tmp_path):
     assert words["PISA"]["Roma"] == words["PISA"]["Bari"] == "0"
     assert words["COMUNE"]["totale"] == "3"
     assert float(words["COMUNE"]["quota_Pisa"]) == pytest.approx(1 / 3)
+
+
+def test_morphological_groups_count_once_per_answer():
+    from hepscape.words import exact_tokens
+
+    assert tokens("BELLA BELLO BELLE carina carino istruttiva istruttivo") == {
+        "BELLO/BELLA",
+        "CARINO/A",
+        "ISTRUTTIVO/A",
+    }
+    assert exact_tokens("BELLA BELLO") == {"BELLA", "BELLO"}
+    assert tokens("BELLA BELLISSIMA") == {"BELLO/BELLA", "BELLISSIMO/A"}

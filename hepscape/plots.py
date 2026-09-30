@@ -357,37 +357,11 @@ def generate(
     )
 
     texts = [r[2] for r in rows if r[2] != 999]
-    stop = set(
-        "E È DI A DA IN CON PER CHE IL LO LA I GLI LE UN UNA UNO MOLTO STATA STATO ESPERIENZA ALLA HO MA NN NON PO TROPPO".split()
-    )
-    tokens = [
-        set(
-            t
-            for t in re.findall(r"[A-ZÀÈÉÌÒÙ]+", re.sub(r"\[[^]]*\]", "", s.upper()))
-            if t not in stop and len(t) > 1
-        )
-        for s in texts
-    ]
-    mapping = {
-        "BELLA": "BELLO/BELLA",
-        "BELLO": "BELLO/BELLA",
-        "ISTRUTTIVA": "ISTRUTTIVO/A",
-        "ISTRUTTIVO": "ISTRUTTIVO/A",
-        "EDUCATIVA": "EDUCATIVO/A",
-        "EDUCATTIVA": "EDUCATIVO/A",
-        "EDUCATIVO": "EDUCATIVO/A",
-        "FORMATIVA": "FORMATIVO/A",
-        "FORMATIVO": "FORMATIVO/A",
-        "SIMPATICO": "SIMPATICO/A",
-        "SIMPATICA": "SIMPATICO/A",
-        "GIOCOSA": "GIOCOSO/A",
-        "GIOCOSO": "GIOCOSO/A",
-        "UNICA": "UNICO/A",
-        "UNICO": "UNICO/A",
-        "INTERATTIVA": "INTERATTIVO/A",
-        "INTERATTIVO": "INTERATTIVO/A",
-    }
-    norm = [set(mapping.get(t, t) for t in ts) for ts in tokens]
+    from .words import STOP, MAPPING, exact_tokens, grouped_tokens
+
+    stop, mapping = STOP, MAPPING
+    tokens = [exact_tokens(s) for s in texts]
+    norm = [grouped_tokens(s) for s in texts]
 
     def wordsplot(ts, name, title):
         # Deterministic alphabetical tie-break, independent of Python's hash seed.

@@ -11,7 +11,7 @@ def generate_wordwall(output, event, valid_count):
     words = [
         (r["parola"], int(r["schede"]))
         for r in csv.DictReader((base / "grafici/frequenze_parole.csv").open())
-        if r["tipo"] == "esatta"
+        if r["tipo"] == "accorpata"
     ]
     words.sort(key=lambda v: (-v[1], v[0]))
     from matplotlib import font_manager
@@ -62,7 +62,7 @@ def generate_wordwall(output, event, valid_count):
     draw = ImageDraw.Draw(im)
     title = "Q2 • LE PAROLE DELL’ESPERIENZA"
     subtitle = f"{len(words)} parole diverse nelle {valid_count} risposte testuali | HEPscape! • {event}"
-    footer = "Dimensione crescente con la frequenza per scheda; escluse parole funzionali e annotazioni, come nella tavola 12."
+    footer = "Dimensione crescente con la frequenza per scheda; escluse parole funzionali e annotazioni, varianti di genere e numero accorpate."
     draw.text((85, 55), title, font=ImageFont.truetype(fontpath, 57), fill="#18304F")
     regular = font_manager.findfont(font_manager.FontProperties(family="DejaVu Sans"))
     draw.text((85, 135), subtitle, font=ImageFont.truetype(regular, 29), fill="#586B7B")

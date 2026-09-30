@@ -128,7 +128,7 @@ def generate(texts, kits, output, event):
     text(
         85,
         H - 50,
-        "Forme esatte, senza stopword né annotazioni editoriali. Le parole condivise compaiono una sola volta.",
+        "Varianti di genere e numero accorpate; una presenza per gruppo e scheda. Parole condivise mostrate una volta.",
         24,
     )
     path = out / "12_word_wall_insieme.png"
