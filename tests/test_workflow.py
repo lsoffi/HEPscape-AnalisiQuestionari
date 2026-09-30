@@ -273,3 +273,65 @@ def test_analysis_empty_q2_small_and_all_missing_groups(data, tmp_path):
     manifest = json.loads((tmp_path / "report/manifest.json").read_text())
     assert "15_citta_1" in manifest["figures"]
     assert "16_kit_1" in manifest["figures"]
+
+
+def test_guided_output_prompts_and_safe_path(monkeypatch):
+    from hepscape.cli import parser
+    from hepscape.routing import destination
+
+    monkeypatch.setattr("sys.stdin.isatty", lambda: True)
+    responses = iter([" rOmA ", "L’Aquila"])
+    monkeypatch.setattr("builtins.input", lambda _: next(responses))
+    args = parser().parse_args(["plots", "input.xlsx"])
+    first, kit, city = destination(args)
+    assert first.parent == Path("kits/roma/l-aquila")
+    assert kit == "Roma" and city == "L’Aquila"
+    args = parser().parse_args(
+        ["plots", "input.xlsx", "--kit", "Roma", "--city", "../../Bari"]
+    )
+    path, _, _ = destination(args)
+    assert path.parent == Path("kits/roma/bari")
+
+
+def test_batch_routing_and_metadata_selection(monkeypatch):
+    from hepscape.cli import parser
+    from hepscape.routing import destination, select_rows
+
+    monkeypatch.setattr("sys.stdin.isatty", lambda: False)
+    with pytest.raises(ValueError, match="automatica"):
+        destination(parser().parse_args(["plots", "input.xlsx"]))
+    assert destination(
+        parser().parse_args(["plots", "input.xlsx", "--out", "all"])
+    ) == (Path("all"), None, None)
+    with pytest.raises(ValueError, match="Kit ammessi"):
+        destination(
+            parser().parse_args(
+                ["plots", "input.xlsx", "--kit", "Invalid", "--city", "Roma"]
+            )
+        )
+    rows = [
+        ("A",) + (0,) * 11 + ("Avezzano", "Roma"),
+        ("B",) + (0,) * 11 + ("Bari", "Roma"),
+        ("C",) + (0,) * 11 + ("Avezzano", "Pisa"),
+    ]
+    assert select_rows(rows, " roma ", "AVEZZANO") == rows[:1]
+    with pytest.raises(ValueError, match="Nessuna scheda"):
+        select_rows(rows, "Bari", "Avezzano")
+    assert select_rows(rows) == rows
+
+
+def test_filtered_report_manifest_and_no_false_output(data, tmp_path):
+    from hepscape.plots import generate
+
+    second = copy.deepcopy(data["records"][0])
+    second.update(id="SECOND", city="Bari", kit="Bari")
+    data["records"].append(second)
+    source = tmp_path / "mixed.xlsx"
+    export_workbook(data, source)
+    generate(source, tmp_path / "selected", kit="Roma", city="Roma")
+    report = json.loads((tmp_path / "selected/manifest.json").read_text())
+    assert report["questionnaires"] == 1
+    assert report["selection"] == {"kit": "Roma", "city": "Roma"}
+    with pytest.raises(ValueError, match="Nessuna scheda"):
+        generate(source, tmp_path / "absent", kit="Pisa", city="Roma")
+    assert not (tmp_path / "absent").exists()

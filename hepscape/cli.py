@@ -59,7 +59,13 @@ def parser():
     mg.add_argument("--out", required=True, type=Path)
     pl = sub.add_parser("plots", help="Excel -> tutti i grafici, word wall e PDF")
     pl.add_argument("workbook", type=Path)
-    pl.add_argument("--out", required=True, type=Path)
+    pl.add_argument(
+        "--out",
+        type=Path,
+        help="Destinazione esplicita; senza filtri analizza tutto il workbook",
+    )
+    pl.add_argument("--kit", help="Origine del kit: Roma, Bari, Perugia, Pisa, Padova")
+    pl.add_argument("--city", help="Città in cui si è svolto l’evento")
     pl.add_argument("--event", default="Evento ERNEST - ERN 2026")
     return p
 
@@ -152,7 +158,11 @@ def run(args):
     elif args.command == "plots":
         from .plots import generate
 
-        generate(args.workbook, args.out, args.event)
+        from .routing import destination
+
+        output, kit, city = destination(args)
+        generate(args.workbook, output, args.event, kit=kit, city=city)
+        print(f"Risultati salvati in: {output.resolve()}")
     return 0
 
 
@@ -160,7 +170,7 @@ def main():
     args = parser().parse_args()
     try:
         return run(args)
-    except (ValueError, OSError, KeyError, json.JSONDecodeError) as exc:
+    except (ValueError, OSError, KeyError, EOFError, json.JSONDecodeError) as exc:
         print(f"Errore: {exc}", file=sys.stderr)
         return 2
 

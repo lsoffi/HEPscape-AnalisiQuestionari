@@ -58,6 +58,28 @@ Le versioni usate nella verifica iniziale sono riportate in [docs/versioni-verif
 
 ## 1. Riprodurre i risultati già presenti, senza API
 
+### Analisi guidata per kit e città dell’evento
+
+Dalla cartella del repository, avvia:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx
+```
+
+Il programma chiede **«Di quale città è il tuo kit?»** (Roma, Bari, Perugia, Pisa o Padova) e **«In quale città si è svolto l’evento?»**. La prima risposta è l’origine del kit, la seconda il luogo dell’evento: per il lotto attuale rispondi **Roma**, poi **Avezzano**.
+
+I risultati vengono salvati in `kits/roma/avezzano/<data-e-ora>/`. Sono già predisposte le cinque cartelle `kits/roma`, `kits/bari`, `kits/perugia`, `kits/pisa` e `kits/padova`. Ogni esecuzione guidata ha una nuova sottocartella, per conservare le analisi precedenti. I percorsi sono relativi alla cartella da cui avvii il comando.
+
+**Le risposte selezionano le schede da analizzare usando le colonne “Città” e “Origine del kit” dell’Excel.** Non cambiano i dati: se il workbook contiene più città o kit, vengono analizzate solo le righe corrispondenti; se non ci sono corrispondenze, il programma si ferma con una spiegazione. La selezione è registrata nel `manifest.json` del report.
+
+Per ottenere lo stesso comportamento senza domande (ad esempio in un’esecuzione automatica):
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx --kit Roma --city Avezzano
+```
+
+Puoi aggiungere `--out percorso` per scegliere una destinazione specifica. Usando **solo `--out`, senza `--kit` e `--city`**, analizzi invece tutto il workbook, con i confronti tra città e kit quando presenti, senza domande interattive. Questa modalità è utile per il report complessivo:
+
 ```sh
 hepscape plots data/ern2026/questionari.xlsx --out work/report \
   --event "Evento ERNEST - ERN 2026"

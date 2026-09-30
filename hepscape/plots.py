@@ -11,13 +11,17 @@ from reportlab.lib.utils import ImageReader
 from PIL import Image, ImageOps, ImageDraw
 
 
-def generate(workbook, output, event="Evento ERNEST - ERN 2026"):
+def generate(
+    workbook, output, event="Evento ERNEST - ERN 2026", *, kit=None, city=None
+):
     base = Path(output)
     out = base / "grafici"
-    out.mkdir(parents=True, exist_ok=True)
     from .workbook import read_workbook
 
-    rows = read_workbook(workbook)
+    from .routing import select_rows
+
+    rows = select_rows(read_workbook(workbook), kit, city)
+    out.mkdir(parents=True, exist_ok=True)
     N = len(rows)
     labels = {
         1: ["Tantissimo", "Piaciuta", "Non molto"],
@@ -578,6 +582,7 @@ def generate(workbook, output, event="Evento ERNEST - ERN 2026"):
         json.dumps(
             {
                 "event": event,
+                "selection": {"kit": kit, "city": city},
                 "questionnaires": N,
                 "figures": [name for name, *_ in figs],
                 "files": [str(p.relative_to(base)) for p in generated],
