@@ -55,9 +55,14 @@ def test_coding_order():
     assert coded("Q2", None) == 999
 
 
-def test_original_dataset_matches_every_excel_cell(tmp_path):
+def test_combined_dataset_matches_every_excel_cell(tmp_path):
     data = load(ROOT / "data/ern2026/questionari_verificati.json", require_review=True)
-    assert len(data["records"]) == 109
+    assert len(data["records"]) == 207
+    roma = load(ROOT / "data/ern2026/lotti/roma.json", require_review=True)
+    bari = load(ROOT / "data/ern2026/lotti/bari.json", require_review=True)
+    assert len(roma["records"]) == 109
+    assert len(bari["records"]) == 98
+    assert data["records"] == roma["records"] + bari["records"]
     target = tmp_path / "reproduced.xlsx"
     export_workbook(data, target)
     assert read_workbook(target) == read_workbook(
@@ -66,7 +71,7 @@ def test_original_dataset_matches_every_excel_cell(tmp_path):
     wb = load_workbook(target)
     assert wb["Dati codificati"].freeze_panes == "B7"
     assert len(wb["Dati codificati"].data_validations.dataValidation) == 10
-    assert wb["Risposte originali"].max_row == 110
+    assert wb["Risposte originali"].max_row == 208
 
 
 @pytest.mark.parametrize("value", [3, -1, "0", True, 999])

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1008pt" height="504pt" viewBox="0 0 1008 504" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-09-30T15:18:30.710433</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 504 
+L 1008 504 
+L 1008 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 302.4 438.48 
+L 967.68 438.48 
+L 967.68 80.64 
+L 302.4 80.64 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 302.4 96.905455 
+L 761.666272 96.905455 
+L 761.666272 165.391579 
+L 302.4 165.391579 
+z
+" clip-path="url(#pa091728378)" style="fill: #335ba6"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 302.4 182.51311 
+L 472.984615 182.51311 
+L 472.984615 250.999234 
+L 302.4 250.999234 
+z
+" clip-path="url(#pa091728378)" style="fill: #5f8fc4"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 302.4 268.120766 
+L 433.618935 268.120766 
+L 433.618935 336.60689 
+L 302.4 336.60689 
+z
+" clip-path="url(#pa091728378)" style="fill: #7bba48"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 302.4 353.728421 
+L 814.153846 353.728421 
+L 814.153846 422.214545 
+L 302.4 422.214545 
+z
+" clip-path="url(#pa091728378)" style="fill: #b6b3c4"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <defs>
+       <path id="mf674519880" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#mf674519880" x="302.4" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="302.4" y="453.837422" transform="rotate(-0 302.4 453.837422)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_2">
+      <g>
+       <use xlink:href="#mf674519880" x="433.618935" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="433.618935" y="453.837422" transform="rotate(-0 433.618935 453.837422)">10</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_3">
+      <g>
+       <use xlink:href="#mf674519880" x="564.83787" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="564.83787" y="453.837422" transform="rotate(-0 564.83787 453.837422)">20</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#mf674519880" x="696.056805" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="696.056805" y="453.837422" transform="rotate(-0 696.056805 453.837422)">30</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_5">
+      <g>
+       <use xlink:href="#mf674519880" x="827.27574" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="827.27574" y="453.837422" transform="rotate(-0 827.27574 453.837422)">40</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#mf674519880" x="958.494675" y="438.48" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle" x="958.494675" y="453.837422" transform="rotate(-0 958.494675 453.837422)">50</text>
+     </g>
+    </g>
+    <g id="text_7">
+     <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: middle; fill: #18304f" x="635.04" y="468.838281" transform="rotate(-0 635.04 468.838281)">Numero di partecipanti</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_7">
+      <defs>
+       <path id="m38cd7417b6" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m38cd7417b6" x="302.4" y="131.148517" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.4" y="135.547657" transform="rotate(-0 295.4 135.547657)">Più curiosità e più interesse</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m38cd7417b6" x="302.4" y="216.756172" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.4" y="221.155313" transform="rotate(-0 295.4 221.155313)">Solo più curiosità</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use xlink:href="#m38cd7417b6" x="302.4" y="302.363828" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.4" y="306.762968" transform="rotate(-0 295.4 306.762968)">Solo più interesse</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m38cd7417b6" x="302.4" y="387.971483" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: end" x="295.4" y="392.150624" transform="rotate(-0 295.4 392.150624)">Nessuno dei due aumenti</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_7">
+    <path d="M 302.4 438.48 
+L 302.4 80.64 
+" style="fill: none; stroke: #becbd5; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 302.4 438.48 
+L 967.68 438.48 
+" style="fill: none; stroke: #becbd5; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_12">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="770.851598" y="134.005939" transform="rotate(-0 770.851598 134.005939)">35 (36.1%)</text>
+   </g>
+   <g id="text_13">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="482.169941" y="219.613594" transform="rotate(-0 482.169941 219.613594)">13 (13.4%)</text>
+   </g>
+   <g id="text_14">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="442.80426" y="305.22125" transform="rotate(-0 442.80426 305.22125)">10 (10.3%)</text>
+   </g>
+   <g id="text_15">
+    <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="823.339172" y="390.828905" transform="rotate(-0 823.339172 390.828905)">39 (40.2%)</text>
+   </g>
+  </g>
+  <g id="text_16">
+   <text style="font-weight: 700; font-size: 20px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="60.48" y="28.596875" transform="rotate(-0 60.48 28.596875)">Curiosità e interesse: aumenti dichiarati insieme</text>
+  </g>
+  <g id="text_17">
+   <text style="font-size: 11px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #56697b" x="60.48" y="42.84" transform="rotate(-0 60.48 42.84)">97 schede con Q4 e Q5 valide. “Nessuno” comprende risposte uguali o inferiori a prima.</text>
+  </g>
+  <g id="text_18">
+   <text style="font-weight: 700; font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #18304f" x="60.48" y="480.816" transform="rotate(-0 60.48 480.816)">HEPscape! | Evento ERNEST - ERN 2026 | 98 questionari</text>
+  </g>
+  <g id="text_19">
+   <text style="font-size: 8.5px; font-family: 'DejaVu Sans'; text-anchor: start; fill: #56697b" x="60.48" y="493.416" transform="rotate(-0 60.48 493.416)">Dichiarazioni dopo l’attività; non sono misure prima/dopo né stime di effetti causali.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa091728378">
+   <rect x="302.4" y="80.64" width="665.28" height="357.84"/>
+  </clipPath>
+ </defs>
+</svg>

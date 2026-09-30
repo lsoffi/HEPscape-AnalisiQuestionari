@@ -13,3 +13,6 @@ dist/
 build/
 *.log
 controllo.png
+
+# Ritagli e bozze private della revisione Bari
+/outputs/bari-revisione/

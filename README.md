@@ -6,13 +6,14 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
-Il lotto iniziale contiene 109 questionari HEPscape! dell’evento ERNEST – ERN 2026, raccolti ad Avezzano con kit Roma.
+Il workbook unico contiene **207 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma e 98 a Bari con kit Bari. Le risposte dei due kit sono selezionabili separatamente.
 
-- [Workbook verificato](data/ern2026/questionari.xlsx)
+- [Workbook unico Roma + Bari](data/ern2026/questionari.xlsx)
+- [Report Bari / Bari con copertina e word wall](kits/bari/bari/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [Report Roma / Avezzano con copertina](kits/roma/avezzano/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [PDF originale preparato insieme, nella cartella Roma](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
-- [Grafici e word wall rigenerati](reports/ern2026/HEPscape_raccolta_grafici.pdf)
-- [PNG, SVG e tabelle](reports/ern2026/grafici/)
+- [Grafici e word wall del lotto storico Roma](reports/ern2026/HEPscape_raccolta_grafici.pdf)
+- [PNG, SVG e tabelle del lotto storico Roma](reports/ern2026/grafici/)
 - [Dati verificati e riutilizzabili](data/ern2026/questionari_verificati.json)
 
 ## Installazione
@@ -130,7 +131,11 @@ Puoi usare anche `--location Avezzano`, equivalente a `--city Avezzano`. L’out
 hepscape plots data/ern2026/questionari.xlsx --kit Roma --event "Evento ERNEST - ERN 2026"
 ```
 
-Questo comando permette di provare subito il lotto storico, senza foto né chat. Il titolo predefinito è “Raccolta HEPscape”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
+Questo comando seleziona il lotto Roma dal workbook unico, senza foto né chat. Per Bari usa:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx --kit Bari --city Bari --event "Evento ERNEST - ERN 2026"
+``` Il titolo predefinito è “Raccolta HEPscape”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
 
 Il **PDF inizia con una copertina con il logo ufficiale HEPscape!** che riporta il nome del kit, la location dell’evento e il numero di questionari selezionati. Per l’aggregato riporta “Tutte le location”; se scegli tutti i kit riporta “Tutti i kit”. Le pagine successive contengono i plot e il metodo. La copertina sposta di una pagina la numerazione precedente delle tavole.
 
@@ -140,6 +145,13 @@ L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` 
 
 ```sh
 hepscape merge data/ern2026/questionari_verificati.json work/roma-avezzano-02/verificati.json --out work/uniti.json
+hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
+```
+
+I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json` e `data/ern2026/lotti/bari.json`. Per ricreare il workbook unico:
+
+```sh
+hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json --out work/uniti.json
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
@@ -185,6 +197,6 @@ I test controllano codifiche, importazione CSV, risposte incerte, revisione, dup
 
 I programmi del repository lavorano in locale e non inviano foto o trascrizioni a servizi esterni. Quando alleghi foto in chat, le condividi con il servizio di chat secondo le condizioni del tuo account. Non sono caricate automaticamente su GitHub.
 
-Il repository contiene il lotto storico autorizzato, senza fotografie originali. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
+Il repository contiene i lotti Roma e Bari autorizzati, senza fotografie originali né scansione PDF dei questionari. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
 
 Il codice originale è distribuito con [licenza MIT](LICENSE). La licenza del codice non concede diritti aggiuntivi sui dati, sulle foto o sul marchio HEPscape!. La [provenienza](docs/PROVENIENZA.md) descrive il lotto iniziale.
