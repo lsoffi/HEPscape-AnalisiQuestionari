@@ -166,6 +166,9 @@ def main():
             ]
         )
         w.writerows(table)
+    from hepscape.comparison import generate
+
+    figures.extend(generate(groups, args.kits, out, args.event))
     pdf = out / "HEPscape_confronto_kit.pdf"
     c = canvas.Canvas(str(pdf), pagesize=(1008, 756))
     loc = "; ".join(

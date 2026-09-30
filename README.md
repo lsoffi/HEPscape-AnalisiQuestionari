@@ -151,7 +151,11 @@ Per rigenerarlo, dalla cartella del repository con l’ambiente attivato:
 python scripts/confronta_kit.py data/ern2026/questionari.xlsx --kits Roma Bari --out reports/confronto-roma-bari/ERN2026
 ```
 
-Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari. Il pubblico differisce per età: questi grafici non isolano un effetto del kit. Q2 è inclusa nel confronto dei mancanti; il confronto delle parole non è incluso in questo PDF. Lo script seleziona tutte le righe dei due kit; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
+Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari. Il pubblico differisce per età: questi grafici non isolano un effetto del kit. Il PDF ampliato comprende anche: quattro esiti per fascia di età, le 20 parole Q2 più frequenti, le 16 parole con maggiore differenza osservata (almeno 3 schede totali), aumenti congiunti di curiosità/interesse, facilità × gradimento, quattro esiti per Q7 e Q8, e otto differenze con intervalli al 95%. I gruppi con meno di 10 risposte hanno un asterisco; n=0 significa non stimabile, non 0%.
+
+Per Q2 le percentuali usano le risposte testuali non vuote del rispettivo kit e contano ogni forma esatta al massimo una volta per scheda, con le stesse stopword dei report esistenti. Le differenze delle parole sono esplorative, selezionate sui dati, e non indicano significatività. Q7 misura le occasioni di partecipazione e Q8 la familiarità didattica con il luogo: nessuna delle due misura direttamente precedenti esperienze HEPscape.
+
+Gli intervalli delle differenze sono Newcombe, costruiti dai limiti Wilson di due proporzioni indipendenti. Si riferiscono agli otto indicatori dichiarati nella tavola, non sono corretti per confronti multipli e assumono osservazioni indipendenti. Non correggono il campionamento non casuale, le differenze di età/location né eventuali gruppi di partecipanti correlati. Non sono test di efficacia del kit. `approfondimenti.csv` conserva conteggi e denominatori; `differenze_intervalli.csv` conserva stime e limiti, nell’ordine dei kit richiesti. Lo script seleziona tutte le righe dei due kit; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
 
 ## 4. Unire lotti verificati dello stesso evento
 
