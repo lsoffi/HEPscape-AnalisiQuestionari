@@ -132,7 +132,7 @@ hepscape plots data/ern2026/questionari.xlsx --kit Roma --event "Evento ERNEST -
 
 Questo comando permette di provare subito il lotto storico, senza foto né chat. Il titolo predefinito è “Raccolta HEPscape”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
 
-Il **PDF inizia con una copertina** che riporta il nome del kit, la location dell’evento e il numero di questionari selezionati. Per l’aggregato riporta “Tutte le location”; se scegli tutti i kit riporta “Tutti i kit”. Le pagine successive contengono i plot e il metodo. La copertina sposta di una pagina la numerazione precedente delle tavole.
+Il **PDF inizia con una copertina con il logo ufficiale HEPscape!** che riporta il nome del kit, la location dell’evento e il numero di questionari selezionati. Per l’aggregato riporta “Tutte le location”; se scegli tutti i kit riporta “Tutti i kit”. Le pagine successive contengono i plot e il metodo. La copertina sposta di una pagina la numerazione precedente delle tavole.
 
 L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 

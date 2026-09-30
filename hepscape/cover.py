@@ -1,6 +1,7 @@
 """PDF cover with the actual analysis scope, using the HEPscape palette."""
 
 from xml.sax.saxutils import escape
+from pathlib import Path
 from reportlab.lib.styles import ParagraphStyle
 from reportlab.platypus import Paragraph
 
@@ -8,6 +9,15 @@ from reportlab.platypus import Paragraph
 def draw_cover(canvas, kit, location, event, count, pages):
     canvas.setFillColorRGB(0.094, 0.188, 0.310)
     canvas.rect(0, 0, 1008, 756, fill=1, stroke=0)
+    canvas.drawImage(
+        str(Path(__file__).parent / "assets" / "hepscape-logo.png"),
+        772,
+        584,
+        width=172,
+        height=151,
+        preserveAspectRatio=True,
+        mask="auto",
+    )
     canvas.setFillColorRGB(0.482, 0.729, 0.282)
     canvas.rect(64, 647, 110, 7, fill=1, stroke=0)
     canvas.setFillColorRGB(1, 1, 1)
