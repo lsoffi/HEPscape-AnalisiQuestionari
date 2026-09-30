@@ -12,7 +12,13 @@ from PIL import Image, ImageOps, ImageDraw
 
 
 def generate(
-    workbook, output, event="Evento ERNEST - ERN 2026", *, kit=None, city=None
+    workbook,
+    output,
+    event="Tutti gli eventi",
+    *,
+    kit=None,
+    city=None,
+    compare_kits=False,
 ):
     base = Path(output)
     out = base / "grafici"
@@ -437,6 +443,8 @@ def generate(
 
     # Add comparisons only when more than one city/kit is actually present.
     for g, slug, name in [(12, "15_citta", "città"), (13, "16_kit", "origine del kit")]:
+        if g == 13 and not compare_kits:
+            continue
         categories = sorted(set(r[g] for r in rows))
         if len(categories) < 2:
             continue
@@ -583,6 +591,7 @@ def generate(
             {
                 "event": event,
                 "selection": {"kit": kit, "city": city},
+                "compare_kits": compare_kits,
                 "questionnaires": N,
                 "figures": [name for name, *_ in figs],
                 "files": [str(p.relative_to(base)) for p in generated],

@@ -64,9 +64,21 @@ def parser():
         type=Path,
         help="Destinazione esplicita; senza filtri analizza tutto il workbook",
     )
-    pl.add_argument("--kit", help="Origine del kit: Roma, Bari, Perugia, Pisa, Padova")
+    pl.add_argument(
+        "--kit",
+        help="Kit da analizzare: Roma, Bari, Perugia, Pisa, Padova oppure tutti",
+    )
     pl.add_argument("--city", help="Città in cui si è svolto l’evento")
-    pl.add_argument("--event", default="Evento ERNEST - ERN 2026")
+    pl.add_argument(
+        "--event",
+        default="Tutti gli eventi",
+        help="Titolo del report, non un filtro sui dati",
+    )
+    pl.add_argument(
+        "--compare-kits",
+        action="store_true",
+        help="Aggiunge confronti descrittivi tra kit se sono presenti almeno due kit",
+    )
     return p
 
 
@@ -161,7 +173,14 @@ def run(args):
         from .routing import destination
 
         output, kit, city = destination(args)
-        generate(args.workbook, output, args.event, kit=kit, city=city)
+        generate(
+            args.workbook,
+            output,
+            args.event,
+            kit=kit,
+            city=city,
+            compare_kits=args.compare_kits,
+        )
         print(f"Risultati salvati in: {output.resolve()}")
     return 0
 

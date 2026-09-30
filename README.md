@@ -98,57 +98,73 @@ Per analizzare il workbook appena creato:
 hepscape plots work/roma-avezzano-02/questionari.xlsx
 ```
 
-Rispondi **Roma** alla domanda sulla città di origine del kit e **Avezzano** alla domanda sulla città dell’evento. Troverai tutti i risultati in **`kits/roma/avezzano/<data-e-ora>/`**; il programma stampa il percorso completo al termine.
+Il programma chiede **quale kit analizzare**: Roma, Bari, Perugia, Pisa, Padova oppure **tutti**. Non richiede più la città dell’evento: per impostazione predefinita considera tutte le città e tutti gli eventi presenti nel workbook.
 
-La cartella contiene `HEPscape_raccolta_grafici.pdf`, la sottocartella `grafici/` con PNG, SVG e tabelle CSV, il word wall, l’archivio ZIP e `manifest.json` con il riepilogo dell’analisi. Questa fase non richiede una chiave API.
+Per il kit Roma i risultati vanno in `kits/roma/tutte-le-citta/<data-e-ora>/`. Scegliendo tutti i kit vanno in `reports/tutti-i-kit/tutte-le-citta/<data-e-ora>/`. Il programma stampa il percorso completo al termine. Ogni esecuzione ha una cartella nuova.
 
-Per provare subito l’analisi sui 109 questionari già verificati, senza leggere nuove foto:
+La cartella contiene `HEPscape_raccolta_grafici.pdf`, grafici PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json`. Questa fase non richiede una chiave API. Il [PDF originale della prima analisi](kits/roma/HEPscape_ERN2026_slide_originali.pdf) resta in `kits/roma/`.
 
-```sh
-hepscape plots data/ern2026/questionari.xlsx
-```
+## 1. Analizzare un workbook unico con tutti gli eventi e i kit
 
-Anche qui rispondi **Roma**, poi **Avezzano**. Il [PDF originale della nostra prima analisi](kits/roma/HEPscape_ERN2026_slide_originali.pdf) è già conservato nella cartella `kits/roma/`; le nuove esecuzioni producono file separati nelle sottocartelle della città dell’evento.
+Usa un solo workbook con una riga per questionario, ID univoci nell’intero file e le colonne Q1–Q11, **Città** (luogo dell’evento) e **Origine del kit**. Il lettore usa queste colonne per selezionare le schede. Non deduce l’evento dalla città: eventi diversi possono svolgersi nella stessa città.
 
-## 1. Riprodurre i risultati già presenti, senza API
+Negli esempi `work/questionari_completi.xlsx` indica il tuo workbook unico: sostituiscilo con il percorso reale. Il file incluso `data/ern2026/questionari.xlsx` contiene solo il lotto iniziale di 109 questionari, kit Roma, evento ad Avezzano.
 
-### Analisi guidata per kit e città dell’evento
-
-Dalla cartella del repository, avvia:
+### Scegliere il kit con una domanda
 
 ```sh
-hepscape plots data/ern2026/questionari.xlsx
+hepscape plots work/questionari_completi.xlsx
 ```
 
-Il programma chiede **«Di quale città è il tuo kit?»** (Roma, Bari, Perugia, Pisa o Padova) e **«In quale città si è svolto l’evento?»**. La prima risposta è l’origine del kit, la seconda il luogo dell’evento: per il lotto attuale rispondi **Roma**, poi **Avezzano**.
+Rispondi con il nome del kit oppure `tutti`. Il report di un kit include tutte le sue schede, anche raccolte in città ed eventi diversi. Il report di tutti i kit aggrega tutte le righe; ogni questionario pesa allo stesso modo, non ogni kit.
 
-I risultati vengono salvati in `kits/roma/avezzano/<data-e-ora>/`. Sono già predisposte le cinque cartelle `kits/roma`, `kits/bari`, `kits/perugia`, `kits/pisa` e `kits/padova`. Ogni esecuzione guidata ha una nuova sottocartella, per conservare le analisi precedenti. I percorsi sono relativi alla cartella da cui avvii il comando.
-
-**Le risposte selezionano le schede da analizzare usando le colonne “Città” e “Origine del kit” dell’Excel.** Non cambiano i dati: se il workbook contiene più città o kit, vengono analizzate solo le righe corrispondenti; se non ci sono corrispondenze, il programma si ferma con una spiegazione. La selezione è registrata nel `manifest.json` del report.
-
-Per ottenere lo stesso comportamento senza domande (ad esempio in un’esecuzione automatica):
+### Scegliere direttamente nel comando
 
 ```sh
-hepscape plots data/ern2026/questionari.xlsx --kit Roma --city Avezzano
+hepscape plots work/questionari_completi.xlsx --kit Roma
+hepscape plots work/questionari_completi.xlsx --kit tutti
 ```
 
-Puoi aggiungere `--out percorso` per scegliere una destinazione specifica. Usando **solo `--out`, senza `--kit` e `--city`**, analizzi invece tutto il workbook, con i confronti tra città e kit quando presenti, senza domande interattive. Questa modalità è utile per il report complessivo:
+La selezione non cambia l’Excel originale. Se non trova schede del kit richiesto, il programma segnala l’errore. Nel manifest sono registrati filtri e numero di schede analizzate.
+
+### Aggiungere i confronti tra kit, quando servono
 
 ```sh
-hepscape plots data/ern2026/questionari.xlsx --out work/report \
-  --event "Evento ERNEST - ERN 2026"
+hepscape plots work/questionari_completi.xlsx --kit tutti --compare-kits
 ```
 
-Produce grafici PNG e SVG, tabelle CSV, word wall, metodo, raccolta PDF e ZIP. Il word wall segue la tavola 12. Tutti i denominatori sono calcolati dal workbook: non sono fissati a 109. Se sono presenti più città o kit, si aggiungono i confronti per queste variabili.
+`--compare-kits` aggiunge tavole descrittive delle risposte a Q1, Q3, Q4 e Q5 per kit, con percentuali calcolate sulle risposte valide e numerosità dei gruppi. Servono almeno due kit presenti nei dati selezionati. Senza questa opzione il report aggregato non contiene queste tavole. Sono confronti descrittivi: differenze di pubblico, città o evento possono spiegare differenze tra kit; non misurano da sole l’efficacia del kit.
 
-Per ricreare anche il workbook dai dati verificati:
+### Filtrare facoltativamente una città
+
+```sh
+hepscape plots work/questionari_completi.xlsx --kit Roma --city Avezzano
+hepscape plots work/questionari_completi.xlsx --kit tutti --city Avezzano --compare-kits
+```
+
+Il filtro città include tutti gli eventi svolti lì. In questo caso la sottocartella è `avezzano` invece di `tutte-le-citta`. **Un filtro per singolo evento non è ancora previsto**: eventuali colonne aggiuntive sull’evento sono ignorate dall’analisi. Per ora il workbook unico viene aggregato per kit e, se richiesto, città.
+
+### Scegliere destinazione e titolo
+
+```sh
+hepscape plots work/questionari_completi.xlsx --kit tutti --out work/report-completo --event "Raccolta HEPscape - tutti gli eventi"
+```
+
+`--event` imposta soltanto il titolo del report, non filtra le schede. Il titolo predefinito è “Tutti gli eventi”. `--out` sceglie una destinazione esplicita: riutilizzarla sovrascrive i file con lo stesso nome. Usando soltanto `--out`, senza selezione, si analizza l’intero workbook senza domande.
+
+Per riprodurre il lotto storico:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx --kit Roma --event "Evento ERNEST - ERN 2026"
+```
+
+Per ricreare il workbook storico dai dati verificati:
 
 ```sh
 hepscape workbook data/ern2026/questionari_verificati.json --out work/questionari.xlsx
-hepscape plots work/questionari.xlsx --out work/report-ricreato
 ```
 
-Il file ricreato conserva codici, risposte originali, città e kit del workbook iniziale; lo stile è simile, non una copia identica del file binario. Tutte le 109 righe vengono confrontate automaticamente nei test.
+Il file ricreato conserva codici, risposte, città e kit; lo stile è simile all’originale. Tutte le 109 righe vengono confrontate nei test.
 
 ## 2. Da nuove foto alla bozza Excel
 
@@ -236,7 +252,7 @@ L’Excel finale viene creato solo quando tutte le risposte sono confermate. Per
 hepscape review work/roma-01/verificati.json --export work/roma-01/revisione-successiva.csv
 ```
 
-## 4. Aggiungere altre città
+## 4. Unire lotti verificati dello stesso evento
 
 ```sh
 hepscape merge data/ern2026/questionari_verificati.json work/roma-01/verificati.json --out work/tutte-le-citta.json
@@ -244,7 +260,7 @@ hepscape workbook work/tutte-le-citta.json --out work/tutte-le-citta.xlsx
 hepscape plots work/tutte-le-citta.xlsx --out work/report-completo --event "Evento ERNEST - ERN 2026"
 ```
 
-L’unione preserva città, origine del kit, ID e provenienza. Rifiuta ID duplicati, foto con hash duplicato ed eventi discordanti. Gli ID del lotto storico sono `1`–`109`; i nuovi usano il prefisso scelto.
+Questo comando `merge` unisce lotti dello stesso evento; non costruisce automaticamente un archivio di eventi diversi. L’analisi `plots` può invece leggere il workbook unico già predisposto con tutti gli eventi. L’unione preserva città, origine del kit, ID e provenienza. Rifiuta ID duplicati, foto con hash duplicato ed eventi discordanti. Gli ID del lotto storico sono `1`–`109`; i nuovi usano il prefisso scelto.
 
 ## Codifica
 

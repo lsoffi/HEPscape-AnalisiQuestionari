@@ -267,7 +267,7 @@ def test_analysis_empty_q2_small_and_all_missing_groups(data, tmp_path):
     data["records"].append(second)
     path = tmp_path / "empty.xlsx"
     export_workbook(data, path)
-    generate(path, tmp_path / "report", "Test senza risposte")
+    generate(path, tmp_path / "report", "Test senza risposte", compare_kits=True)
     assert len(PdfReader(tmp_path / "report/HEPscape_raccolta_grafici.pdf").pages) == 18
     assert len(list((tmp_path / "report/grafici").glob("*.svg"))) == 17
     manifest = json.loads((tmp_path / "report/manifest.json").read_text())
@@ -280,12 +280,12 @@ def test_guided_output_prompts_and_safe_path(monkeypatch):
     from hepscape.routing import destination
 
     monkeypatch.setattr("sys.stdin.isatty", lambda: True)
-    responses = iter([" rOmA ", "L’Aquila"])
+    responses = iter([" rOmA "])
     monkeypatch.setattr("builtins.input", lambda _: next(responses))
     args = parser().parse_args(["plots", "input.xlsx"])
     first, kit, city = destination(args)
-    assert first.parent == Path("kits/roma/l-aquila")
-    assert kit == "Roma" and city == "L’Aquila"
+    assert first.parent == Path("kits/roma/tutte-le-citta")
+    assert kit == "Roma" and city is None
     args = parser().parse_args(
         ["plots", "input.xlsx", "--kit", "Roma", "--city", "../../Bari"]
     )
@@ -318,6 +318,13 @@ def test_batch_routing_and_metadata_selection(monkeypatch):
     with pytest.raises(ValueError, match="Nessuna scheda"):
         select_rows(rows, "Bari", "Avezzano")
     assert select_rows(rows) == rows
+    assert select_rows(rows, kit="Roma") == rows[:2]
+    assert select_rows(rows, city="Avezzano") == [rows[0], rows[2]]
+    output, kit, city = destination(
+        parser().parse_args(["plots", "input.xlsx", "--kit", "tutti"])
+    )
+    assert output.parent == Path("reports/tutti-i-kit/tutte-le-citta")
+    assert kit is None and city is None
 
 
 def test_filtered_report_manifest_and_no_false_output(data, tmp_path):
@@ -335,3 +342,19 @@ def test_filtered_report_manifest_and_no_false_output(data, tmp_path):
     with pytest.raises(ValueError, match="Nessuna scheda"):
         generate(source, tmp_path / "absent", kit="Pisa", city="Roma")
     assert not (tmp_path / "absent").exists()
+
+
+def test_all_kits_report_without_comparisons(data, tmp_path):
+    from hepscape.plots import generate
+
+    second = copy.deepcopy(data["records"][0])
+    second.update(id="BARI-01", kit="Bari")
+    data["records"].append(second)
+    source = tmp_path / "all.xlsx"
+    export_workbook(data, source)
+    generate(source, tmp_path / "all")
+    report = json.loads((tmp_path / "all/manifest.json").read_text())
+    assert report["questionnaires"] == 2
+    assert report["compare_kits"] is False
+    assert not any(name.startswith("16_kit") for name in report["figures"])
+    assert report["event"] == "Tutti gli eventi"
