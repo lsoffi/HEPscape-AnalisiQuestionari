@@ -1,0 +1,634 @@
+﻿analisi,domanda,sottogruppo,kit,risposta,conteggio,validi,percentuale
+05_eta,Q1,Meno di 11,Roma,codice 0,6,15,40.0
+05_eta,Q1,11–14,Roma,codice 0,11,18,61.111111111111114
+05_eta,Q1,15–18,Roma,codice 0,11,28,39.285714285714285
+05_eta,Q1,19–25,Roma,codice 0,3,4,75.0
+05_eta,Q1,26–40,Roma,codice 0,9,10,90.0
+05_eta,Q1,41–60,Roma,codice 0,21,27,77.77777777777777
+05_eta,Q1,Più di 60,Roma,codice 0,3,5,60.0
+05_eta,Q1,Preferisco non rispondere,Roma,codice 0,0,0,
+05_eta,Q1,Meno di 11,Bari,codice 0,12,24,50.0
+05_eta,Q1,11–14,Bari,codice 0,3,20,15.0
+05_eta,Q1,15–18,Bari,codice 0,17,49,34.69387755102041
+05_eta,Q1,19–25,Bari,codice 0,0,0,
+05_eta,Q1,26–40,Bari,codice 0,0,0,
+05_eta,Q1,41–60,Bari,codice 0,0,1,0.0
+05_eta,Q1,Più di 60,Bari,codice 0,0,0,
+05_eta,Q1,Preferisco non rispondere,Bari,codice 0,0,2,0.0
+05_eta,Q1,Meno di 11,Pisa,codice 0,7,14,50.0
+05_eta,Q1,11–14,Pisa,codice 0,3,6,50.0
+05_eta,Q1,15–18,Pisa,codice 0,0,0,
+05_eta,Q1,19–25,Pisa,codice 0,2,2,100.0
+05_eta,Q1,26–40,Pisa,codice 0,0,0,
+05_eta,Q1,41–60,Pisa,codice 0,0,0,
+05_eta,Q1,Più di 60,Pisa,codice 0,0,0,
+05_eta,Q1,Preferisco non rispondere,Pisa,codice 0,0,0,
+05_eta,Q3,Meno di 11,Roma,codice 0,8,14,57.142857142857146
+05_eta,Q3,11–14,Roma,codice 0,13,18,72.22222222222223
+05_eta,Q3,15–18,Roma,codice 0,15,28,53.57142857142857
+05_eta,Q3,19–25,Roma,codice 0,3,4,75.0
+05_eta,Q3,26–40,Roma,codice 0,9,10,90.0
+05_eta,Q3,41–60,Roma,codice 0,22,27,81.48148148148148
+05_eta,Q3,Più di 60,Roma,codice 0,1,5,20.0
+05_eta,Q3,Preferisco non rispondere,Roma,codice 0,0,0,
+05_eta,Q3,Meno di 11,Bari,codice 0,12,24,50.0
+05_eta,Q3,11–14,Bari,codice 0,6,20,30.0
+05_eta,Q3,15–18,Bari,codice 0,30,49,61.224489795918366
+05_eta,Q3,19–25,Bari,codice 0,0,0,
+05_eta,Q3,26–40,Bari,codice 0,0,0,
+05_eta,Q3,41–60,Bari,codice 0,0,1,0.0
+05_eta,Q3,Più di 60,Bari,codice 0,0,0,
+05_eta,Q3,Preferisco non rispondere,Bari,codice 0,0,2,0.0
+05_eta,Q3,Meno di 11,Pisa,codice 0,6,14,42.857142857142854
+05_eta,Q3,11–14,Pisa,codice 0,3,6,50.0
+05_eta,Q3,15–18,Pisa,codice 0,0,0,
+05_eta,Q3,19–25,Pisa,codice 0,0,2,0.0
+05_eta,Q3,26–40,Pisa,codice 0,0,0,
+05_eta,Q3,41–60,Pisa,codice 0,0,0,
+05_eta,Q3,Più di 60,Pisa,codice 0,0,0,
+05_eta,Q3,Preferisco non rispondere,Pisa,codice 0,0,0,
+05_eta,Q4,Meno di 11,Roma,codice 0,10,13,76.92307692307692
+05_eta,Q4,11–14,Roma,codice 0,11,18,61.111111111111114
+05_eta,Q4,15–18,Roma,codice 0,18,28,64.28571428571429
+05_eta,Q4,19–25,Roma,codice 0,3,4,75.0
+05_eta,Q4,26–40,Roma,codice 0,9,10,90.0
+05_eta,Q4,41–60,Roma,codice 0,22,27,81.48148148148148
+05_eta,Q4,Più di 60,Roma,codice 0,2,5,40.0
+05_eta,Q4,Preferisco non rispondere,Roma,codice 0,0,0,
+05_eta,Q4,Meno di 11,Bari,codice 0,14,24,58.333333333333336
+05_eta,Q4,11–14,Bari,codice 0,6,20,30.0
+05_eta,Q4,15–18,Bari,codice 0,27,49,55.10204081632653
+05_eta,Q4,19–25,Bari,codice 0,0,0,
+05_eta,Q4,26–40,Bari,codice 0,0,0,
+05_eta,Q4,41–60,Bari,codice 0,0,1,0.0
+05_eta,Q4,Più di 60,Bari,codice 0,0,0,
+05_eta,Q4,Preferisco non rispondere,Bari,codice 0,1,2,50.0
+05_eta,Q4,Meno di 11,Pisa,codice 0,7,14,50.0
+05_eta,Q4,11–14,Pisa,codice 0,3,6,50.0
+05_eta,Q4,15–18,Pisa,codice 0,0,0,
+05_eta,Q4,19–25,Pisa,codice 0,2,2,100.0
+05_eta,Q4,26–40,Pisa,codice 0,0,0,
+05_eta,Q4,41–60,Pisa,codice 0,0,0,
+05_eta,Q4,Più di 60,Pisa,codice 0,0,0,
+05_eta,Q4,Preferisco non rispondere,Pisa,codice 0,0,0,
+05_eta,Q5,Meno di 11,Roma,codice 0,8,15,53.333333333333336
+05_eta,Q5,11–14,Roma,codice 0,11,18,61.111111111111114
+05_eta,Q5,15–18,Roma,codice 0,18,28,64.28571428571429
+05_eta,Q5,19–25,Roma,codice 0,4,4,100.0
+05_eta,Q5,26–40,Roma,codice 0,9,10,90.0
+05_eta,Q5,41–60,Roma,codice 0,22,27,81.48148148148148
+05_eta,Q5,Più di 60,Roma,codice 0,3,5,60.0
+05_eta,Q5,Preferisco non rispondere,Roma,codice 0,0,0,
+05_eta,Q5,Meno di 11,Bari,codice 0,10,24,41.666666666666664
+05_eta,Q5,11–14,Bari,codice 0,10,20,50.0
+05_eta,Q5,15–18,Bari,codice 0,24,49,48.97959183673469
+05_eta,Q5,19–25,Bari,codice 0,0,0,
+05_eta,Q5,26–40,Bari,codice 0,0,0,
+05_eta,Q5,41–60,Bari,codice 0,0,1,0.0
+05_eta,Q5,Più di 60,Bari,codice 0,0,0,
+05_eta,Q5,Preferisco non rispondere,Bari,codice 0,1,2,50.0
+05_eta,Q5,Meno di 11,Pisa,codice 0,7,14,50.0
+05_eta,Q5,11–14,Pisa,codice 0,1,6,16.666666666666668
+05_eta,Q5,15–18,Pisa,codice 0,0,0,
+05_eta,Q5,19–25,Pisa,codice 0,2,2,100.0
+05_eta,Q5,26–40,Pisa,codice 0,0,0,
+05_eta,Q5,41–60,Pisa,codice 0,0,0,
+05_eta,Q5,Più di 60,Pisa,codice 0,0,0,
+05_eta,Q5,Preferisco non rispondere,Pisa,codice 0,0,0,
+parole,Q2,forme esatte,Roma,ABBASTANZA,0,91,0.0
+parole,Q2,forme esatte,Roma,ACCATTIVANTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,AFFASCINANTE,3,91,3.2967032967032965
+parole,Q2,forme esatte,Roma,AL,0,91,0.0
+parole,Q2,forme esatte,Roma,ALL,0,91,0.0
+parole,Q2,forme esatte,Roma,ALTERNATIVA,0,91,0.0
+parole,Q2,forme esatte,Roma,ANCHE,0,91,0.0
+parole,Q2,forme esatte,Roma,APPASSIONANTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,ASILO,0,91,0.0
+parole,Q2,forme esatte,Roma,ASSICURARE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,AVVICINA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,AVVINCENTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,BELISSIMO,0,91,0.0
+parole,Q2,forme esatte,Roma,BELLA,10,91,10.989010989010989
+parole,Q2,forme esatte,Roma,BELLISSIMA,0,91,0.0
+parole,Q2,forme esatte,Roma,BELLO,4,91,4.395604395604396
+parole,Q2,forme esatte,Roma,BEN,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,BUFFA,0,91,0.0
+parole,Q2,forme esatte,Roma,BUONA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CACCIA,0,91,0.0
+parole,Q2,forme esatte,Roma,CAPITO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CARINA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CARINO,0,91,0.0
+parole,Q2,forme esatte,Roma,CASCHETTO,0,91,0.0
+parole,Q2,forme esatte,Roma,COINVOLGENTE,15,91,16.483516483516482
+parole,Q2,forme esatte,Roma,COMPLESSI,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CONCENTRAZIONE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CONCETTI,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,CONOSCEVO,0,91,0.0
+parole,Q2,forme esatte,Roma,CORTO,0,91,0.0
+parole,Q2,forme esatte,Roma,CULTURA,0,91,0.0
+parole,Q2,forme esatte,Roma,CURIOSA,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,CURIOSITÀ,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,DELUSIONE,0,91,0.0
+parole,Q2,forme esatte,Roma,DIDATTICA,0,91,0.0
+parole,Q2,forme esatte,Roma,DIFFICILE,0,91,0.0
+parole,Q2,forme esatte,Roma,DIFFICILI,0,91,0.0
+parole,Q2,forme esatte,Roma,DINAMICA,0,91,0.0
+parole,Q2,forme esatte,Roma,DIVERTENTE,29,91,31.86813186813187
+parole,Q2,forme esatte,Roma,DIVERTIMENTO,0,91,0.0
+parole,Q2,forme esatte,Roma,DIVERTITO,0,91,0.0
+parole,Q2,forme esatte,Roma,DIVULGAZIONE,0,91,0.0
+parole,Q2,forme esatte,Roma,EDUCATIVA,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,EDUCATTIVA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,EFFICACE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,EMOZIONANTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,ENERGETICA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,ENTUSIASMANTE,3,91,3.2967032967032965
+parole,Q2,forme esatte,Roma,ERA,0,91,0.0
+parole,Q2,forme esatte,Roma,ESCAPE,0,91,0.0
+parole,Q2,forme esatte,Roma,ESPERIMENTI,0,91,0.0
+parole,Q2,forme esatte,Roma,FANTASTICA,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,FATTA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,FELICE,0,91,0.0
+parole,Q2,forme esatte,Roma,FELICITÀ,0,91,0.0
+parole,Q2,forme esatte,Roma,FORMATIVA,5,91,5.4945054945054945
+parole,Q2,forme esatte,Roma,FORTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,FUTURISTICO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,GIOCOSA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,GIOCOSO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,GIOVANILE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,GIÀ,0,91,0.0
+parole,Q2,forme esatte,Roma,IMMERSIVA,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,IMPARARE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,INCLUSIVA,0,91,0.0
+parole,Q2,forme esatte,Roma,INDIMENTICABILE,0,91,0.0
+parole,Q2,forme esatte,Roma,INFANTILE,0,91,0.0
+parole,Q2,forme esatte,Roma,INFORMATIVA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,INGRESSI,0,91,0.0
+parole,Q2,forme esatte,Roma,INNOVATIVA,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,INNOVATIVO,0,91,0.0
+parole,Q2,forme esatte,Roma,INNOVAZIONE,0,91,0.0
+parole,Q2,forme esatte,Roma,INSEGNATIVA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,INTELLIGENTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,INTERATTIVA,3,91,3.2967032967032965
+parole,Q2,forme esatte,Roma,INTERESSANTE,41,91,45.05494505494506
+parole,Q2,forme esatte,Roma,INTRATTENITIVA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,INTRIGANTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,ISTRUTTIVA,9,91,9.89010989010989
+parole,Q2,forme esatte,Roma,ISTRUTTIVO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,LOGICA,0,91,0.0
+parole,Q2,forme esatte,Roma,MAGNIFICA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,MAL,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,MANIERA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,MANO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,MATEMATICA,0,91,0.0
+parole,Q2,forme esatte,Roma,MATEMATICO,0,91,0.0
+parole,Q2,forme esatte,Roma,MEGLIO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,MI,0,91,0.0
+parole,Q2,forme esatte,Roma,MIA,0,91,0.0
+parole,Q2,forme esatte,Roma,NIENTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,NOIOSA,0,91,0.0
+parole,Q2,forme esatte,Roma,NOIOSO,0,91,0.0
+parole,Q2,forme esatte,Roma,NOVITÀ,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,NUOVA,0,91,0.0
+parole,Q2,forme esatte,Roma,NUOVO,0,91,0.0
+parole,Q2,forme esatte,Roma,ORGANIZZATA,0,91,0.0
+parole,Q2,forme esatte,Roma,ORIGINALE,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,OTTIMO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,PAROLE,0,91,0.0
+parole,Q2,forme esatte,Roma,PARTICOLARE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,PERÒ,0,91,0.0
+parole,Q2,forme esatte,Roma,PIACEVOLE,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,PIACIUTA,0,91,0.0
+parole,Q2,forme esatte,Roma,PIÙ,0,91,0.0
+parole,Q2,forme esatte,Roma,POCO,0,91,0.0
+parole,Q2,forme esatte,Roma,PRECISA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,PRIMA,0,91,0.0
+parole,Q2,forme esatte,Roma,PROSSIMA,0,91,0.0
+parole,Q2,forme esatte,Roma,PUZZLE,0,91,0.0
+parole,Q2,forme esatte,Roma,REALISTICA,0,91,0.0
+parole,Q2,forme esatte,Roma,RICAPITOLARE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,ROOM,0,91,0.0
+parole,Q2,forme esatte,Roma,SCHIENA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SCIENTIFICA,0,91,0.0
+parole,Q2,forme esatte,Roma,SCIENTIFICO,0,91,0.0
+parole,Q2,forme esatte,Roma,SEDIE,0,91,0.0
+parole,Q2,forme esatte,Roma,SEGUONO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SEMPLICE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SIMPATICA,3,91,3.2967032967032965
+parole,Q2,forme esatte,Roma,SIMPATICO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SONO,0,91,0.0
+parole,Q2,forme esatte,Roma,SPAVENTATA,0,91,0.0
+parole,Q2,forme esatte,Roma,SPAZIALE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SPECIALE,0,91,0.0
+parole,Q2,forme esatte,Roma,STANCHEZZA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,STATICA,0,91,0.0
+parole,Q2,forme esatte,Roma,STIMOLANTE,2,91,2.197802197802198
+parole,Q2,forme esatte,Roma,STUPEFACENTE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,STUPENDA,0,91,0.0
+parole,Q2,forme esatte,Roma,STUPENDO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,SUSPANCE,0,91,0.0
+parole,Q2,forme esatte,Roma,TANTISSIMO,0,91,0.0
+parole,Q2,forme esatte,Roma,TANTO,0,91,0.0
+parole,Q2,forme esatte,Roma,TESORO,0,91,0.0
+parole,Q2,forme esatte,Roma,TOP,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,TORNATI,0,91,0.0
+parole,Q2,forme esatte,Roma,TUTTI,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,TUTTO,0,91,0.0
+parole,Q2,forme esatte,Roma,UNICA,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,UNICO,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,UTILE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,VELOCE,1,91,1.098901098901099
+parole,Q2,forme esatte,Roma,VISIVA,0,91,0.0
+parole,Q2,forme esatte,Roma,VOLTA,0,91,0.0
+parole,Q2,forme esatte,Roma,WOW,0,91,0.0
+parole,Q2,forme esatte,Bari,ABBASTANZA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ACCATTIVANTE,0,66,0.0
+parole,Q2,forme esatte,Bari,AFFASCINANTE,0,66,0.0
+parole,Q2,forme esatte,Bari,AL,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ALL,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ALTERNATIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ANCHE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,APPASSIONANTE,0,66,0.0
+parole,Q2,forme esatte,Bari,ASILO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ASSICURARE,0,66,0.0
+parole,Q2,forme esatte,Bari,AVVICINA,0,66,0.0
+parole,Q2,forme esatte,Bari,AVVINCENTE,0,66,0.0
+parole,Q2,forme esatte,Bari,BELISSIMO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,BELLA,10,66,15.151515151515152
+parole,Q2,forme esatte,Bari,BELLISSIMA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,BELLO,8,66,12.121212121212121
+parole,Q2,forme esatte,Bari,BEN,0,66,0.0
+parole,Q2,forme esatte,Bari,BUFFA,0,66,0.0
+parole,Q2,forme esatte,Bari,BUONA,0,66,0.0
+parole,Q2,forme esatte,Bari,CACCIA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,CAPITO,0,66,0.0
+parole,Q2,forme esatte,Bari,CARINA,0,66,0.0
+parole,Q2,forme esatte,Bari,CARINO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,CASCHETTO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,COINVOLGENTE,5,66,7.575757575757576
+parole,Q2,forme esatte,Bari,COMPLESSI,0,66,0.0
+parole,Q2,forme esatte,Bari,CONCENTRAZIONE,0,66,0.0
+parole,Q2,forme esatte,Bari,CONCETTI,0,66,0.0
+parole,Q2,forme esatte,Bari,CONOSCEVO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,CORTO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,CULTURA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,CURIOSA,3,66,4.545454545454546
+parole,Q2,forme esatte,Bari,CURIOSITÀ,5,66,7.575757575757576
+parole,Q2,forme esatte,Bari,DELUSIONE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DIDATTICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DIFFICILE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DIFFICILI,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DINAMICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DIVERTENTE,14,66,21.21212121212121
+parole,Q2,forme esatte,Bari,DIVERTIMENTO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,DIVERTITO,0,66,0.0
+parole,Q2,forme esatte,Bari,DIVULGAZIONE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,EDUCATIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,EDUCATTIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,EFFICACE,0,66,0.0
+parole,Q2,forme esatte,Bari,EMOZIONANTE,0,66,0.0
+parole,Q2,forme esatte,Bari,ENERGETICA,0,66,0.0
+parole,Q2,forme esatte,Bari,ENTUSIASMANTE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ERA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ESCAPE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ESPERIMENTI,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,FANTASTICA,0,66,0.0
+parole,Q2,forme esatte,Bari,FATTA,0,66,0.0
+parole,Q2,forme esatte,Bari,FELICE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,FELICITÀ,3,66,4.545454545454546
+parole,Q2,forme esatte,Bari,FORMATIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,FORTE,0,66,0.0
+parole,Q2,forme esatte,Bari,FUTURISTICO,0,66,0.0
+parole,Q2,forme esatte,Bari,GIOCOSA,0,66,0.0
+parole,Q2,forme esatte,Bari,GIOCOSO,0,66,0.0
+parole,Q2,forme esatte,Bari,GIOVANILE,0,66,0.0
+parole,Q2,forme esatte,Bari,GIÀ,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,IMMERSIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,IMPARARE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INCLUSIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INDIMENTICABILE,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,INFANTILE,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,INFORMATIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,INGRESSI,0,66,0.0
+parole,Q2,forme esatte,Bari,INNOVATIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INNOVATIVO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INNOVAZIONE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INSEGNATIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,INTELLIGENTE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,INTERATTIVA,4,66,6.0606060606060606
+parole,Q2,forme esatte,Bari,INTERESSANTE,22,66,33.333333333333336
+parole,Q2,forme esatte,Bari,INTRATTENITIVA,0,66,0.0
+parole,Q2,forme esatte,Bari,INTRIGANTE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ISTRUTTIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ISTRUTTIVO,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,LOGICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,MAGNIFICA,0,66,0.0
+parole,Q2,forme esatte,Bari,MAL,0,66,0.0
+parole,Q2,forme esatte,Bari,MANIERA,0,66,0.0
+parole,Q2,forme esatte,Bari,MANO,0,66,0.0
+parole,Q2,forme esatte,Bari,MATEMATICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,MATEMATICO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,MEGLIO,0,66,0.0
+parole,Q2,forme esatte,Bari,MI,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,MIA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,NIENTE,0,66,0.0
+parole,Q2,forme esatte,Bari,NOIOSA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,NOIOSO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,NOVITÀ,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,NUOVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,NUOVO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,ORGANIZZATA,0,66,0.0
+parole,Q2,forme esatte,Bari,ORIGINALE,0,66,0.0
+parole,Q2,forme esatte,Bari,OTTIMO,0,66,0.0
+parole,Q2,forme esatte,Bari,PAROLE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,PARTICOLARE,0,66,0.0
+parole,Q2,forme esatte,Bari,PERÒ,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,PIACEVOLE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,PIACIUTA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,PIÙ,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,POCO,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,PRECISA,0,66,0.0
+parole,Q2,forme esatte,Bari,PRIMA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,PROSSIMA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,PUZZLE,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,REALISTICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,RICAPITOLARE,0,66,0.0
+parole,Q2,forme esatte,Bari,ROOM,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SCHIENA,0,66,0.0
+parole,Q2,forme esatte,Bari,SCIENTIFICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SCIENTIFICO,0,66,0.0
+parole,Q2,forme esatte,Bari,SEDIE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SEGUONO,0,66,0.0
+parole,Q2,forme esatte,Bari,SEMPLICE,0,66,0.0
+parole,Q2,forme esatte,Bari,SIMPATICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SIMPATICO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SONO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SPAVENTATA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SPAZIALE,0,66,0.0
+parole,Q2,forme esatte,Bari,SPECIALE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,STANCHEZZA,0,66,0.0
+parole,Q2,forme esatte,Bari,STATICA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,STIMOLANTE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,STUPEFACENTE,0,66,0.0
+parole,Q2,forme esatte,Bari,STUPENDA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,STUPENDO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,SUSPANCE,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,TANTISSIMO,0,66,0.0
+parole,Q2,forme esatte,Bari,TANTO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,TESORO,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,TOP,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,TORNATI,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,TUTTI,0,66,0.0
+parole,Q2,forme esatte,Bari,TUTTO,2,66,3.0303030303030303
+parole,Q2,forme esatte,Bari,UNICA,0,66,0.0
+parole,Q2,forme esatte,Bari,UNICO,0,66,0.0
+parole,Q2,forme esatte,Bari,UTILE,0,66,0.0
+parole,Q2,forme esatte,Bari,VELOCE,0,66,0.0
+parole,Q2,forme esatte,Bari,VISIVA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,VOLTA,1,66,1.5151515151515151
+parole,Q2,forme esatte,Bari,WOW,1,66,1.5151515151515151
+parole,Q2,forme esatte,Pisa,ABBASTANZA,0,11,0.0
+parole,Q2,forme esatte,Pisa,ACCATTIVANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,AFFASCINANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,AL,0,11,0.0
+parole,Q2,forme esatte,Pisa,ALL,0,11,0.0
+parole,Q2,forme esatte,Pisa,ALTERNATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,ANCHE,0,11,0.0
+parole,Q2,forme esatte,Pisa,APPASSIONANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ASILO,0,11,0.0
+parole,Q2,forme esatte,Pisa,ASSICURARE,0,11,0.0
+parole,Q2,forme esatte,Pisa,AVVICINA,0,11,0.0
+parole,Q2,forme esatte,Pisa,AVVINCENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,BELISSIMO,0,11,0.0
+parole,Q2,forme esatte,Pisa,BELLA,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,BELLISSIMA,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,BELLO,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,BEN,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,BUFFA,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,BUONA,0,11,0.0
+parole,Q2,forme esatte,Pisa,CACCIA,0,11,0.0
+parole,Q2,forme esatte,Pisa,CAPITO,0,11,0.0
+parole,Q2,forme esatte,Pisa,CARINA,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,CARINO,0,11,0.0
+parole,Q2,forme esatte,Pisa,CASCHETTO,0,11,0.0
+parole,Q2,forme esatte,Pisa,COINVOLGENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,COMPLESSI,0,11,0.0
+parole,Q2,forme esatte,Pisa,CONCENTRAZIONE,0,11,0.0
+parole,Q2,forme esatte,Pisa,CONCETTI,0,11,0.0
+parole,Q2,forme esatte,Pisa,CONOSCEVO,0,11,0.0
+parole,Q2,forme esatte,Pisa,CORTO,0,11,0.0
+parole,Q2,forme esatte,Pisa,CULTURA,0,11,0.0
+parole,Q2,forme esatte,Pisa,CURIOSA,0,11,0.0
+parole,Q2,forme esatte,Pisa,CURIOSITÀ,0,11,0.0
+parole,Q2,forme esatte,Pisa,DELUSIONE,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIDATTICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIFFICILE,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIFFICILI,0,11,0.0
+parole,Q2,forme esatte,Pisa,DINAMICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIVERTENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIVERTIMENTO,0,11,0.0
+parole,Q2,forme esatte,Pisa,DIVERTITO,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,DIVULGAZIONE,0,11,0.0
+parole,Q2,forme esatte,Pisa,EDUCATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,EDUCATTIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,EFFICACE,0,11,0.0
+parole,Q2,forme esatte,Pisa,EMOZIONANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ENERGETICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,ENTUSIASMANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ERA,0,11,0.0
+parole,Q2,forme esatte,Pisa,ESCAPE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ESPERIMENTI,0,11,0.0
+parole,Q2,forme esatte,Pisa,FANTASTICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,FATTA,0,11,0.0
+parole,Q2,forme esatte,Pisa,FELICE,0,11,0.0
+parole,Q2,forme esatte,Pisa,FELICITÀ,0,11,0.0
+parole,Q2,forme esatte,Pisa,FORMATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,FORTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,FUTURISTICO,0,11,0.0
+parole,Q2,forme esatte,Pisa,GIOCOSA,0,11,0.0
+parole,Q2,forme esatte,Pisa,GIOCOSO,0,11,0.0
+parole,Q2,forme esatte,Pisa,GIOVANILE,0,11,0.0
+parole,Q2,forme esatte,Pisa,GIÀ,0,11,0.0
+parole,Q2,forme esatte,Pisa,IMMERSIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,IMPARARE,0,11,0.0
+parole,Q2,forme esatte,Pisa,INCLUSIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INDIMENTICABILE,0,11,0.0
+parole,Q2,forme esatte,Pisa,INFANTILE,0,11,0.0
+parole,Q2,forme esatte,Pisa,INFORMATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INGRESSI,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,INNOVATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INNOVATIVO,0,11,0.0
+parole,Q2,forme esatte,Pisa,INNOVAZIONE,0,11,0.0
+parole,Q2,forme esatte,Pisa,INSEGNATIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INTELLIGENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,INTERATTIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INTERESSANTE,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,INTRATTENITIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,INTRIGANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ISTRUTTIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,ISTRUTTIVO,0,11,0.0
+parole,Q2,forme esatte,Pisa,LOGICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,MAGNIFICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,MAL,0,11,0.0
+parole,Q2,forme esatte,Pisa,MANIERA,0,11,0.0
+parole,Q2,forme esatte,Pisa,MANO,0,11,0.0
+parole,Q2,forme esatte,Pisa,MATEMATICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,MATEMATICO,0,11,0.0
+parole,Q2,forme esatte,Pisa,MEGLIO,0,11,0.0
+parole,Q2,forme esatte,Pisa,MI,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,MIA,0,11,0.0
+parole,Q2,forme esatte,Pisa,NIENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,NOIOSA,0,11,0.0
+parole,Q2,forme esatte,Pisa,NOIOSO,0,11,0.0
+parole,Q2,forme esatte,Pisa,NOVITÀ,0,11,0.0
+parole,Q2,forme esatte,Pisa,NUOVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,NUOVO,0,11,0.0
+parole,Q2,forme esatte,Pisa,ORGANIZZATA,2,11,18.181818181818183
+parole,Q2,forme esatte,Pisa,ORIGINALE,0,11,0.0
+parole,Q2,forme esatte,Pisa,OTTIMO,0,11,0.0
+parole,Q2,forme esatte,Pisa,PAROLE,0,11,0.0
+parole,Q2,forme esatte,Pisa,PARTICOLARE,0,11,0.0
+parole,Q2,forme esatte,Pisa,PERÒ,0,11,0.0
+parole,Q2,forme esatte,Pisa,PIACEVOLE,0,11,0.0
+parole,Q2,forme esatte,Pisa,PIACIUTA,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,PIÙ,0,11,0.0
+parole,Q2,forme esatte,Pisa,POCO,0,11,0.0
+parole,Q2,forme esatte,Pisa,PRECISA,0,11,0.0
+parole,Q2,forme esatte,Pisa,PRIMA,0,11,0.0
+parole,Q2,forme esatte,Pisa,PROSSIMA,0,11,0.0
+parole,Q2,forme esatte,Pisa,PUZZLE,0,11,0.0
+parole,Q2,forme esatte,Pisa,REALISTICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,RICAPITOLARE,0,11,0.0
+parole,Q2,forme esatte,Pisa,ROOM,0,11,0.0
+parole,Q2,forme esatte,Pisa,SCHIENA,0,11,0.0
+parole,Q2,forme esatte,Pisa,SCIENTIFICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,SCIENTIFICO,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,SEDIE,0,11,0.0
+parole,Q2,forme esatte,Pisa,SEGUONO,0,11,0.0
+parole,Q2,forme esatte,Pisa,SEMPLICE,0,11,0.0
+parole,Q2,forme esatte,Pisa,SIMPATICA,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,SIMPATICO,0,11,0.0
+parole,Q2,forme esatte,Pisa,SONO,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,SPAVENTATA,0,11,0.0
+parole,Q2,forme esatte,Pisa,SPAZIALE,0,11,0.0
+parole,Q2,forme esatte,Pisa,SPECIALE,0,11,0.0
+parole,Q2,forme esatte,Pisa,STANCHEZZA,0,11,0.0
+parole,Q2,forme esatte,Pisa,STATICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,STIMOLANTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,STUPEFACENTE,0,11,0.0
+parole,Q2,forme esatte,Pisa,STUPENDA,0,11,0.0
+parole,Q2,forme esatte,Pisa,STUPENDO,0,11,0.0
+parole,Q2,forme esatte,Pisa,SUSPANCE,0,11,0.0
+parole,Q2,forme esatte,Pisa,TANTISSIMO,1,11,9.090909090909092
+parole,Q2,forme esatte,Pisa,TANTO,0,11,0.0
+parole,Q2,forme esatte,Pisa,TESORO,0,11,0.0
+parole,Q2,forme esatte,Pisa,TOP,0,11,0.0
+parole,Q2,forme esatte,Pisa,TORNATI,0,11,0.0
+parole,Q2,forme esatte,Pisa,TUTTI,0,11,0.0
+parole,Q2,forme esatte,Pisa,TUTTO,0,11,0.0
+parole,Q2,forme esatte,Pisa,UNICA,0,11,0.0
+parole,Q2,forme esatte,Pisa,UNICO,0,11,0.0
+parole,Q2,forme esatte,Pisa,UTILE,0,11,0.0
+parole,Q2,forme esatte,Pisa,VELOCE,0,11,0.0
+parole,Q2,forme esatte,Pisa,VISIVA,0,11,0.0
+parole,Q2,forme esatte,Pisa,VOLTA,0,11,0.0
+parole,Q2,forme esatte,Pisa,WOW,0,11,0.0
+aumenti,Q4+Q5,coppie valide,Roma,Più curiosità e più interesse,63,106,59.43396226415094
+aumenti,Q4+Q5,coppie valide,Roma,Solo più curiosità,12,106,11.320754716981131
+aumenti,Q4+Q5,coppie valide,Roma,Solo più interesse,10,106,9.433962264150944
+aumenti,Q4+Q5,coppie valide,Roma,Nessuno dei due aumenti,21,106,19.81132075471698
+aumenti,Q4+Q5,coppie valide,Bari,Più curiosità e più interesse,35,97,36.08247422680412
+aumenti,Q4+Q5,coppie valide,Bari,Solo più curiosità,13,97,13.402061855670103
+aumenti,Q4+Q5,coppie valide,Bari,Solo più interesse,10,97,10.309278350515465
+aumenti,Q4+Q5,coppie valide,Bari,Nessuno dei due aumenti,39,97,40.20618556701031
+aumenti,Q4+Q5,coppie valide,Pisa,Più curiosità e più interesse,7,23,30.434782608695652
+aumenti,Q4+Q5,coppie valide,Pisa,Solo più curiosità,5,23,21.73913043478261
+aumenti,Q4+Q5,coppie valide,Pisa,Solo più interesse,3,23,13.043478260869565
+aumenti,Q4+Q5,coppie valide,Pisa,Nessuno dei due aumenti,8,23,34.78260869565217
+facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta tantissimo,49,79,62.0253164556962
+facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta,29,79,36.70886075949367
+facilita_gradimento,Q1,"Sì, molto",Roma,Non mi è piaciuta molto,1,79,1.2658227848101267
+facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta tantissimo,15,26,57.69230769230769
+facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta,11,26,42.30769230769231
+facilita_gradimento,Q1,In parte,Roma,Non mi è piaciuta molto,0,26,0.0
+facilita_gradimento,Q1,No,Roma,Mi è piaciuta tantissimo,0,2,0.0
+facilita_gradimento,Q1,No,Roma,Mi è piaciuta,2,2,100.0
+facilita_gradimento,Q1,No,Roma,Non mi è piaciuta molto,0,2,0.0
+facilita_gradimento,Q1,"Sì, molto",Bari,Mi è piaciuta tantissimo,30,83,36.144578313253014
+facilita_gradimento,Q1,"Sì, molto",Bari,Mi è piaciuta,41,83,49.397590361445786
+facilita_gradimento,Q1,"Sì, molto",Bari,Non mi è piaciuta molto,12,83,14.457831325301205
+facilita_gradimento,Q1,In parte,Bari,Mi è piaciuta tantissimo,2,12,16.666666666666668
+facilita_gradimento,Q1,In parte,Bari,Mi è piaciuta,9,12,75.0
+facilita_gradimento,Q1,In parte,Bari,Non mi è piaciuta molto,1,12,8.333333333333334
+facilita_gradimento,Q1,No,Bari,Mi è piaciuta tantissimo,0,3,0.0
+facilita_gradimento,Q1,No,Bari,Mi è piaciuta,2,3,66.66666666666667
+facilita_gradimento,Q1,No,Bari,Non mi è piaciuta molto,1,3,33.333333333333336
+facilita_gradimento,Q1,"Sì, molto",Pisa,Mi è piaciuta tantissimo,10,19,52.63157894736842
+facilita_gradimento,Q1,"Sì, molto",Pisa,Mi è piaciuta,9,19,47.36842105263158
+facilita_gradimento,Q1,"Sì, molto",Pisa,Non mi è piaciuta molto,0,19,0.0
+facilita_gradimento,Q1,In parte,Pisa,Mi è piaciuta tantissimo,0,2,0.0
+facilita_gradimento,Q1,In parte,Pisa,Mi è piaciuta,2,2,100.0
+facilita_gradimento,Q1,In parte,Pisa,Non mi è piaciuta molto,0,2,0.0
+facilita_gradimento,Q1,No,Pisa,Mi è piaciuta tantissimo,0,0,
+facilita_gradimento,Q1,No,Pisa,Mi è piaciuta,0,0,
+facilita_gradimento,Q1,No,Pisa,Non mi è piaciuta molto,0,0,
+10_occasioni,Q1,Spesso,Roma,codice 0,7,8,87.5
+10_occasioni,Q1,A volte,Roma,codice 0,16,26,61.53846153846154
+10_occasioni,Q1,Mai,Roma,codice 0,41,74,55.4054054054054
+10_occasioni,Q1,Spesso,Bari,codice 0,10,14,71.42857142857143
+10_occasioni,Q1,A volte,Bari,codice 0,5,24,20.833333333333332
+10_occasioni,Q1,Mai,Bari,codice 0,16,58,27.586206896551722
+10_occasioni,Q1,Spesso,Pisa,codice 0,1,2,50.0
+10_occasioni,Q1,A volte,Pisa,codice 0,4,7,57.142857142857146
+10_occasioni,Q1,Mai,Pisa,codice 0,5,12,41.666666666666664
+10_occasioni,Q3,Spesso,Roma,codice 0,6,7,85.71428571428571
+10_occasioni,Q3,A volte,Roma,codice 0,16,26,61.53846153846154
+10_occasioni,Q3,Mai,Roma,codice 0,49,73,67.12328767123287
+10_occasioni,Q3,Spesso,Bari,codice 0,11,14,78.57142857142857
+10_occasioni,Q3,A volte,Bari,codice 0,8,24,33.333333333333336
+10_occasioni,Q3,Mai,Bari,codice 0,28,58,48.275862068965516
+10_occasioni,Q3,Spesso,Pisa,codice 0,1,2,50.0
+10_occasioni,Q3,A volte,Pisa,codice 0,4,7,57.142857142857146
+10_occasioni,Q3,Mai,Pisa,codice 0,3,12,25.0
+10_occasioni,Q4,Spesso,Roma,codice 0,5,7,71.42857142857143
+10_occasioni,Q4,A volte,Roma,codice 0,20,26,76.92307692307692
+10_occasioni,Q4,Mai,Roma,codice 0,50,73,68.4931506849315
+10_occasioni,Q4,Spesso,Bari,codice 0,12,14,85.71428571428571
+10_occasioni,Q4,A volte,Bari,codice 0,9,24,37.5
+10_occasioni,Q4,Mai,Bari,codice 0,26,58,44.827586206896555
+10_occasioni,Q4,Spesso,Pisa,codice 0,2,2,100.0
+10_occasioni,Q4,A volte,Pisa,codice 0,3,7,42.857142857142854
+10_occasioni,Q4,Mai,Pisa,codice 0,6,12,50.0
+10_occasioni,Q5,Spesso,Roma,codice 0,7,8,87.5
+10_occasioni,Q5,A volte,Roma,codice 0,20,26,76.92307692307692
+10_occasioni,Q5,Mai,Roma,codice 0,48,74,64.86486486486487
+10_occasioni,Q5,Spesso,Bari,codice 0,11,14,78.57142857142857
+10_occasioni,Q5,A volte,Bari,codice 0,8,23,34.78260869565217
+10_occasioni,Q5,Mai,Bari,codice 0,25,58,43.10344827586207
+10_occasioni,Q5,Spesso,Pisa,codice 0,2,2,100.0
+10_occasioni,Q5,A volte,Pisa,codice 0,3,7,42.857142857142854
+10_occasioni,Q5,Mai,Pisa,codice 0,3,12,25.0
+11_familiarita,Q1,No,Roma,codice 0,35,52,67.3076923076923
+11_familiarita,Q1,Sì,Roma,codice 0,29,56,51.785714285714285
+11_familiarita,Q1,No,Bari,codice 0,28,74,37.83783783783784
+11_familiarita,Q1,Sì,Bari,codice 0,4,15,26.666666666666668
+11_familiarita,Q1,No,Pisa,codice 0,9,15,60.0
+11_familiarita,Q1,Sì,Pisa,codice 0,3,8,37.5
+11_familiarita,Q3,No,Roma,codice 0,32,50,64.0
+11_familiarita,Q3,Sì,Roma,codice 0,39,56,69.64285714285714
+11_familiarita,Q3,No,Bari,codice 0,41,74,55.4054054054054
+11_familiarita,Q3,Sì,Bari,codice 0,5,15,33.333333333333336
+11_familiarita,Q3,No,Pisa,codice 0,8,15,53.333333333333336
+11_familiarita,Q3,Sì,Pisa,codice 0,1,8,12.5
+11_familiarita,Q4,No,Roma,codice 0,35,51,68.62745098039215
+11_familiarita,Q4,Sì,Roma,codice 0,40,55,72.72727272727273
+11_familiarita,Q4,No,Bari,codice 0,38,74,51.351351351351354
+11_familiarita,Q4,Sì,Bari,codice 0,8,15,53.333333333333336
+11_familiarita,Q4,No,Pisa,codice 0,9,15,60.0
+11_familiarita,Q4,Sì,Pisa,codice 0,3,8,37.5
+11_familiarita,Q5,No,Roma,codice 0,35,52,67.3076923076923
+11_familiarita,Q5,Sì,Roma,codice 0,40,56,71.42857142857143
+11_familiarita,Q5,No,Bari,codice 0,36,74,48.648648648648646
+11_familiarita,Q5,Sì,Bari,codice 0,7,15,46.666666666666664
+11_familiarita,Q5,No,Pisa,codice 0,7,15,46.666666666666664
+11_familiarita,Q5,Sì,Pisa,codice 0,3,8,37.5

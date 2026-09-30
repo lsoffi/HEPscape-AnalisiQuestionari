@@ -1,4 +1,4 @@
-"""Single pooled word wall with each word split by its two-kit contribution."""
+"""Single pooled word wall with each word split by its kit contributions."""
 
 import csv
 import html
@@ -10,13 +10,13 @@ from matplotlib import font_manager
 
 
 def generate(texts, kits, output, event):
-    from .comparison import tokens, COLORS
+    from .comparison import tokens, kit_colors
+
+    colors = kit_colors(kits)
 
     out = Path(output)
     counts = [Counter(t for text in group for t in tokens(text)) for group in texts]
-    words = sorted(
-        set(counts[0]) | set(counts[1]), key=lambda w: (-sum(c[w] for c in counts), w)
-    )
+    words = sorted(set().union(*counts), key=lambda w: (-sum(c[w] for c in counts), w))
     fontpath = font_manager.findfont(
         font_manager.FontProperties(family="DejaVu Sans", weight="bold")
     )
@@ -79,8 +79,10 @@ def generate(texts, kits, output, event):
         f"{len(words)} parole diverse · {sum(map(len,texts))} risposte Q2 non vuote · {event}",
         29,
     )
-    text(85, 215, f"● {kits[0]}: {len(texts[0])} risposte", 33, COLORS[0], True)
-    text(850, 215, f"● {kits[1]}: {len(texts[1])} risposte", 33, COLORS[1], True)
+    for j, kit in enumerate(kits):
+        text(
+            85 + j * 800, 215, f"● {kit}: {len(texts[j])} risposte", 33, colors[j], True
+        )
     for i, (word, n, size, x, y, bbox) in enumerate(placed):
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]
         mask = Image.new("L", (tw, th), 0)
@@ -90,24 +92,27 @@ def generate(texts, kits, output, event):
             font=ImageFont.truetype(fontpath, size),
             fill=255,
         )
-        split = round(tw * counts[0][word] / n)
-        ink = Image.new("RGB", (tw, th), COLORS[1])
-        if split:
-            ImageDraw.Draw(ink).rectangle((0, 0, split - 1, th), fill=COLORS[0])
-        im.paste(ink, (x, y), mask)
+        ink = Image.new("RGB", (tw, th), "white")
+        left = 0
+        cumulative = 0
         title = html.escape(
-            f"{kits[0]}: {counts[0][word]}; {kits[1]}: {counts[1][word]}; totale: {n}"
+            "; ".join(f"{kit}: {c[word]}" for kit, c in zip(kits, counts))
+            + f"; totale: {n}"
         )
-        svg.append(
-            f'<defs><clipPath id="blue{i}"><rect x="{x}" y="{y}" width="{split}" height="{th}"/></clipPath></defs>'
-        )
-        for color, clip in [
-            (COLORS[1], ""),
-            (COLORS[0], f' clip-path="url(#blue{i})"'),
-        ]:
-            svg.append(
-                f'<text x="{x-bbox[0]}" y="{y-bbox[1]+ImageFont.truetype(fontpath,size).getmetrics()[0]}" font-family="DejaVu Sans" font-size="{size}" font-weight="bold" fill="{color}"{clip}><title>{title}</title>{html.escape(word)}</text>'
-            )
+        for j, (c, color) in enumerate(zip(counts, colors)):
+            cumulative += c[word]
+            right = round(tw * cumulative / n)
+            if right > left:
+                ImageDraw.Draw(ink).rectangle((left, 0, right - 1, th), fill=color)
+                clip = f"kit{i}_{j}"
+                svg.append(
+                    f'<defs><clipPath id="{clip}"><rect x="{x+left}" y="{y}" width="{right-left}" height="{th}"/></clipPath></defs>'
+                )
+                svg.append(
+                    f'<text x="{x-bbox[0]}" y="{y-bbox[1]+ImageFont.truetype(fontpath,size).getmetrics()[0]}" font-family="DejaVu Sans" font-size="{size}" font-weight="bold" fill="{color}" clip-path="url(#{clip})"><title>{title}</title>{html.escape(word)}</text>'
+                )
+            left = right
+        im.paste(ink, (x, y), mask)
     text(
         85,
         H - 140,
@@ -117,7 +122,7 @@ def generate(texts, kits, output, event):
     text(
         85,
         H - 95,
-        "Quota blu/verde della larghezza = contributo di ciascun kit al totale. Conteggi grezzi, non percentuali normalizzate.",
+        "Quote colorate della larghezza = contributo di ciascun kit al totale. Conteggi grezzi, non percentuali normalizzate.",
         26,
     )
     text(
@@ -135,9 +140,11 @@ def generate(texts, kits, output, event):
         "w", encoding="utf-8-sig", newline=""
     ) as f:
         w = csv.writer(f)
-        w.writerow(["parola", *kits, "totale", "quota_kit1"])
+        w.writerow(["parola", *kits, "totale", *[f"quota_{kit}" for kit in kits]])
         for word in words:
             n = sum(c[word] for c in counts)
-            w.writerow([word, counts[0][word], counts[1][word], n, counts[0][word] / n])
+            w.writerow(
+                [word, *[c[word] for c in counts], n, *[c[word] / n for c in counts]]
+            )
     print(f"Word wall: {len(placed)} parole, tutte incluse senza sovrapposizioni.")
     return path

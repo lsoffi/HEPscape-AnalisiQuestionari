@@ -1,0 +1,36 @@
+HEPscape! - Analisi descrittiva di 23 questionari | Evento ERNEST - ERN 2026
+Il campione riguarda esclusivamente HEPscape!, non tutte le attività dell’evento ERNEST.
+Palette dal sito https://web.infn.it/hepscape/: blu #234A8C / #335BA6, azzurro #5F8FC4, verde #7BBA48.
+Fonte: questionari.xlsx, foglio Dati codificati.
+Una riga per scheda. Città e origine kit sono lette dalle rispettive colonne del workbook.
+I codici sono categorie, non punteggi su cui calcolare medie. 999 escluso dai denominatori validi.
+Nei confronti si escludono le schede mancanti in una delle due variabili. n è indicato per gruppo.
+Non sono stati effettuati test di significatività, selezioni di risultati in base a p-value o inferenze causali.
+Gruppi piccoli (<10 risposte) contrassegnati da asterisco; risultati esplorativi non generalizzabili automaticamente.
+Q4 e Q5 misurano cambiamenti dichiarati: non esistono misure pre-attività.
+Q2: conteggio di presenza per scheda; BELLA BELLA conta una volta. Rimosse annotazioni editoriali tra parentesi quadre e stopword.
+Le forme esatte non correggono refusi. Nelle forme accorpate si uniscono solo le voci della mappa sotto; EDUCATTIVA è ricondotta a EDUCATIVO/A.
+I dati originali non sono stati modificati. Nessuna classificazione automatica di sentiment.
+
+Stopword: A, ALLA, CHE, CON, DA, DI, E, ESPERIENZA, GLI, HO, I, IL, IN, LA, LE, LO, MA, MOLTO, NN, NON, PER, PO, STATA, STATO, TROPPO, UN, UNA, UNO, È
+
+Accorpamenti:
+{
+  "BELLA": "BELLO/BELLA",
+  "BELLO": "BELLO/BELLA",
+  "ISTRUTTIVA": "ISTRUTTIVO/A",
+  "ISTRUTTIVO": "ISTRUTTIVO/A",
+  "EDUCATIVA": "EDUCATIVO/A",
+  "EDUCATTIVA": "EDUCATIVO/A",
+  "EDUCATIVO": "EDUCATIVO/A",
+  "FORMATIVA": "FORMATIVO/A",
+  "FORMATIVO": "FORMATIVO/A",
+  "SIMPATICO": "SIMPATICO/A",
+  "SIMPATICA": "SIMPATICO/A",
+  "GIOCOSA": "GIOCOSO/A",
+  "GIOCOSO": "GIOCOSO/A",
+  "UNICA": "UNICO/A",
+  "UNICO": "UNICO/A",
+  "INTERATTIVA": "INTERATTIVO/A",
+  "INTERATTIVO": "INTERATTIVO/A"
+}

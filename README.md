@@ -9,6 +9,8 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 Il workbook unico contiene **230 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma, 98 a Bari con kit Bari e 23 a Pisa con kit Pisa. Le risposte dei tre kit sono selezionabili separatamente.
 
 - [Workbook unico Roma + Bari + Pisa](data/ern2026/questionari.xlsx)
+- [Report Pisa / Pisa con copertina e word wall](kits/pisa/pisa/ERN2026/HEPscape_raccolta_grafici.pdf)
+- [Confronto Roma / Bari / Pisa a tre colori](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf)
 - [Workbook del solo kit Pisa](kits/pisa/pisa/ERN2026/questionari_Pisa.xlsx)
 - [Report Bari / Bari con copertina e word wall](kits/bari/bari/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [Report Roma / Avezzano con copertina](kits/roma/avezzano/ERN2026/HEPscape_raccolta_grafici.pdf)
@@ -142,21 +144,27 @@ Il **PDF inizia con una copertina con il logo ufficiale HEPscape!** che riporta 
 
 L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 
-## Confronto diretto Roma e Bari
+## Confronto diretto Roma, Bari e Pisa
 
-[PDF di confronto](reports/confronto-roma-bari/ERN2026/HEPscape_confronto_kit.pdf): tutte le 10 domande chiuse e risposte mancanti (inclusa Q2), con colori costanti per kit, percentuali e denominatori validi. PNG/SVG e tabella CSV sono nella stessa cartella.
+[PDF di confronto a tre kit](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf): tutte le 10 domande chiuse e risposte mancanti (inclusa Q2), con colori costanti per kit, percentuali e denominatori validi. PNG/SVG e tabella CSV sono nella stessa cartella.
 
 Per rigenerarlo, dalla cartella del repository con l’ambiente attivato:
 
 ```sh
-python scripts/confronta_kit.py data/ern2026/questionari.xlsx --kits Roma Bari --out reports/confronto-roma-bari/ERN2026
+python scripts/confronta_kit.py data/ern2026/questionari.xlsx --kits Roma Bari Pisa --out reports/confronto-roma-bari-pisa/ERN2026
 ```
 
-Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari. Il pubblico differisce per età: questi grafici non isolano un effetto del kit. Il PDF ampliato comprende anche: quattro esiti per fascia di età, le 20 parole Q2 più frequenti, le 16 parole con maggiore differenza osservata (almeno 3 schede totali), aumenti congiunti di curiosità/interesse, facilità × gradimento, quattro esiti per Q7 e Q8, e un word wall unico Roma/Bari a due colori. I gruppi con meno di 10 risposte hanno un asterisco; n=0 significa non stimabile, non 0%.
+Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari e Pisa 23 raccolte a Pisa. Il pubblico differisce per età: questi grafici non isolano un effetto del kit. Il PDF ampliato comprende anche: quattro esiti per fascia di età, le 20 parole Q2 più frequenti, le 16 parole con maggiore scarto massimo-minimo tra le percentuali dei kit (almeno 3 schede totali), aumenti congiunti di curiosità/interesse, facilità × gradimento, quattro esiti per Q7 e Q8, e un word wall unico Roma/Bari/Pisa a tre colori. I gruppi con meno di 10 risposte hanno un asterisco; n=0 significa non stimabile, non 0%.
 
 Per Q2 le percentuali usano le risposte testuali non vuote del rispettivo kit e contano ogni forma esatta al massimo una volta per scheda, con le stesse stopword dei report esistenti. Le differenze delle parole sono esplorative, selezionate sui dati, e non indicano significatività. Q7 misura le occasioni di partecipazione e Q8 la familiarità didattica con il luogo: nessuna delle due misura direttamente precedenti esperienze HEPscape.
 
-Il word wall usa blu per Roma e verde per Bari (nell’ordine dei kit richiesti). La dimensione del carattere cresce con la radice del numero totale di schede che citano la parola. Ogni parola condivisa compare una sola volta: la larghezza blu/verde è proporzionale ai conteggi dei due kit. Si tratta di conteggi grezzi, quindi anche la diversa numerosità delle risposte Q2 contribuisce al risultato; per confrontare percentuali normalizzate restano le tavole precedenti. `word_wall_insieme.csv` conserva i conteggi e `approfondimenti.csv` i denominatori degli approfondimenti. La precedente tavola con gli intervalli è stata rimossa dal report. Lo script seleziona tutte le righe dei due kit; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
+I colori sono stabili anche cambiando l’ordine: blu Roma (#234A8C), verde Bari (#7BBA48), azzurro Pisa (#5F8FC4). La dimensione del carattere cresce con la radice del numero totale di schede che citano la parola. Ogni parola condivisa compare una sola volta: la larghezza delle porzioni colorate è proporzionale ai conteggi di ciascun kit. Si tratta di conteggi grezzi, quindi anche la diversa numerosità delle risposte Q2 contribuisce al risultato; per confrontare percentuali normalizzate restano le tavole precedenti. `word_wall_insieme.csv` conserva i conteggi e `approfondimenti.csv` i denominatori degli approfondimenti. La precedente tavola con gli intervalli è stata rimossa dal report. Lo script accetta due o tre kit distinti e seleziona tutte le righe dei kit richiesti; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
+
+La precedente raccolta Roma/Bari resta disponibile in `reports/confronto-roma-bari/ERN2026/` come versione storica. Il report Pisa si rigenera con:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx --kit Pisa --city Pisa --event "Evento ERNEST - ERN 2026" --out kits/pisa/pisa/ERN2026
+```
 
 ## 4. Unire lotti verificati dello stesso evento
 

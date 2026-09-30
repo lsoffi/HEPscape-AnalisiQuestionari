@@ -1,4 +1,4 @@
-"""Confronto descrittivo di tutte le domande chiuse fra due kit."""
+"""Confronto descrittivo di tutte le domande chiuse fra due o tre kit."""
 
 import argparse
 import csv
@@ -30,10 +30,14 @@ TITLES = {
 def main():
     p = argparse.ArgumentParser(description=__doc__)
     p.add_argument("workbook")
-    p.add_argument("--kits", nargs=2, default=["Roma", "Bari"])
-    p.add_argument("--out", default="reports/confronto-roma-bari/ERN2026")
+    p.add_argument("--kits", nargs="+", default=["Roma", "Bari", "Pisa"])
+    p.add_argument("--out", default="reports/confronto-roma-bari-pisa/ERN2026")
     p.add_argument("--event", default="Evento ERNEST - ERN 2026")
     args = p.parse_args()
+    if len(args.kits) not in (2, 3) or len(set(k.casefold() for k in args.kits)) != len(
+        args.kits
+    ):
+        p.error("Scegli due o tre kit distinti.")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     rows = read_workbook(args.workbook)
@@ -41,8 +45,12 @@ def main():
         [r for r in rows if r[13].casefold() == kit.casefold()] for kit in args.kits
     ]
     if not all(groups):
-        raise ValueError("Entrambi i kit devono avere questionari.")
-    colors = ["#234A8C", "#7BBA48"]
+        raise ValueError("Ogni kit deve avere questionari.")
+    from hepscape.comparison import kit_colors
+
+    colors = kit_colors(args.kits)
+    center = (len(groups) - 1) / 2
+    step = 0.78 / len(groups)
     navy = "#18304F"
     plt.rcParams.update(
         {
@@ -69,16 +77,16 @@ def main():
                 counts = [vals.count(k) for k in range(len(labels))]
                 pct = [100 * c / n if n else 0 for c in counts]
                 ax.barh(
-                    y + (j - 0.5) * 0.36,
+                    y + (j - center) * step,
                     pct,
-                    height=0.34,
+                    height=step * 0.9,
                     color=colors[j],
                     label=f"{kit}: n={n}, vuote={len(rs)-n}",
                 )
                 for k, (count, pc) in enumerate(zip(counts, pct)):
                     ax.text(
                         pc + 1,
-                        y[k] + (j - 0.5) * 0.36,
+                        y[k] + (j - center) * step,
                         f"{pc:.1f}%",
                         va="center",
                         fontsize=8,
@@ -131,14 +139,14 @@ def main():
     for j, (kit, rs) in enumerate(zip(args.kits, groups)):
         pct = [100 * sum(r[q] == 999 for r in rs) / len(rs) for q in range(1, 12)]
         ax.barh(
-            y + (j - 0.5) * 0.36,
+            y + (j - center) * step,
             pct,
-            height=0.34,
+            height=step * 0.9,
             color=colors[j],
             label=f"{kit}: {len(rs)} schede",
         )
         for k, v in enumerate(pct):
-            ax.text(v + 1, y[k] + (j - 0.5) * 0.36, f"{v:.1f}%", va="center")
+            ax.text(v + 1, y[k] + (j - center) * step, f"{v:.1f}%", va="center")
     ax.set_yticks(y, [f"Q{i}" for i in range(1, 12)])
     ax.invert_yaxis()
     ax.set_xlim(0, 100)

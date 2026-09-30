@@ -25,3 +25,24 @@ def test_zero_difference_retains_uncertainty():
 
 def test_word_presence_and_editorial_exclusion():
     assert tokens("Bella BELLA e curiosità [incerto]") == {"BELLA", "CURIOSITÀ"}
+
+
+def test_colors_follow_kit_identity():
+    from hepscape.comparison import kit_colors
+
+    assert kit_colors(["Pisa", "Roma", "Bari"]) == ["#5F8FC4", "#234A8C", "#7BBA48"]
+
+
+def test_three_kit_wordwall_preserves_exclusive_words(tmp_path):
+    import csv
+    from hepscape.comparison_wordwall import generate
+
+    texts = [["COMUNE ROMA"], ["COMUNE BARI"], ["COMUNE PISA"]]
+    generate(texts, ["Roma", "Bari", "Pisa"], tmp_path, "Test")
+    with (tmp_path / "word_wall_insieme.csv").open(encoding="utf-8-sig") as f:
+        words = {r["parola"]: r for r in csv.DictReader(f)}
+    assert set(words) == {"COMUNE", "ROMA", "BARI", "PISA"}
+    assert words["PISA"]["Pisa"] == "1"
+    assert words["PISA"]["Roma"] == words["PISA"]["Bari"] == "0"
+    assert words["COMUNE"]["totale"] == "3"
+    assert float(words["COMUNE"]["quota_Pisa"]) == pytest.approx(1 / 3)

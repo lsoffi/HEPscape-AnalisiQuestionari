@@ -10,7 +10,14 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 from .schema import OPTIONS
 
-COLORS = ["#234A8C", "#7BBA48"]
+COLORS = ["#234A8C", "#7BBA48", "#5F8FC4"]
+
+
+def kit_colors(kits):
+    mapping = {"roma": COLORS[0], "bari": COLORS[1], "pisa": COLORS[2]}
+    return [mapping.get(k.casefold(), COLORS[i]) for i, k in enumerate(kits)]
+
+
 OUTCOMES = [
     (1, "Gradimento: tantissimo"),
     (3, "Apprendimento: sì, molto"),
@@ -58,6 +65,9 @@ def difference_interval(xa, na, xb, nb):
 
 def generate(groups, kits, output, event):
     out = Path(output)
+    colors = kit_colors(kits)
+    center = (len(groups) - 1) / 2
+    step = 0.78 / len(groups)
     figures = []
     records = []
 
@@ -96,10 +106,10 @@ def generate(groups, kits, output, event):
                     subset = [r for r in rs if r[g] == k and r[q] != 999]
                     n = len(subset)
                     x = sum(r[q] == 0 for r in subset)
-                    y = k + (j - 0.5) * 0.34
+                    y = k + (j - center) * step
                     if n:
                         pc = 100 * x / n
-                        ax.barh(y, pc, height=0.31, color=COLORS[j])
+                        ax.barh(y, pc, height=step * 0.9, color=colors[j])
                         ax.text(
                             pc + 1,
                             y,
@@ -114,7 +124,7 @@ def generate(groups, kits, output, event):
                             "n=0 · non stimabile",
                             fontsize=8,
                             va="center",
-                            color=COLORS[j],
+                            color=colors[j],
                         )
                     table(slug, f"Q{q}", label, kit, "codice 0", x, n)
             ax.set_yticks(range(len(labels)), labels, fontsize=9)
@@ -123,13 +133,13 @@ def generate(groups, kits, output, event):
             ax.set_xticks([0, 25, 50, 75, 100])
             ax.set_xlabel("% della risposta indicata, nel sottogruppo")
             ax.set_title(titleq, loc="left", fontsize=12)
-        handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in COLORS]
+        handles = [plt.Rectangle((0, 0), 1, 1, color=c) for c in colors]
         fig.legend(
             handles,
             kits,
             loc="lower center",
             bbox_to_anchor=(0.5, 0.062),
-            ncol=2,
+            ncol=len(kits),
             frameon=False,
         )
         fig.subplots_adjust(
@@ -146,17 +156,17 @@ def generate(groups, kits, output, event):
     # Presence per questionnaire, exact forms, same tokenization as existing report.
     texts = [[r[2] for r in rs if r[2] != 999] for rs in groups]
     counters = [Counter(t for s in ts for t in tokens(s)) for ts in texts]
-    vocab = set(counters[0]) | set(counters[1])
+    vocab = set().union(*counters)
     total = lambda w: sum(c[w] for c in counters)
     words = sorted(vocab, key=lambda w: (-total(w), w))[:20]
     fig, ax = plt.subplots(figsize=(16, 12))
     for j, (kit, ts, c) in enumerate(zip(kits, texts, counters)):
         for i, w in enumerate(words):
             pct = 100 * c[w] / len(ts) if ts else 0
-            ax.barh(i + (j - 0.5) * 0.35, pct, height=0.32, color=COLORS[j])
+            ax.barh(i + (j - center) * step, pct, height=step * 0.9, color=colors[j])
             ax.text(
                 pct + 0.4,
-                i + (j - 0.5) * 0.35,
+                i + (j - center) * step,
                 f"{pct:.1f}% ({c[w]})",
                 va="center",
                 fontsize=8,
@@ -181,11 +191,11 @@ def generate(groups, kits, output, event):
     ax.set_xlabel("% delle risposte Q2 non vuote del kit")
     fig.subplots_adjust(left=0.24, right=0.95, top=0.85, bottom=0.13)
     fig.legend(
-        [plt.Rectangle((0, 0), 1, 1, color=c) for c in COLORS],
+        [plt.Rectangle((0, 0), 1, 1, color=c) for c in colors],
         [f"{kit}: Q2 valide={len(ts)}" for kit, ts in zip(kits, texts)],
         loc="lower center",
         bbox_to_anchor=(0.5, 0.065),
-        ncol=2,
+        ncol=len(kits),
         frameon=False,
     )
     save(
@@ -196,34 +206,36 @@ def generate(groups, kits, output, event):
         "Forme esatte; stopword escluse come nei report esistenti. Q2 vuote escluse, refusi non corretti.",
     )
     if all(texts):
-        diff = lambda w: 100 * (
-            counters[0][w] / len(texts[0]) - counters[1][w] / len(texts[1])
-        )
+        frequencies = lambda w: [100 * c[w] / len(ts) for c, ts in zip(counters, texts)]
+        spread = lambda w: max(frequencies(w)) - min(frequencies(w))
         chosen = sorted(
-            [w for w in vocab if total(w) >= 3], key=lambda w: (-abs(diff(w)), w)
+            [w for w in vocab if total(w) >= 3], key=lambda w: (-spread(w), w)
         )[:16]
-        chosen = sorted(chosen, key=lambda w: (diff(w), w))
-        fig, ax = plt.subplots(figsize=(16, 10))
-        ds = [diff(w) for w in chosen]
-        ax.barh(chosen, ds, color=[COLORS[0] if d >= 0 else COLORS[1] for d in ds])
-        ax.axvline(0, color="#18304F", lw=1)
-        for i, d in enumerate(ds):
-            ax.text(
-                d + (0.5 if d >= 0 else -0.5),
-                i,
-                f"{d:+.1f}",
-                va="center",
-                ha="left" if d >= 0 else "right",
-            )
-        lim = max([abs(d) for d in ds] or [1]) + 7
-        ax.set_xlim(-lim, lim)
-        ax.set_xlabel(f"Differenza in punti percentuali: {kits[0]} meno {kits[1]}")
+        fig, ax = plt.subplots(figsize=(16, 12))
+        for i, w in enumerate(chosen):
+            vals = frequencies(w)
+            ax.plot([min(vals), max(vals)], [i, i], color="#BECBD5", lw=2)
+            for j, v in enumerate(vals):
+                ax.scatter(
+                    v,
+                    i + (j - center) * 0.18,
+                    color=colors[j],
+                    s=45,
+                    label=kits[j] if i == 0 else None,
+                )
+        ax.set_yticks(range(len(chosen)), chosen)
+        ax.invert_yaxis()
+        ax.set_xlim(0, 100)
+        ax.set_xlabel("% delle risposte Q2 non vuote del kit")
+        ax.legend(frameon=False)
         fig.subplots_adjust(left=0.24, right=0.95, top=0.84, bottom=0.16)
         save(
             fig,
             "07_parole_differenze",
             "Parole con maggiore differenza osservata",
-            f"16 differenze assolute maggiori tra parole presenti in almeno 3 schede totali; denominatori Q2: {len(texts[0])}, {len(texts[1])}.",
+            "16 maggiori scarti massimo-minimo tra kit; almeno 3 schede totali. Q2 valide: "
+            + ", ".join(f"{k}={len(t)}" for k, t in zip(kits, texts))
+            + ".",
             "Selezione esplorativa, non test di significatività né misura di sentiment. Forme esatte separate.",
         )
     fig, ax = plt.subplots(figsize=(16, 10))
@@ -242,12 +254,12 @@ def generate(groups, kits, output, event):
         ):
             x = cnt[key]
             pc = 100 * x / n if n else 0
-            y = i + (j - 0.5) * 0.34
+            y = i + (j - center) * step
             ax.barh(
                 y,
                 pc,
-                height=0.31,
-                color=COLORS[j],
+                height=step * 0.9,
+                color=colors[j],
                 label=f"{kit}: n={n}" if i == 0 else None,
             )
             ax.text(pc + 1, y, f"{pc:.1f}% ({x})", va="center")
@@ -264,7 +276,7 @@ def generate(groups, kits, output, event):
         "Curiosità e interesse insieme",
         "Aumenti dichiarati dopo l’attività; “nessuno” comprende risposte uguali o inferiori a prima.",
     )
-    fig, axs = plt.subplots(1, 2, figsize=(16, 10))
+    fig, axs = plt.subplots(1, len(kits), figsize=(18, 10))
     for ax, kit, rs in zip(axs, kits, groups):
         matrix = np.zeros((3, 3), dtype=int)
         for r in rs:
@@ -315,12 +327,12 @@ def generate(groups, kits, output, event):
         ax.set_xlabel("Q1 · Gradimento")
         ax.set_ylabel("Q6 · Facilità di partecipazione")
         ax.set_title(kit)
-    fig.subplots_adjust(left=0.15, right=0.97, top=0.82, bottom=0.18, wspace=0.48)
+    fig.subplots_adjust(left=0.12, right=0.97, top=0.82, bottom=0.18, wspace=0.65)
     save(
         fig,
         "09_facilita_gradimento",
         "Facilità e gradimento",
-        "Percentuali entro ciascuna risposta Q6, stessa scala 0-100% nei due pannelli. Celle: percentuale e conteggio/n.",
+        "Percentuali entro ciascuna risposta Q6, stessa scala 0-100% in tutti i pannelli. Celle: percentuale e conteggio/n.",
         "Q6 riguarda la facilità di partecipazione, non la difficoltà degli enigmi. * n<10; coppie mancanti escluse.",
     )
     stratified(
