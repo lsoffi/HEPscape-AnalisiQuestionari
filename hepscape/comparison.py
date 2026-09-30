@@ -195,39 +195,6 @@ def generate(groups, kits, output, event):
         "Selezione per numero totale di schede; ogni parola conta una volta per scheda. Tra parentesi: conteggi.",
         "Varianti di genere e numero accorpate; una presenza per gruppo e scheda. Q2 vuote escluse.",
     )
-    if all(texts):
-        frequencies = lambda w: [100 * c[w] / len(ts) for c, ts in zip(counters, texts)]
-        spread = lambda w: max(frequencies(w)) - min(frequencies(w))
-        chosen = sorted(
-            [w for w in vocab if total(w) >= 3], key=lambda w: (-spread(w), w)
-        )[:16]
-        fig, ax = plt.subplots(figsize=(16, 12))
-        for i, w in enumerate(chosen):
-            vals = frequencies(w)
-            ax.plot([min(vals), max(vals)], [i, i], color="#BECBD5", lw=2)
-            for j, v in enumerate(vals):
-                ax.scatter(
-                    v,
-                    i + (j - center) * 0.18,
-                    color=colors[j],
-                    s=45,
-                    label=kits[j] if i == 0 else None,
-                )
-        ax.set_yticks(range(len(chosen)), chosen)
-        ax.invert_yaxis()
-        ax.set_xlim(0, 100)
-        ax.set_xlabel("% delle risposte Q2 non vuote del kit")
-        ax.legend(frameon=False)
-        fig.subplots_adjust(left=0.24, right=0.95, top=0.84, bottom=0.16)
-        save(
-            fig,
-            "07_parole_differenze",
-            "Parole con maggiore differenza osservata",
-            "16 maggiori scarti massimo-minimo tra kit; almeno 3 schede totali. Q2 valide: "
-            + ", ".join(f"{k}={len(t)}" for k, t in zip(kits, texts))
-            + ".",
-            "Selezione esplorativa, non test di significatività né misura di sentiment. Varianti di genere e numero accorpate.",
-        )
     fig, ax = plt.subplots(figsize=(16, 10))
     names = [
         "Più curiosità e più interesse",
