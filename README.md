@@ -9,6 +9,7 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 Il lotto iniziale contiene 109 questionari HEPscape! dell’evento ERNEST – ERN 2026, raccolti ad Avezzano con kit Roma.
 
 - [Workbook verificato](data/ern2026/questionari.xlsx)
+- [Report Roma / Avezzano con copertina](kits/roma/avezzano/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [PDF originale preparato insieme, nella cartella Roma](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
 - [Grafici e word wall rigenerati](reports/ern2026/HEPscape_raccolta_grafici.pdf)
 - [PNG, SVG e tabelle](reports/ern2026/grafici/)
@@ -105,14 +106,14 @@ Per analizzare il nuovo workbook:
 hepscape plots work/roma-avezzano-02/questionari.xlsx
 ```
 
-Il programma chiede quale kit analizzare: **Roma, Bari, Perugia, Pisa, Padova oppure tutti**. Include tutte le città e tutti gli eventi delle schede selezionate. Salva in `kits/roma/tutte-le-citta/<data-e-ora>/` per Roma, oppure in `reports/tutti-i-kit/tutte-le-citta/<data-e-ora>/` per tutti. Ogni esecuzione guidata ha una nuova cartella.
+Il programma chiede prima quale kit analizzare: **Roma, Bari, Perugia, Pisa, Padova oppure tutti**. Poi elenca le location presenti per quel kit, lette dalla colonna **Città**, e chiede di scegliere una location oppure **0 per tutti i dati del kit**. Non occorre ricordare o riscrivere il nome della location. Salva in `kits/roma/tutte-le-citta/<data-e-ora>/` per Roma, oppure in `reports/tutti-i-kit/tutte-le-citta/<data-e-ora>/` per tutti. Ogni esecuzione guidata ha una nuova cartella.
 
 Negli esempi seguenti sostituisci `work/questionari_completi.xlsx` con il tuo workbook unico:
 
 ```sh
-hepscape plots work/questionari_completi.xlsx --kit Roma
-hepscape plots work/questionari_completi.xlsx --kit tutti
-hepscape plots work/questionari_completi.xlsx --kit tutti --compare-kits
+hepscape plots work/questionari_completi.xlsx --kit Roma --all-locations
+hepscape plots work/questionari_completi.xlsx --kit tutti --all-locations
+hepscape plots work/questionari_completi.xlsx --kit tutti --all-locations --compare-kits
 ```
 
 `--compare-kits` aggiunge confronti descrittivi per Q1, Q3, Q4 e Q5 quando sono presenti almeno due kit. Senza questa opzione il report aggregato non contiene confronti tra kit. Ogni questionario pesa allo stesso modo; i kit non ricevono automaticamente lo stesso peso.
@@ -123,13 +124,15 @@ Per limitare l’analisi a una città:
 hepscape plots work/questionari_completi.xlsx --kit Roma --city Avezzano
 ```
 
-L’output va sotto `kits/roma/avezzano/`. Il filtro include tutti gli eventi svolti in quella città; non esiste ancora un filtro per singolo evento. Eventuali colonne aggiuntive sull’evento vengono ignorate dall’analisi. `--event` cambia soltanto il titolo del report:
+Puoi usare anche `--location Avezzano`, equivalente a `--city Avezzano`. L’output va sotto `kits/roma/avezzano/<data-e-ora>/`; per un evento di kit Bari va sotto `kits/bari/<location>/<data-e-ora>/`, e così per gli altri kit. Con `--all-locations` analizzi tutto il kit senza la domanda sulla location. In esecuzioni non interattive, omettere il filtro location include tutte le location. Il filtro include tutti gli eventi svolti in quella città; non esiste ancora un filtro per singolo evento. Eventuali colonne aggiuntive sull’evento vengono ignorate dall’analisi. `--event` cambia soltanto il titolo del report:
 
 ```sh
 hepscape plots data/ern2026/questionari.xlsx --kit Roma --event "Evento ERNEST - ERN 2026"
 ```
 
-Questo comando permette di provare subito il lotto storico, senza foto né chat. Il titolo predefinito è “Tutti gli eventi”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
+Questo comando permette di provare subito il lotto storico, senza foto né chat. Il titolo predefinito è “Raccolta HEPscape”. Puoi aggiungere `--out work/report` per una destinazione esplicita; riutilizzarla sovrascrive i file con lo stesso nome. Con il solo `--out`, senza filtri, viene analizzato tutto il workbook senza domande.
+
+Il **PDF inizia con una copertina** che riporta il nome del kit, la location dell’evento e il numero di questionari selezionati. Per l’aggregato riporta “Tutte le location”; se scegli tutti i kit riporta “Tutti i kit”. Le pagine successive contengono i plot e il metodo. La copertina sposta di una pagina la numerazione precedente delle tavole.
 
 L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 

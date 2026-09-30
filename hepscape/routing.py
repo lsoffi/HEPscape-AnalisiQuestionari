@@ -47,6 +47,26 @@ def destination(args):
     if normalize(kit) not in canonical:
         raise ValueError("Kit ammessi: " + ", ".join(KITS) + ", tutti")
     kit = canonical[normalize(kit)]
+    if city is None and not args.all_locations and sys.stdin.isatty():
+        from .workbook import read_workbook
+
+        rows = select_rows(read_workbook(args.workbook), kit=kit)
+        locations = sorted(
+            {normalize(r[12]): " ".join(r[12].split()) for r in rows}.values(),
+            key=normalize,
+        )
+        print(
+            "Location disponibili per " + ("kit " + kit if kit else "tutti i kit") + ":"
+        )
+        print("  0. Tutte le location / tutti i dati")
+        for number, name in enumerate(locations, 1):
+            print(f"  {number}. {name}")
+        choice = input("Scegli il numero della location oppure 0 per tutte: ").strip()
+        if not choice.isdigit() or not 0 <= int(choice) <= len(locations):
+            raise ValueError(
+                "Selezione location non valida: usare uno dei numeri elencati."
+            )
+        city = locations[int(choice) - 1] if int(choice) else None
     slug = "tutte-le-citta"
     if city is not None:
         city = " ".join(city.split())

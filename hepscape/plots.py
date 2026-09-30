@@ -14,7 +14,7 @@ from PIL import Image, ImageOps, ImageDraw
 def generate(
     workbook,
     output,
-    event="Tutti gli eventi",
+    event="Raccolta HEPscape",
     *,
     kit=None,
     city=None,
@@ -532,7 +532,13 @@ def generate(
     figs.insert(12, ("12b_word_wall", "Q2 - Word wall", "", ""))
     pdf = base / "HEPscape_raccolta_grafici.pdf"
     c = canvas.Canvas(str(pdf), pagesize=(1008, 756))
-    for i, (name, title, subtitle, foot) in enumerate(figs, 1):
+    from .cover import draw_cover
+
+    kit_label = kit or "Tutti i kit"
+    location_label = city or "Tutte le location"
+    draw_cover(c, kit_label, location_label, event, N, len(figs) + 2)
+    c.showPage()
+    for i, (name, title, subtitle, foot) in enumerate(figs, 2):
         im = Image.open(out / (name + ".png"))
         w, h = im.size
         scale = min(984 / w, 708 / h)
@@ -544,7 +550,7 @@ def generate(
             height=h * scale,
         )
         c.setFont("Helvetica", 8)
-        c.drawRightString(985, 12, f"{i} / {len(figs)+1}")
+        c.drawRightString(985, 12, f"{i} / {len(figs)+2}")
         c.showPage()
     c.setFont("Helvetica-Bold", 18)
     c.drawString(48, 704, "Metodo e lettura dei grafici")
@@ -560,7 +566,7 @@ def generate(
             y -= 17
         y -= 8
     c.setFont("Helvetica", 8)
-    c.drawRightString(985, 12, f"{len(figs)+1} / {len(figs)+1}")
+    c.drawRightString(985, 12, f"{len(figs)+2} / {len(figs)+2}")
     c.save()
     thumbs = []
     for name, *_ in figs:
@@ -592,6 +598,7 @@ def generate(
                 "event": event,
                 "selection": {"kit": kit, "city": city},
                 "compare_kits": compare_kits,
+                "cover": {"kit": kit_label, "location": location_label},
                 "questionnaires": N,
                 "figures": [name for name, *_ in figs],
                 "files": [str(p.relative_to(base)) for p in generated],

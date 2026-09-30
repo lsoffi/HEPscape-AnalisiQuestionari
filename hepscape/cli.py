@@ -50,10 +50,18 @@ def parser():
         "--kit",
         help="Kit da analizzare: Roma, Bari, Perugia, Pisa, Padova oppure tutti",
     )
-    pl.add_argument("--city", help="Città in cui si è svolto l’evento")
+    scope = pl.add_mutually_exclusive_group()
+    scope.add_argument(
+        "--city", "--location", dest="city", help="Location dell’evento (colonna Città)"
+    )
+    scope.add_argument(
+        "--all-locations",
+        action="store_true",
+        help="Analizza tutte le location senza chiedere",
+    )
     pl.add_argument(
         "--event",
-        default="Tutti gli eventi",
+        default="Raccolta HEPscape",
         help="Titolo del report, non un filtro sui dati",
     )
     pl.add_argument(

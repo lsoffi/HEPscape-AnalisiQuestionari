@@ -157,7 +157,7 @@ def test_analysis_empty_q2_small_and_all_missing_groups(data, tmp_path):
     path = tmp_path / "empty.xlsx"
     export_workbook(data, path)
     generate(path, tmp_path / "report", "Test senza risposte", compare_kits=True)
-    assert len(PdfReader(tmp_path / "report/HEPscape_raccolta_grafici.pdf").pages) == 18
+    assert len(PdfReader(tmp_path / "report/HEPscape_raccolta_grafici.pdf").pages) == 19
     assert len(list((tmp_path / "report/grafici").glob("*.svg"))) == 17
     manifest = json.loads((tmp_path / "report/manifest.json").read_text())
     assert "15_citta_1" in manifest["figures"]
@@ -169,8 +169,12 @@ def test_guided_output_prompts_and_safe_path(monkeypatch):
     from hepscape.routing import destination
 
     monkeypatch.setattr("sys.stdin.isatty", lambda: True)
-    responses = iter([" rOmA "])
+    responses = iter([" rOmA ", "0"])
     monkeypatch.setattr("builtins.input", lambda _: next(responses))
+    monkeypatch.setattr(
+        "hepscape.workbook.read_workbook",
+        lambda _: [("A",) + (0,) * 11 + ("Avezzano", "Roma")],
+    )
     args = parser().parse_args(["plots", "input.xlsx"])
     first, kit, city = destination(args)
     assert first.parent == Path("kits/roma/tutte-le-citta")
@@ -226,6 +230,15 @@ def test_filtered_report_manifest_and_no_false_output(data, tmp_path):
     export_workbook(data, source)
     generate(source, tmp_path / "selected", kit="Roma", city="Roma")
     report = json.loads((tmp_path / "selected/manifest.json").read_text())
+    from pypdf import PdfReader
+
+    cover = (
+        PdfReader(tmp_path / "selected/HEPscape_raccolta_grafici.pdf")
+        .pages[0]
+        .extract_text()
+    )
+    assert "Roma" in cover and "LOCATION" in cover
+    assert report["cover"] == {"kit": "Roma", "location": "Roma"}
     assert report["questionnaires"] == 1
     assert report["selection"] == {"kit": "Roma", "city": "Roma"}
     with pytest.raises(ValueError, match="Nessuna scheda"):
@@ -246,7 +259,7 @@ def test_all_kits_report_without_comparisons(data, tmp_path):
     assert report["questionnaires"] == 2
     assert report["compare_kits"] is False
     assert not any(name.startswith("16_kit") for name in report["figures"])
-    assert report["event"] == "Tutti gli eventi"
+    assert report["event"] == "Raccolta HEPscape"
 
 
 def test_chat_import_requires_review_and_preserves_uncertainty(tmp_path):
@@ -313,3 +326,29 @@ def test_chat_import_rejects_duplicate_ids_and_bad_codes(tmp_path):
     with pytest.raises(ValueError, match="codice"):
         import_chat(path, tmp_path / "out", city="Roma", kit="Roma", event="Test")
     assert not (tmp_path / "out").exists()
+
+
+def test_guided_location_only_lists_selected_kit(monkeypatch):
+    from hepscape.cli import parser
+    from hepscape.routing import destination
+
+    monkeypatch.setattr("sys.stdin.isatty", lambda: True)
+    rows = [
+        ("A",) + (0,) * 11 + ("Avezzano", "Roma"),
+        ("B",) + (0,) * 11 + ("Bari", "Roma"),
+        ("C",) + (0,) * 11 + ("Pisa", "Pisa"),
+    ]
+    monkeypatch.setattr("hepscape.workbook.read_workbook", lambda _: rows)
+    monkeypatch.setattr("builtins.input", lambda _: "2")
+    output, kit, city = destination(
+        parser().parse_args(["plots", "input.xlsx", "--kit", "Roma"])
+    )
+    assert kit == "Roma" and city == "Bari"
+    assert output.parent == Path("kits/roma/bari")
+    output, kit, city = destination(
+        parser().parse_args(["plots", "input.xlsx", "--kit", "Roma", "--all-locations"])
+    )
+    assert city is None and output.parent == Path("kits/roma/tutte-le-citta")
+    monkeypatch.setattr("builtins.input", lambda _: "3")
+    with pytest.raises(ValueError, match="location non valida"):
+        destination(parser().parse_args(["plots", "input.xlsx", "--kit", "Roma"]))
