@@ -7,7 +7,8 @@ Il repository include **109 questionari HEPscape! raccolti durante l’evento ER
 ## Risultati già pronti
 
 - [Workbook verificato: 109 schede](data/ern2026/questionari.xlsx)
-- [Slide con tutti i grafici e il word wall](reports/ern2026/HEPscape_raccolta_grafici.pdf)
+- [PDF originale preparato insieme: kit Roma, evento ad Avezzano](kits/roma/HEPscape_ERN2026_slide_originali.pdf)
+- [Raccolta rigenerata dal programma, con grafici e word wall](reports/ern2026/HEPscape_raccolta_grafici.pdf)
 - [Grafici PNG/SVG e tabelle CSV](reports/ern2026/grafici/)
 - [Trascrizioni e codici verificati, in JSON](data/ern2026/questionari_verificati.json)
 - [Storico delle trascrizioni e delle correzioni](data/ern2026/trascrizione_storica.json)
@@ -55,6 +56,59 @@ hepscape --help
 
 Per usare solo Excel e grafici, senza il lettore di immagini, basta `python -m pip install -e .`.
 Le versioni usate nella verifica iniziale sono riportate in [docs/versioni-verificate.txt](docs/versioni-verificate.txt); i requisiti ammettono anche versioni compatibili.
+
+## Guida pratica: come avviare i due script
+
+Dopo l’installazione, apri il terminale nella cartella `HEPscape-AnalisiQuestionari` e attiva l’ambiente `.venv` come indicato sopra. Se hai già scaricato il repository, usa `git pull` da quella cartella per ricevere gli aggiornamenti. I comandi seguenti sono su una sola riga e si possono usare sia su macOS/Linux sia in PowerShell.
+
+### A. Dalle foto al workbook Excel
+
+Esempio: **kit Roma**, evento ad **Avezzano**, nuovo lotto `ROMA-AVZ-2026-02`.
+
+1. Crea sul tuo computer la cartella `photos/roma/avezzano/` dentro il repository e mettici le nuove fotografie, una scheda per foto.
+2. Configura `OPENAI_API_KEY` e `OPENAI_MODEL` seguendo [le istruzioni per la chiave API](#che-cosè-una-chiave-api).
+3. Avvia la lettura delle foto:
+
+```sh
+hepscape extract photos/roma/avezzano --out work/roma-avezzano-02 --kit Roma --city Avezzano --prefix ROMA-AVZ-2026-02 --event "Evento ERNEST - ERN 2026" --send-to-openai
+```
+
+Questo primo comando **non fa domande interattive**: origine del kit e città dell’evento sono specificate con `--kit` e `--city`. Per un altro caso sostituisci questi valori, la cartella delle foto, il prefisso e la destinazione. Il prefisso deve essere unico per ogni lotto e la destinazione deve essere nuova o vuota.
+
+4. Apri `work/roma-avezzano-02/bozza.xlsx` per vedere la proposta. Controlla anche `errori.json` per le foto escluse. Apri `revisione.csv` e confronta tutte le risposte con le foto: inserisci eventuali modifiche in `correzione` e scrivi `SI` in `confermato`. Per una risposta vuota confermata usa `__BLANK__`. Segui i dettagli del [punto 3](#3-risolvere-i-dubbi-e-confermare), mantenendo ID e colonna `controllo` come testo.
+5. Dopo aver salvato il CSV revisionato, applica le conferme:
+
+```sh
+hepscape review work/roma-avezzano-02/bozza.json --apply work/roma-avezzano-02/revisione.csv --out work/roma-avezzano-02/verificati.json
+```
+
+6. Crea il workbook finale:
+
+```sh
+hepscape workbook work/roma-avezzano-02/verificati.json --out work/roma-avezzano-02/questionari.xlsx
+```
+
+Il risultato è **`work/roma-avezzano-02/questionari.xlsx`**. Se rimangono risposte non confermate, il programma chiede di completare la revisione prima di creare il file finale. La bozza viene generata automaticamente dalle foto; il controllo umano completa il passaggio all’Excel utilizzabile per l’analisi.
+
+### B. Dal workbook ai grafici e al PDF
+
+Per analizzare il workbook appena creato:
+
+```sh
+hepscape plots work/roma-avezzano-02/questionari.xlsx
+```
+
+Rispondi **Roma** alla domanda sulla città di origine del kit e **Avezzano** alla domanda sulla città dell’evento. Troverai tutti i risultati in **`kits/roma/avezzano/<data-e-ora>/`**; il programma stampa il percorso completo al termine.
+
+La cartella contiene `HEPscape_raccolta_grafici.pdf`, la sottocartella `grafici/` con PNG, SVG e tabelle CSV, il word wall, l’archivio ZIP e `manifest.json` con il riepilogo dell’analisi. Questa fase non richiede una chiave API.
+
+Per provare subito l’analisi sui 109 questionari già verificati, senza leggere nuove foto:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx
+```
+
+Anche qui rispondi **Roma**, poi **Avezzano**. Il [PDF originale della nostra prima analisi](kits/roma/HEPscape_ERN2026_slide_originali.pdf) è già conservato nella cartella `kits/roma/`; le nuove esecuzioni producono file separati nelle sottocartelle della città dell’evento.
 
 ## 1. Riprodurre i risultati già presenti, senza API
 

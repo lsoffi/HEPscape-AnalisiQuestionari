@@ -7,7 +7,7 @@
 - `data/ern2026/questionari.xlsx` è il workbook finale della sessione originale, copiato senza modificare celle o formattazione.
 - `data/ern2026/trascrizione_storica.json` conserva risposte, annotazioni e storia delle verifiche della sessione, con i percorsi personali ridotti ai soli nomi dei file.
 - `data/ern2026/questionari_verificati.json` usa il formato del nuovo programma. I codici provengono dal workbook verificato; non da una nuova interpretazione delle foto.
-- `reports/ern2026/slides.pdf` è una copia della raccolta finale della sessione originale.
+- `kits/roma/HEPscape_ERN2026_slide_originali.pdf` è una copia della raccolta finale della sessione originale.
 - `reports/ern2026/HEPscape_raccolta_grafici.pdf`, i PNG/SVG, i CSV, il word wall e il manifest sono rigenerati dal nuovo programma portabile.
 
 La raccolta rigenerata usa gli stessi dati e criteri di quella originale. Nei pareggi delle frequenze lessicali usa un ordinamento alfabetico esplicito; non cambia i conteggi. Il confronto automatico dell’Excel ricreato verifica tutte le righe ID/Q1–Q11/città/kit. La grafica e i metadati interni dei file possono variare con le versioni delle librerie.
