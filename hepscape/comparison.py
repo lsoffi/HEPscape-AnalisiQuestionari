@@ -335,68 +335,9 @@ def generate(groups, kits, output, event):
         "Confronto per familiarità con il luogo",
         "Q8: già stato/a in questo luogo per un’attività didattica. Non equivale ad aver già fatto HEPscape.",
     )
-    endpoints = OUTCOMES + [
-        (6, "Facilità: sì, molto"),
-        (7, "Occasioni: mai"),
-        (8, "Già stato/a nel luogo: sì"),
-        (11, "Residente nella città: sì"),
-    ]
-    fig, ax = plt.subplots(figsize=(16, 10))
-    diffrows = []
-    labels = []
-    for i, (q, label) in enumerate(endpoints):
-        code = 2 if q == 7 else 1 if q in (8, 11) else 0
-        vals = [[r[q] for r in rs if r[q] != 999] for rs in groups]
-        xs = [vs.count(code) for vs in vals]
-        ns = list(map(len, vals))
-        interval = difference_interval(xs[0], ns[0], xs[1], ns[1])
-        labels.append(label)
-        if interval:
-            d, l, u = [100 * v for v in interval]
-            ax.errorbar(
-                d, i, xerr=[[d - l], [u - d]], fmt="o", color=COLORS[0], capsize=5
-            )
-            ax.text(
-                1.02,
-                i,
-                f"{d:+.1f} pp [{l:+.1f}, {u:+.1f}]\nn={ns[0]} / {ns[1]}",
-                transform=ax.get_yaxis_transform(),
-                fontsize=10,
-                va="center",
-            )
-            diffrows.append([f"Q{q}", label, code, *xs, *ns, d, l, u])
-    ax.set_yticks(range(len(labels)), labels)
-    ax.invert_yaxis()
-    ax.axvline(0, color="#18304F", ls="--")
-    ax.set_xlim(-100, 100)
-    ax.set_xlabel(f"Punti percentuali: {kits[0]} meno {kits[1]}")
-    fig.subplots_adjust(left=0.28, right=0.75, top=0.83, bottom=0.16)
-    save(
-        fig,
-        "12_intervalli",
-        "Differenze e intervalli di incertezza al 95%",
-        "Intervalli Newcombe da limiti Wilson per proporzioni indipendenti; non corretti per confronti multipli.",
-        "Intervalli basati su un modello binomiale: non correggono selezione del campione, età, location o dipendenze tra rispondenti.",
-    )
-    with (out / "differenze_intervalli.csv").open(
-        "w", encoding="utf-8-sig", newline=""
-    ) as f:
-        w = csv.writer(f)
-        w.writerow(
-            [
-                "domanda",
-                "indicatore",
-                "codice",
-                "conteggio_kit1",
-                "conteggio_kit2",
-                "n_kit1",
-                "n_kit2",
-                "differenza_pp",
-                "limite_inferiore_95",
-                "limite_superiore_95",
-            ]
-        )
-        w.writerows(diffrows)
+    from .comparison_wordwall import generate as generate_wordwall
+
+    figures.append(generate_wordwall(texts, kits, out, event))
     with (out / "approfondimenti.csv").open("w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f)
         w.writerow(
