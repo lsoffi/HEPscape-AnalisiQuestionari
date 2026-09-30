@@ -141,6 +141,18 @@ Il **PDF inizia con una copertina con il logo ufficiale HEPscape!** che riporta 
 
 L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 
+## Confronto diretto Roma e Bari
+
+[PDF di confronto](reports/confronto-roma-bari/ERN2026/HEPscape_confronto_kit.pdf): tutte le 10 domande chiuse e risposte mancanti (inclusa Q2), con colori costanti per kit, percentuali e denominatori validi. PNG/SVG e tabella CSV sono nella stessa cartella.
+
+Per rigenerarlo, dalla cartella del repository con l’ambiente attivato:
+
+```sh
+python scripts/confronta_kit.py data/ern2026/questionari.xlsx --kits Roma Bari --out reports/confronto-roma-bari/ERN2026
+```
+
+Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari. Il pubblico differisce per età: questi grafici non isolano un effetto del kit. Q2 è inclusa nel confronto dei mancanti; il confronto delle parole non è incluso in questo PDF. Lo script seleziona tutte le righe dei due kit; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
+
 ## 4. Unire lotti verificati dello stesso evento
 
 ```sh
