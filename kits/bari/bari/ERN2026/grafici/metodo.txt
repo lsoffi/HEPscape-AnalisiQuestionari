@@ -12,7 +12,7 @@ Q2: conteggio di presenza per scheda; BELLA BELLA conta una volta. Rimosse annot
 Le forme esatte non correggono refusi. Nelle forme accorpate si uniscono solo le voci della mappa sotto; EDUCATTIVA è ricondotta a EDUCATIVO/A.
 I dati originali non sono stati modificati. Nessuna classificazione automatica di sentiment.
 
-Stopword: A, ALLA, CHE, CON, DA, DI, E, ESPERIENZA, GLI, HO, I, IL, IN, LA, LE, LO, MA, MOLTO, NN, NON, PER, PO, STATA, STATO, TROPPO, UN, UNA, UNO, È
+Stopword: A, ALLA, BEN, CHE, CON, DA, DI, E, ESPERIENZA, GLI, HO, I, IL, IN, LA, LE, LO, MA, MI, MOLTO, NN, NON, PER, PO, STATA, STATO, TROPPO, UN, UNA, UNO, È
 
 Accorpamenti:
 {

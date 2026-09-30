@@ -1,9 +1,7 @@
 tipo,parola,schede,risposte_Q2_valide
 esatta,BELLO,2,11
-esatta,BEN,2,11
 esatta,CARINA,2,11
 esatta,INTERESSANTE,2,11
-esatta,MI,2,11
 esatta,ORGANIZZATA,2,11
 esatta,BELLA,1,11
 esatta,BELLISSIMA,1,11
@@ -16,10 +14,8 @@ esatta,SIMPATICA,1,11
 esatta,SONO,1,11
 esatta,TANTISSIMO,1,11
 accorpata,BELLO/BELLA,3,11
-accorpata,BEN,2,11
 accorpata,CARINO/A,2,11
 accorpata,INTERESSANTE,2,11
-accorpata,MI,2,11
 accorpata,ORGANIZZATO/A,2,11
 accorpata,BELLISSIMO/A,1,11
 accorpata,BUFFA,1,11
