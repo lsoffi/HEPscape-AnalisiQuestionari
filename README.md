@@ -174,17 +174,14 @@ Mettere le foto in una cartella, per esempio `photos/roma/`. Serve **una scheda 
 
 Un’**API** è un modo con cui un programma comunica con un servizio online. Qui lo script invia una foto a OpenAI e riceve una proposta di trascrizione delle risposte.
 
-La **chiave API** è un codice segreto che autorizza queste richieste e le associa al tuo progetto OpenAI. È simile a una password per il programma: chi la possiede potrebbe utilizzare il servizio a carico del tuo account. Non è la password di ChatGPT e non va inserita nell’Excel, nel README o nei file pubblicati su GitHub. La [guida ufficiale OpenAI](https://developers.openai.com/api/docs/quickstart) spiega come crearla e renderla disponibile al programma.
+La **chiave API** è un codice segreto che autorizza queste richieste e le associa al tuo progetto OpenAI. È simile a una password per il programma: chi la possiede potrebbe utilizzare il servizio tramite il tuo account. Non è la password di ChatGPT e non va inserita nell’Excel, nel README o nei file pubblicati su GitHub. La [guida ufficiale OpenAI](https://developers.openai.com/api/docs/quickstart) spiega come crearla e renderla disponibile al programma.
 
-### Come procurarsela e quanto costa
+### Come procurarsi la chiave
 
 1. Accedi alla [piattaforma API OpenAI](https://platform.openai.com/), oppure crea un account.
 2. Seleziona il progetto da usare e apri la sezione **API keys** per creare una chiave segreta. Se usi un progetto del tuo gruppo, chiedi al suo responsabile l’accesso previsto.
-3. Verifica la fatturazione nella sezione **Billing** della piattaforma API. **L’uso dell’API viene fatturato separatamente dall’abbonamento ChatGPT**: avere un abbonamento ChatGPT non configura automaticamente la fatturazione dello script. Vedi la [spiegazione ufficiale sulla fatturazione](https://help.openai.com/en/articles/9039756-managing-billing-for-chatgpt-and-the-api-platform).
-4. Conserva la chiave in un luogo privato. Rendila disponibile al programma sul tuo computer usando `OPENAI_API_KEY`, come nell’esempio sotto. Non inviarla in chat né condividerla nel repository.
-5. Scegli un modello disponibile nel tuo account che supporti immagini e output strutturati, e indica il suo nome in `OPENAI_MODEL`.
-
-Il software di questo repository non richiede un pagamento per l’uso. La **lettura delle nuove foto può generare costi OpenAI**, variabili in base al modello e alla quantità di dati elaborati. Consulta le [tariffe API aggiornate](https://developers.openai.com/api/docs/pricing) e controlla i consumi nella piattaforma. Non è indicato un prezzo fisso per questionario: fai prima una prova con poche foto e controlla il costo effettivo.
+3. Conserva la chiave in un luogo privato. Rendila disponibile al programma sul tuo computer usando `OPENAI_API_KEY`, come nell’esempio sotto. Non inviarla in chat né condividerla nel repository.
+4. Scegli un modello disponibile nel tuo account che supporti immagini e output strutturati, e indica il suo nome in `OPENAI_MODEL`.
 
 Se una chiave viene pubblicata per errore, revocala nella piattaforma e creane una nuova: eliminarla dal file non basta a renderla nuovamente segreta. Le [indicazioni ufficiali sulla gestione delle chiavi](https://developers.openai.com/api/docs/guides/production-best-practices) approfondiscono questo punto.
 
@@ -300,7 +297,7 @@ python -m pytest -q
 
 Un test automatico controlla che il programma produca il risultato previsto per un caso preparato. I test coprono la corrispondenza di tutte le righe dell’Excel storico, codifiche, mancanti, revisione, duplicati, unioni, testo che sembra una formula, richiesta API simulata e analisi di un lotto senza risposte valide. GitHub Actions ripete i test senza chiavi o chiamate API.
 
-**Il riconoscimento da foto non è stato validato con chiamate API reali in questa prima versione**, perché non era disponibile una chiave. La trascrizione dei 109 questionari è quella già verificata manualmente, non il risultato del nuovo estrattore. Nella prova simulata una risposta preparata sostituisce quella del servizio OpenAI: questo controlla il funzionamento del collegamento nel programma, senza inviare foto e senza costi API. Le prove simulate verificano il flusso software, non l’accuratezza della lettura. Il riconoscimento può sbagliare anche quando non segnala incertezza: controllare le schede prima dell’analisi. Variazioni di modello, versione e qualità delle foto possono cambiare le proposte.
+**Il riconoscimento da foto non è stato validato con chiamate API reali in questa prima versione**, perché non era disponibile una chiave. La trascrizione dei 109 questionari è quella già verificata manualmente, non il risultato del nuovo estrattore. Nella prova simulata una risposta preparata sostituisce quella del servizio OpenAI: questo controlla il funzionamento del collegamento nel programma, senza inviare foto al servizio. Le prove simulate verificano il flusso software, non l’accuratezza della lettura. Il riconoscimento può sbagliare anche quando non segnala incertezza: controllare le schede prima dell’analisi. Variazioni di modello, versione e qualità delle foto possono cambiare le proposte.
 
 Per la prima prova reale, usa poche foto e confronta ogni risposta proposta con il foglio: caselle selezionate, parole della Q2 e risposte vuote. Completa la revisione del punto 3 prima di generare l’Excel finale. Il superamento dei test software non garantisce che una crocetta o una parola manoscritta siano state lette correttamente.
 
