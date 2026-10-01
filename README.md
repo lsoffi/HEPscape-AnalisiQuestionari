@@ -6,9 +6,11 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
-Il workbook unico contiene **230 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma, 98 a Bari con kit Bari e 23 a Pisa con kit Pisa. Le risposte dei tre kit sono selezionabili separatamente.
+Il workbook unico contiene **276 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma, 98 a Bari con kit Bari, 23 a Pisa con kit Pisa e 46 a Terni con kit Perugia. Le risposte dei quattro kit sono selezionabili separatamente. Il lotto Terni è stato trascritto da `Survey1_Terni.pdf`; i sei punti dubbi sono stati chiariti in chat il 1 ottobre 2026. Il PDF originale non è pubblicato nel repository; i riferimenti alle pagine e le correzioni sono conservati nei dati.
 
-- [Workbook unico Roma + Bari + Pisa](data/ern2026/questionari.xlsx)
+- [Workbook unico Roma + Bari + Pisa + Perugia](data/ern2026/questionari.xlsx)
+- [Report Perugia / Terni con copertina e word wall](kits/perugia/terni/ERN2026/HEPscape_raccolta_grafici.pdf)
+- [Workbook del lotto Perugia / Terni](kits/perugia/terni/ERN2026/questionari_Perugia_Terni.xlsx)
 - [Report Pisa / Pisa con copertina e word wall](kits/pisa/pisa/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [Confronto Roma / Bari / Pisa a tre colori](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf)
 - [Workbook del solo kit Pisa](kits/pisa/pisa/ERN2026/questionari_Pisa.xlsx)
@@ -146,6 +148,8 @@ L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` 
 
 ## Confronto diretto Roma, Bari e Pisa
 
+Questo confronto comprende Roma, Bari e Pisa; il lotto Perugia/Terni è disponibile nel workbook unico e nel report dedicato, ma non è incluso in questo PDF.
+
 [PDF di confronto a tre kit](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf): tutte le 10 domande chiuse e risposte mancanti (inclusa Q2), con colori costanti per kit, percentuali e denominatori validi. PNG/SVG e tabella CSV sono nella stessa cartella.
 
 Per rigenerarlo, dalla cartella del repository con l’ambiente attivato:
@@ -166,6 +170,12 @@ La precedente raccolta Roma/Bari resta disponibile in `reports/confronto-roma-ba
 hepscape plots data/ern2026/questionari.xlsx --kit Pisa --city Pisa --event "Evento ERNEST - ERN 2026" --out kits/pisa/pisa/ERN2026
 ```
 
+Per rigenerare il report Perugia / Terni:
+
+```sh
+hepscape plots data/ern2026/questionari.xlsx --kit Perugia --city Terni --event "Evento ERNEST - ERN 2026" --out kits/perugia/terni/ERN2026
+```
+
 ## 4. Unire lotti verificati dello stesso evento
 
 ```sh
@@ -173,10 +183,10 @@ hepscape merge data/ern2026/questionari_verificati.json work/roma-avezzano-02/ve
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
-I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json`, `data/ern2026/lotti/bari.json` e `data/ern2026/lotti/pisa.json`. Per ricreare il workbook unico:
+I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json`, `data/ern2026/lotti/bari.json`, `data/ern2026/lotti/pisa.json` e `data/ern2026/lotti/perugia_terni.json`. Per ricreare il workbook unico:
 
 ```sh
-hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json data/ern2026/lotti/pisa.json --out work/uniti.json
+hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json data/ern2026/lotti/pisa.json data/ern2026/lotti/perugia_terni.json --out work/uniti.json
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
