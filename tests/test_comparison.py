@@ -25,6 +25,7 @@ def test_zero_difference_retains_uncertainty():
 
 def test_word_presence_and_editorial_exclusion():
     assert tokens("Bella BELLA e curiosità [incerto]") == {"BELLO/BELLA", "CURIOSITÀ"}
+    assert tokens("sono più ben mi tutto grazie ingressi interessante") == {"INTERESSANTE"}
 
 
 def test_colors_follow_kit_identity():
@@ -47,15 +48,20 @@ def test_four_kit_wordwall_preserves_counts_and_colors(tmp_path):
     from hepscape.comparison_wordwall import generate
 
     kits = ["Roma", "Perugia", "Bari", "Pisa"]
-    texts = [["COMUNE " + k.upper()] for k in kits]
+    texts = [
+        ["INTERESSANTE COINVOLGENTE"],
+        ["INTERESSANTE CURIOSA"],
+        ["INTERESSANTE DIVERTENTE"],
+        ["INTERESSANTE PUZZLE"],
+    ]
     generate(texts, kits, tmp_path, "Test")
     with (tmp_path / "word_wall_insieme.csv").open(encoding="utf-8-sig") as f:
         words = {r["parola"]: r for r in csv.DictReader(f)}
-    assert words["COMUNE"]["totale"] == "4"
-    assert words["PERUGIA"]["Perugia"] == "1"
-    assert words["PERUGIA"]["Roma"] == "0"
+    assert words["INTERESSANTE"]["totale"] == "4"
+    assert words["CURIOSO/A"]["Perugia"] == "1"
+    assert words["CURIOSO/A"]["Roma"] == "0"
     for kit in kits:
-        assert float(words["COMUNE"][f"quota_{kit}"]) == 0.25
+        assert float(words["INTERESSANTE"][f"quota_{kit}"]) == 0.25
     svg = (tmp_path / "12_word_wall_insieme.svg").read_text()
     assert "#39754B" in svg and "Pisa: 1 risposte" in svg
 
@@ -64,15 +70,15 @@ def test_three_kit_wordwall_preserves_exclusive_words(tmp_path):
     import csv
     from hepscape.comparison_wordwall import generate
 
-    texts = [["COMUNE ROMA"], ["COMUNE BARI"], ["COMUNE PISA"]]
+    texts = [["INTERESSANTE IMMERSIVA"], ["INTERESSANTE CURIOSA"], ["INTERESSANTE PUZZLE"]]
     generate(texts, ["Roma", "Bari", "Pisa"], tmp_path, "Test")
     with (tmp_path / "word_wall_insieme.csv").open(encoding="utf-8-sig") as f:
         words = {r["parola"]: r for r in csv.DictReader(f)}
-    assert set(words) == {"COMUNE", "ROMA", "BARI", "PISA"}
-    assert words["PISA"]["Pisa"] == "1"
-    assert words["PISA"]["Roma"] == words["PISA"]["Bari"] == "0"
-    assert words["COMUNE"]["totale"] == "3"
-    assert float(words["COMUNE"]["quota_Pisa"]) == pytest.approx(1 / 3)
+    assert set(words) == {"INTERESSANTE", "IMMERSIVO/A", "CURIOSO/A", "PUZZLE"}
+    assert words["PUZZLE"]["Pisa"] == "1"
+    assert words["PUZZLE"]["Roma"] == words["PUZZLE"]["Bari"] == "0"
+    assert words["INTERESSANTE"]["totale"] == "3"
+    assert float(words["INTERESSANTE"]["quota_Pisa"]) == pytest.approx(1 / 3)
 
 
 def test_morphological_groups_count_once_per_answer():

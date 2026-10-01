@@ -1,11 +1,11 @@
 ﻿analisi,domanda,sottogruppo,kit,risposta,conteggio,validi,percentuale
-05_eta,Q1,Meno di 11,Roma,codice 0,6,15,40.0
-05_eta,Q1,11–14,Roma,codice 0,11,18,61.111111111111114
-05_eta,Q1,15–18,Roma,codice 0,11,28,39.285714285714285
-05_eta,Q1,19–25,Roma,codice 0,3,4,75.0
-05_eta,Q1,26–40,Roma,codice 0,9,10,90.0
-05_eta,Q1,41–60,Roma,codice 0,21,27,77.77777777777777
-05_eta,Q1,Più di 60,Roma,codice 0,3,5,60.0
+05_eta,Q1,Meno di 11,Roma,codice 0,8,17,47.05882352941177
+05_eta,Q1,11–14,Roma,codice 0,12,19,63.1578947368421
+05_eta,Q1,15–18,Roma,codice 0,25,60,41.666666666666664
+05_eta,Q1,19–25,Roma,codice 0,4,8,50.0
+05_eta,Q1,26–40,Roma,codice 0,10,11,90.9090909090909
+05_eta,Q1,41–60,Roma,codice 0,28,34,82.3529411764706
+05_eta,Q1,Più di 60,Roma,codice 0,5,7,71.42857142857143
 05_eta,Q1,Preferisco non rispondere,Roma,codice 0,0,0,
 05_eta,Q1,Meno di 11,Bari,codice 0,12,24,50.0
 05_eta,Q1,11–14,Bari,codice 0,3,20,15.0
@@ -23,13 +23,13 @@
 05_eta,Q1,41–60,Pisa,codice 0,0,0,
 05_eta,Q1,Più di 60,Pisa,codice 0,0,0,
 05_eta,Q1,Preferisco non rispondere,Pisa,codice 0,0,0,
-05_eta,Q3,Meno di 11,Roma,codice 0,8,14,57.142857142857146
-05_eta,Q3,11–14,Roma,codice 0,13,18,72.22222222222223
-05_eta,Q3,15–18,Roma,codice 0,15,28,53.57142857142857
-05_eta,Q3,19–25,Roma,codice 0,3,4,75.0
-05_eta,Q3,26–40,Roma,codice 0,9,10,90.0
-05_eta,Q3,41–60,Roma,codice 0,22,27,81.48148148148148
-05_eta,Q3,Più di 60,Roma,codice 0,1,5,20.0
+05_eta,Q3,Meno di 11,Roma,codice 0,10,16,62.5
+05_eta,Q3,11–14,Roma,codice 0,13,19,68.42105263157895
+05_eta,Q3,15–18,Roma,codice 0,28,60,46.666666666666664
+05_eta,Q3,19–25,Roma,codice 0,5,8,62.5
+05_eta,Q3,26–40,Roma,codice 0,10,11,90.9090909090909
+05_eta,Q3,41–60,Roma,codice 0,26,34,76.47058823529412
+05_eta,Q3,Più di 60,Roma,codice 0,2,7,28.571428571428573
 05_eta,Q3,Preferisco non rispondere,Roma,codice 0,0,0,
 05_eta,Q3,Meno di 11,Bari,codice 0,12,24,50.0
 05_eta,Q3,11–14,Bari,codice 0,6,20,30.0
@@ -47,13 +47,13 @@
 05_eta,Q3,41–60,Pisa,codice 0,0,0,
 05_eta,Q3,Più di 60,Pisa,codice 0,0,0,
 05_eta,Q3,Preferisco non rispondere,Pisa,codice 0,0,0,
-05_eta,Q4,Meno di 11,Roma,codice 0,10,13,76.92307692307692
-05_eta,Q4,11–14,Roma,codice 0,11,18,61.111111111111114
-05_eta,Q4,15–18,Roma,codice 0,18,28,64.28571428571429
-05_eta,Q4,19–25,Roma,codice 0,3,4,75.0
-05_eta,Q4,26–40,Roma,codice 0,9,10,90.0
-05_eta,Q4,41–60,Roma,codice 0,22,27,81.48148148148148
-05_eta,Q4,Più di 60,Roma,codice 0,2,5,40.0
+05_eta,Q4,Meno di 11,Roma,codice 0,12,15,80.0
+05_eta,Q4,11–14,Roma,codice 0,11,19,57.89473684210526
+05_eta,Q4,15–18,Roma,codice 0,32,60,53.333333333333336
+05_eta,Q4,19–25,Roma,codice 0,5,8,62.5
+05_eta,Q4,26–40,Roma,codice 0,10,11,90.9090909090909
+05_eta,Q4,41–60,Roma,codice 0,29,34,85.29411764705883
+05_eta,Q4,Più di 60,Roma,codice 0,4,7,57.142857142857146
 05_eta,Q4,Preferisco non rispondere,Roma,codice 0,0,0,
 05_eta,Q4,Meno di 11,Bari,codice 0,14,24,58.333333333333336
 05_eta,Q4,11–14,Bari,codice 0,6,20,30.0
@@ -71,13 +71,13 @@
 05_eta,Q4,41–60,Pisa,codice 0,0,0,
 05_eta,Q4,Più di 60,Pisa,codice 0,0,0,
 05_eta,Q4,Preferisco non rispondere,Pisa,codice 0,0,0,
-05_eta,Q5,Meno di 11,Roma,codice 0,8,15,53.333333333333336
-05_eta,Q5,11–14,Roma,codice 0,11,18,61.111111111111114
-05_eta,Q5,15–18,Roma,codice 0,18,28,64.28571428571429
-05_eta,Q5,19–25,Roma,codice 0,4,4,100.0
-05_eta,Q5,26–40,Roma,codice 0,9,10,90.0
-05_eta,Q5,41–60,Roma,codice 0,22,27,81.48148148148148
-05_eta,Q5,Più di 60,Roma,codice 0,3,5,60.0
+05_eta,Q5,Meno di 11,Roma,codice 0,10,17,58.8235294117647
+05_eta,Q5,11–14,Roma,codice 0,12,19,63.1578947368421
+05_eta,Q5,15–18,Roma,codice 0,31,60,51.666666666666664
+05_eta,Q5,19–25,Roma,codice 0,6,8,75.0
+05_eta,Q5,26–40,Roma,codice 0,10,11,90.9090909090909
+05_eta,Q5,41–60,Roma,codice 0,29,34,85.29411764705883
+05_eta,Q5,Più di 60,Roma,codice 0,5,7,71.42857142857143
 05_eta,Q5,Preferisco non rispondere,Roma,codice 0,0,0,
 05_eta,Q5,Meno di 11,Bari,codice 0,10,24,41.666666666666664
 05_eta,Q5,11–14,Bari,codice 0,10,20,50.0
@@ -95,403 +95,193 @@
 05_eta,Q5,41–60,Pisa,codice 0,0,0,
 05_eta,Q5,Più di 60,Pisa,codice 0,0,0,
 05_eta,Q5,Preferisco non rispondere,Pisa,codice 0,0,0,
-parole,Q2,forme accorpate,Roma,ABBASTANZA,0,91,0.0
-parole,Q2,forme accorpate,Roma,ACCATTIVANTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,AFFASCINANTE,3,91,3.2967032967032965
-parole,Q2,forme accorpate,Roma,AL,0,91,0.0
-parole,Q2,forme accorpate,Roma,ALL,0,91,0.0
-parole,Q2,forme accorpate,Roma,ALTERNATIVA,0,91,0.0
-parole,Q2,forme accorpate,Roma,ANCHE,0,91,0.0
-parole,Q2,forme accorpate,Roma,APPASSIONANTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,ASILO,0,91,0.0
-parole,Q2,forme accorpate,Roma,ASSICURARE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,AVVICINA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,AVVINCENTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,BELISSIMO,0,91,0.0
-parole,Q2,forme accorpate,Roma,BELLISSIMO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,BELLO/BELLA,14,91,15.384615384615385
-parole,Q2,forme accorpate,Roma,BUFFA,0,91,0.0
-parole,Q2,forme accorpate,Roma,BUONO/A,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CACCIA,0,91,0.0
-parole,Q2,forme accorpate,Roma,CAPITO,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CARINO/A,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CASCHETTO,0,91,0.0
-parole,Q2,forme accorpate,Roma,COINVOLGENTE,15,91,16.483516483516482
-parole,Q2,forme accorpate,Roma,COMPLESSI,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CONCENTRAZIONE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CONCETTI,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,CONOSCEVO,0,91,0.0
-parole,Q2,forme accorpate,Roma,CORTO,0,91,0.0
-parole,Q2,forme accorpate,Roma,CULTURA,0,91,0.0
-parole,Q2,forme accorpate,Roma,CURIOSITÀ,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,CURIOSO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,DELUSIONE,0,91,0.0
-parole,Q2,forme accorpate,Roma,DIDATTICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,DIFFICILE,0,91,0.0
-parole,Q2,forme accorpate,Roma,DINAMICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,DIVERTENTE,29,91,31.86813186813187
-parole,Q2,forme accorpate,Roma,DIVERTIMENTO,0,91,0.0
-parole,Q2,forme accorpate,Roma,DIVERTITO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,DIVULGAZIONE,0,91,0.0
-parole,Q2,forme accorpate,Roma,EDUCATIVO/A,3,91,3.2967032967032965
-parole,Q2,forme accorpate,Roma,EFFICACE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,EMOZIONANTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,ENERGETICA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,ENTUSIASMANTE,3,91,3.2967032967032965
-parole,Q2,forme accorpate,Roma,ERA,0,91,0.0
-parole,Q2,forme accorpate,Roma,ESCAPE,0,91,0.0
-parole,Q2,forme accorpate,Roma,ESPERIMENTI,0,91,0.0
-parole,Q2,forme accorpate,Roma,FANTASTICO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,FATTA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,FELICE,0,91,0.0
-parole,Q2,forme accorpate,Roma,FELICITÀ,0,91,0.0
-parole,Q2,forme accorpate,Roma,FORMATIVO/A,5,91,5.4945054945054945
-parole,Q2,forme accorpate,Roma,FORTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,FUTURISTICO,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,GIOCOSO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,GIOVANILE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,GIÀ,0,91,0.0
-parole,Q2,forme accorpate,Roma,IMMERSIVO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,IMPARARE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,INCLUSIVO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,INDIMENTICABILE,0,91,0.0
-parole,Q2,forme accorpate,Roma,INFANTILE,0,91,0.0
-parole,Q2,forme accorpate,Roma,INFORMATIVO/A,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,INGRESSI,0,91,0.0
-parole,Q2,forme accorpate,Roma,INNOVATIVO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,INNOVAZIONE,0,91,0.0
-parole,Q2,forme accorpate,Roma,INSEGNATIVA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,INTELLIGENTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,INTERATTIVO/A,3,91,3.2967032967032965
-parole,Q2,forme accorpate,Roma,INTERESSANTE,41,91,45.05494505494506
-parole,Q2,forme accorpate,Roma,INTRATTENITIVA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,INTRIGANTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,ISTRUTTIVO/A,10,91,10.989010989010989
-parole,Q2,forme accorpate,Roma,LOGICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,MAGNIFICA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,MAL,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,MANIERA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,MANO,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,MATEMATICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,MATEMATICO,0,91,0.0
-parole,Q2,forme accorpate,Roma,MEGLIO,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,MIA,0,91,0.0
-parole,Q2,forme accorpate,Roma,NIENTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,NOIOSO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,NOVITÀ,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,NUOVO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,ORGANIZZATO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,ORIGINALE,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,OTTIMO/A,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,PAROLE,0,91,0.0
-parole,Q2,forme accorpate,Roma,PARTICOLARE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,PERÒ,0,91,0.0
-parole,Q2,forme accorpate,Roma,PIACEVOLE,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,PIACIUTO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,PIÙ,0,91,0.0
-parole,Q2,forme accorpate,Roma,POCO,0,91,0.0
-parole,Q2,forme accorpate,Roma,PRECISA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,PRIMA,0,91,0.0
-parole,Q2,forme accorpate,Roma,PROSSIMA,0,91,0.0
-parole,Q2,forme accorpate,Roma,PUZZLE,0,91,0.0
-parole,Q2,forme accorpate,Roma,REALISTICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,RICAPITOLARE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,ROOM,0,91,0.0
-parole,Q2,forme accorpate,Roma,SCHIENA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,SCIENTIFICO/A,0,91,0.0
-parole,Q2,forme accorpate,Roma,SEDIE,0,91,0.0
-parole,Q2,forme accorpate,Roma,SEGUONO,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,SEMPLICE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,SIMPATICO/A,4,91,4.395604395604396
-parole,Q2,forme accorpate,Roma,SONO,0,91,0.0
-parole,Q2,forme accorpate,Roma,SPAVENTATA,0,91,0.0
-parole,Q2,forme accorpate,Roma,SPAZIALE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,SPECIALE,0,91,0.0
-parole,Q2,forme accorpate,Roma,STANCHEZZA,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,STATICA,0,91,0.0
-parole,Q2,forme accorpate,Roma,STIMOLANTE,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,STUPEFACENTE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,STUPENDO/A,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,SUSPANCE,0,91,0.0
-parole,Q2,forme accorpate,Roma,TANTISSIMO,0,91,0.0
-parole,Q2,forme accorpate,Roma,TANTO,0,91,0.0
-parole,Q2,forme accorpate,Roma,TESORO,0,91,0.0
-parole,Q2,forme accorpate,Roma,TOP,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,TORNATI,0,91,0.0
-parole,Q2,forme accorpate,Roma,TUTTI,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,TUTTO,0,91,0.0
-parole,Q2,forme accorpate,Roma,UNICO/A,2,91,2.197802197802198
-parole,Q2,forme accorpate,Roma,UTILE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,VELOCE,1,91,1.098901098901099
-parole,Q2,forme accorpate,Roma,VISIVA,0,91,0.0
-parole,Q2,forme accorpate,Roma,VOLTA,0,91,0.0
-parole,Q2,forme accorpate,Roma,WOW,0,91,0.0
-parole,Q2,forme accorpate,Bari,ABBASTANZA,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Roma,ACCATTIVANTE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,AFFASCINANTE,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,ALTERNATIVO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,APPASSIONANTE,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,AVVINCENTE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,BELLISSIMO/A,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,BELLO/BELLA,23,134,17.16417910447761
+parole,Q2,forme accorpate,Roma,BUFFO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,BUONO/A,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,CARINO/A,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,COINVOLGENTE,20,134,14.925373134328359
+parole,Q2,forme accorpate,Roma,COMPLESSO/A,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,CONCENTRAZIONE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,CORTO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,CULTURA,0,134,0.0
+parole,Q2,forme accorpate,Roma,CURIOSITÀ,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,CURIOSO/A,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,DELUSIONE,0,134,0.0
+parole,Q2,forme accorpate,Roma,DIDATTICO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,DIFFICILE,0,134,0.0
+parole,Q2,forme accorpate,Roma,DINAMICO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,DIVERTENTE,37,134,27.611940298507463
+parole,Q2,forme accorpate,Roma,DIVERTITO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,DIVULGAZIONE,0,134,0.0
+parole,Q2,forme accorpate,Roma,EDUCATIVO/A,6,134,4.477611940298507
+parole,Q2,forme accorpate,Roma,EMOZIONANTE,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,ENTUSIASMANTE,5,134,3.7313432835820897
+parole,Q2,forme accorpate,Roma,FANTASTICO/A,5,134,3.7313432835820897
+parole,Q2,forme accorpate,Roma,FELICITÀ,0,134,0.0
+parole,Q2,forme accorpate,Roma,FORMATIVO/A,5,134,3.7313432835820897
+parole,Q2,forme accorpate,Roma,GIOCOSO/A,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,IMMERSIVO/A,4,134,2.985074626865672
+parole,Q2,forme accorpate,Roma,IMPARARE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,INCLUSIVO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,INDIMENTICABILE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,INFANTILE,0,134,0.0
+parole,Q2,forme accorpate,Roma,INFORMATIVO/A,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,INNOVATIVO/A,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,INTELLIGENTE,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,INTERATTIVO/A,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,INTERESSANTE,60,134,44.776119402985074
+parole,Q2,forme accorpate,Roma,INTRIGANTE,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,ISTRUTTIVO/A,11,134,8.208955223880597
+parole,Q2,forme accorpate,Roma,NOIOSO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,NOVITÀ,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,NUOVO/A,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,ORGANIZZATO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,ORIGINALE,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,OTTIMO/A,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,PARTICOLARE,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,PIACEVOLE,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,PIACIUTO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,PUZZLE,0,134,0.0
+parole,Q2,forme accorpate,Roma,SCIENTIFICO/A,0,134,0.0
+parole,Q2,forme accorpate,Roma,SENSAZIONALE,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,SIMPATICO/A,5,134,3.7313432835820897
+parole,Q2,forme accorpate,Roma,STIMOLANTE,5,134,3.7313432835820897
+parole,Q2,forme accorpate,Roma,STUPENDO/A,2,134,1.492537313432836
+parole,Q2,forme accorpate,Roma,TOP,1,134,0.746268656716418
+parole,Q2,forme accorpate,Roma,UNICO/A,3,134,2.2388059701492535
+parole,Q2,forme accorpate,Roma,UTILE,1,134,0.746268656716418
 parole,Q2,forme accorpate,Bari,ACCATTIVANTE,0,66,0.0
 parole,Q2,forme accorpate,Bari,AFFASCINANTE,0,66,0.0
-parole,Q2,forme accorpate,Bari,AL,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ALL,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ALTERNATIVA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ANCHE,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,ALTERNATIVO/A,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,APPASSIONANTE,0,66,0.0
-parole,Q2,forme accorpate,Bari,ASILO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ASSICURARE,0,66,0.0
-parole,Q2,forme accorpate,Bari,AVVICINA,0,66,0.0
 parole,Q2,forme accorpate,Bari,AVVINCENTE,0,66,0.0
-parole,Q2,forme accorpate,Bari,BELISSIMO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,BELLISSIMO/A,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,BELLISSIMO/A,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,BELLO/BELLA,18,66,27.272727272727273
-parole,Q2,forme accorpate,Bari,BUFFA,0,66,0.0
+parole,Q2,forme accorpate,Bari,BUFFO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,BUONO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,CACCIA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,CAPITO,0,66,0.0
 parole,Q2,forme accorpate,Bari,CARINO/A,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,CASCHETTO,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,COINVOLGENTE,5,66,7.575757575757576
-parole,Q2,forme accorpate,Bari,COMPLESSI,0,66,0.0
+parole,Q2,forme accorpate,Bari,COMPLESSO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,CONCENTRAZIONE,0,66,0.0
-parole,Q2,forme accorpate,Bari,CONCETTI,0,66,0.0
-parole,Q2,forme accorpate,Bari,CONOSCEVO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,CORTO,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,CORTO/A,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,CULTURA,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,CURIOSITÀ,5,66,7.575757575757576
 parole,Q2,forme accorpate,Bari,CURIOSO/A,3,66,4.545454545454546
 parole,Q2,forme accorpate,Bari,DELUSIONE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,DIDATTICA,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,DIDATTICO/A,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,DIFFICILE,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,DINAMICA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,DIVERTENTE,14,66,21.21212121212121
-parole,Q2,forme accorpate,Bari,DIVERTIMENTO,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,DINAMICO/A,1,66,1.5151515151515151
+parole,Q2,forme accorpate,Bari,DIVERTENTE,15,66,22.727272727272727
 parole,Q2,forme accorpate,Bari,DIVERTITO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,DIVULGAZIONE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,EDUCATIVO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,EFFICACE,0,66,0.0
 parole,Q2,forme accorpate,Bari,EMOZIONANTE,0,66,0.0
-parole,Q2,forme accorpate,Bari,ENERGETICA,0,66,0.0
 parole,Q2,forme accorpate,Bari,ENTUSIASMANTE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ERA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ESCAPE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,ESPERIMENTI,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,FANTASTICO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,FATTA,0,66,0.0
-parole,Q2,forme accorpate,Bari,FELICE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,FELICITÀ,3,66,4.545454545454546
 parole,Q2,forme accorpate,Bari,FORMATIVO/A,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,FORTE,0,66,0.0
-parole,Q2,forme accorpate,Bari,FUTURISTICO,0,66,0.0
 parole,Q2,forme accorpate,Bari,GIOCOSO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,GIOVANILE,0,66,0.0
-parole,Q2,forme accorpate,Bari,GIÀ,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,IMMERSIVO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,IMPARARE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,INCLUSIVO/A,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,INDIMENTICABILE,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,INFANTILE,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,INFORMATIVO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,INGRESSI,0,66,0.0
 parole,Q2,forme accorpate,Bari,INNOVATIVO/A,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,INNOVAZIONE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,INSEGNATIVA,0,66,0.0
 parole,Q2,forme accorpate,Bari,INTELLIGENTE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,INTERATTIVO/A,4,66,6.0606060606060606
 parole,Q2,forme accorpate,Bari,INTERESSANTE,22,66,33.333333333333336
-parole,Q2,forme accorpate,Bari,INTRATTENITIVA,0,66,0.0
 parole,Q2,forme accorpate,Bari,INTRIGANTE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,ISTRUTTIVO/A,3,66,4.545454545454546
-parole,Q2,forme accorpate,Bari,LOGICA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,MAGNIFICA,0,66,0.0
-parole,Q2,forme accorpate,Bari,MAL,0,66,0.0
-parole,Q2,forme accorpate,Bari,MANIERA,0,66,0.0
-parole,Q2,forme accorpate,Bari,MANO,0,66,0.0
-parole,Q2,forme accorpate,Bari,MATEMATICA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,MATEMATICO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,MEGLIO,0,66,0.0
-parole,Q2,forme accorpate,Bari,MIA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,NIENTE,0,66,0.0
 parole,Q2,forme accorpate,Bari,NOIOSO/A,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,NOVITÀ,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,NUOVO/A,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,ORGANIZZATO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,ORIGINALE,0,66,0.0
 parole,Q2,forme accorpate,Bari,OTTIMO/A,0,66,0.0
-parole,Q2,forme accorpate,Bari,PAROLE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,PARTICOLARE,0,66,0.0
-parole,Q2,forme accorpate,Bari,PERÒ,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,PIACEVOLE,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,PIACIUTO/A,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,PIÙ,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,POCO,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,PRECISA,0,66,0.0
-parole,Q2,forme accorpate,Bari,PRIMA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,PROSSIMA,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,PUZZLE,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,REALISTICA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,RICAPITOLARE,0,66,0.0
-parole,Q2,forme accorpate,Bari,ROOM,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,SCHIENA,0,66,0.0
 parole,Q2,forme accorpate,Bari,SCIENTIFICO/A,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,SEDIE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,SEGUONO,0,66,0.0
-parole,Q2,forme accorpate,Bari,SEMPLICE,0,66,0.0
+parole,Q2,forme accorpate,Bari,SENSAZIONALE,0,66,0.0
 parole,Q2,forme accorpate,Bari,SIMPATICO/A,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,SONO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,SPAVENTATA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,SPAZIALE,0,66,0.0
-parole,Q2,forme accorpate,Bari,SPECIALE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,STANCHEZZA,0,66,0.0
-parole,Q2,forme accorpate,Bari,STATICA,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,STIMOLANTE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,STUPEFACENTE,0,66,0.0
 parole,Q2,forme accorpate,Bari,STUPENDO/A,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,SUSPANCE,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,TANTISSIMO,0,66,0.0
-parole,Q2,forme accorpate,Bari,TANTO,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,TESORO,1,66,1.5151515151515151
 parole,Q2,forme accorpate,Bari,TOP,2,66,3.0303030303030303
-parole,Q2,forme accorpate,Bari,TORNATI,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,TUTTI,0,66,0.0
-parole,Q2,forme accorpate,Bari,TUTTO,2,66,3.0303030303030303
 parole,Q2,forme accorpate,Bari,UNICO/A,0,66,0.0
 parole,Q2,forme accorpate,Bari,UTILE,0,66,0.0
-parole,Q2,forme accorpate,Bari,VELOCE,0,66,0.0
-parole,Q2,forme accorpate,Bari,VISIVA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,VOLTA,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Bari,WOW,1,66,1.5151515151515151
-parole,Q2,forme accorpate,Pisa,ABBASTANZA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,ACCATTIVANTE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,AFFASCINANTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,AL,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ALL,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ALTERNATIVA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ANCHE,0,11,0.0
+parole,Q2,forme accorpate,Pisa,ALTERNATIVO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,APPASSIONANTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ASILO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ASSICURARE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,AVVICINA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,AVVINCENTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,BELISSIMO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,BELLISSIMO/A,1,11,9.090909090909092
 parole,Q2,forme accorpate,Pisa,BELLO/BELLA,3,11,27.272727272727273
-parole,Q2,forme accorpate,Pisa,BUFFA,1,11,9.090909090909092
+parole,Q2,forme accorpate,Pisa,BUFFO/A,1,11,9.090909090909092
 parole,Q2,forme accorpate,Pisa,BUONO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,CACCIA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,CAPITO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,CARINO/A,2,11,18.181818181818183
-parole,Q2,forme accorpate,Pisa,CASCHETTO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,COINVOLGENTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,COMPLESSI,0,11,0.0
+parole,Q2,forme accorpate,Pisa,COMPLESSO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,CONCENTRAZIONE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,CONCETTI,0,11,0.0
-parole,Q2,forme accorpate,Pisa,CONOSCEVO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,CORTO,0,11,0.0
+parole,Q2,forme accorpate,Pisa,CORTO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,CULTURA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,CURIOSITÀ,0,11,0.0
 parole,Q2,forme accorpate,Pisa,CURIOSO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,DELUSIONE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,DIDATTICA,0,11,0.0
+parole,Q2,forme accorpate,Pisa,DIDATTICO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,DIFFICILE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,DINAMICA,0,11,0.0
+parole,Q2,forme accorpate,Pisa,DINAMICO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,DIVERTENTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,DIVERTIMENTO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,DIVERTITO/A,1,11,9.090909090909092
 parole,Q2,forme accorpate,Pisa,DIVULGAZIONE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,EDUCATIVO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,EFFICACE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,EMOZIONANTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ENERGETICA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,ENTUSIASMANTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ERA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ESCAPE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ESPERIMENTI,0,11,0.0
 parole,Q2,forme accorpate,Pisa,FANTASTICO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,FATTA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,FELICE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,FELICITÀ,0,11,0.0
 parole,Q2,forme accorpate,Pisa,FORMATIVO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,FORTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,FUTURISTICO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,GIOCOSO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,GIOVANILE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,GIÀ,0,11,0.0
 parole,Q2,forme accorpate,Pisa,IMMERSIVO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,IMPARARE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INCLUSIVO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INDIMENTICABILE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INFANTILE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INFORMATIVO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,INGRESSI,1,11,9.090909090909092
 parole,Q2,forme accorpate,Pisa,INNOVATIVO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,INNOVAZIONE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,INSEGNATIVA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INTELLIGENTE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INTERATTIVO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INTERESSANTE,2,11,18.181818181818183
-parole,Q2,forme accorpate,Pisa,INTRATTENITIVA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,INTRIGANTE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,ISTRUTTIVO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,LOGICA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MAGNIFICA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MAL,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MANIERA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MANO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MATEMATICA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MATEMATICO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MEGLIO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,MIA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,NIENTE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,NOIOSO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,NOVITÀ,0,11,0.0
 parole,Q2,forme accorpate,Pisa,NUOVO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,ORGANIZZATO/A,2,11,18.181818181818183
 parole,Q2,forme accorpate,Pisa,ORIGINALE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,OTTIMO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,PAROLE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,PARTICOLARE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,PERÒ,0,11,0.0
 parole,Q2,forme accorpate,Pisa,PIACEVOLE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,PIACIUTO/A,1,11,9.090909090909092
-parole,Q2,forme accorpate,Pisa,PIÙ,0,11,0.0
-parole,Q2,forme accorpate,Pisa,POCO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,PRECISA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,PRIMA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,PROSSIMA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,PUZZLE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,REALISTICA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,RICAPITOLARE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,ROOM,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SCHIENA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,SCIENTIFICO/A,1,11,9.090909090909092
-parole,Q2,forme accorpate,Pisa,SEDIE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SEGUONO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SEMPLICE,0,11,0.0
+parole,Q2,forme accorpate,Pisa,SENSAZIONALE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,SIMPATICO/A,1,11,9.090909090909092
-parole,Q2,forme accorpate,Pisa,SONO,1,11,9.090909090909092
-parole,Q2,forme accorpate,Pisa,SPAVENTATA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SPAZIALE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SPECIALE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,STANCHEZZA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,STATICA,0,11,0.0
 parole,Q2,forme accorpate,Pisa,STIMOLANTE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,STUPEFACENTE,0,11,0.0
 parole,Q2,forme accorpate,Pisa,STUPENDO/A,0,11,0.0
-parole,Q2,forme accorpate,Pisa,SUSPANCE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,TANTISSIMO,1,11,9.090909090909092
-parole,Q2,forme accorpate,Pisa,TANTO,0,11,0.0
-parole,Q2,forme accorpate,Pisa,TESORO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,TOP,0,11,0.0
-parole,Q2,forme accorpate,Pisa,TORNATI,0,11,0.0
-parole,Q2,forme accorpate,Pisa,TUTTI,0,11,0.0
-parole,Q2,forme accorpate,Pisa,TUTTO,0,11,0.0
 parole,Q2,forme accorpate,Pisa,UNICO/A,0,11,0.0
 parole,Q2,forme accorpate,Pisa,UTILE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,VELOCE,0,11,0.0
-parole,Q2,forme accorpate,Pisa,VISIVA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,VOLTA,0,11,0.0
-parole,Q2,forme accorpate,Pisa,WOW,0,11,0.0
-aumenti,Q4+Q5,coppie valide,Roma,Più curiosità e più interesse,63,106,59.43396226415094
-aumenti,Q4+Q5,coppie valide,Roma,Solo più curiosità,12,106,11.320754716981131
-aumenti,Q4+Q5,coppie valide,Roma,Solo più interesse,10,106,9.433962264150944
-aumenti,Q4+Q5,coppie valide,Roma,Nessuno dei due aumenti,21,106,19.81132075471698
+aumenti,Q4+Q5,coppie valide,Roma,Più curiosità e più interesse,87,155,56.12903225806452
+aumenti,Q4+Q5,coppie valide,Roma,Solo più curiosità,16,155,10.32258064516129
+aumenti,Q4+Q5,coppie valide,Roma,Solo più interesse,14,155,9.03225806451613
+aumenti,Q4+Q5,coppie valide,Roma,Nessuno dei due aumenti,38,155,24.516129032258064
 aumenti,Q4+Q5,coppie valide,Bari,Più curiosità e più interesse,35,97,36.08247422680412
 aumenti,Q4+Q5,coppie valide,Bari,Solo più curiosità,13,97,13.402061855670103
 aumenti,Q4+Q5,coppie valide,Bari,Solo più interesse,10,97,10.309278350515465
@@ -500,15 +290,15 @@ aumenti,Q4+Q5,coppie valide,Pisa,Più curiosità e più interesse,7,23,30.434782
 aumenti,Q4+Q5,coppie valide,Pisa,Solo più curiosità,5,23,21.73913043478261
 aumenti,Q4+Q5,coppie valide,Pisa,Solo più interesse,3,23,13.043478260869565
 aumenti,Q4+Q5,coppie valide,Pisa,Nessuno dei due aumenti,8,23,34.78260869565217
-facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta tantissimo,49,79,62.0253164556962
-facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta,29,79,36.70886075949367
-facilita_gradimento,Q1,"Sì, molto",Roma,Non mi è piaciuta molto,1,79,1.2658227848101267
-facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta tantissimo,15,26,57.69230769230769
-facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta,11,26,42.30769230769231
-facilita_gradimento,Q1,In parte,Roma,Non mi è piaciuta molto,0,26,0.0
-facilita_gradimento,Q1,No,Roma,Mi è piaciuta tantissimo,0,2,0.0
-facilita_gradimento,Q1,No,Roma,Mi è piaciuta,2,2,100.0
-facilita_gradimento,Q1,No,Roma,Non mi è piaciuta molto,0,2,0.0
+facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta tantissimo,72,118,61.016949152542374
+facilita_gradimento,Q1,"Sì, molto",Roma,Mi è piaciuta,45,118,38.13559322033898
+facilita_gradimento,Q1,"Sì, molto",Roma,Non mi è piaciuta molto,1,118,0.847457627118644
+facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta tantissimo,20,35,57.142857142857146
+facilita_gradimento,Q1,In parte,Roma,Mi è piaciuta,15,35,42.857142857142854
+facilita_gradimento,Q1,In parte,Roma,Non mi è piaciuta molto,0,35,0.0
+facilita_gradimento,Q1,No,Roma,Mi è piaciuta tantissimo,0,3,0.0
+facilita_gradimento,Q1,No,Roma,Mi è piaciuta,2,3,66.66666666666667
+facilita_gradimento,Q1,No,Roma,Non mi è piaciuta molto,1,3,33.333333333333336
 facilita_gradimento,Q1,"Sì, molto",Bari,Mi è piaciuta tantissimo,30,83,36.144578313253014
 facilita_gradimento,Q1,"Sì, molto",Bari,Mi è piaciuta,41,83,49.397590361445786
 facilita_gradimento,Q1,"Sì, molto",Bari,Non mi è piaciuta molto,12,83,14.457831325301205
@@ -527,62 +317,62 @@ facilita_gradimento,Q1,In parte,Pisa,Non mi è piaciuta molto,0,2,0.0
 facilita_gradimento,Q1,No,Pisa,Mi è piaciuta tantissimo,0,0,
 facilita_gradimento,Q1,No,Pisa,Mi è piaciuta,0,0,
 facilita_gradimento,Q1,No,Pisa,Non mi è piaciuta molto,0,0,
-10_occasioni,Q1,Spesso,Roma,codice 0,7,8,87.5
-10_occasioni,Q1,A volte,Roma,codice 0,16,26,61.53846153846154
-10_occasioni,Q1,Mai,Roma,codice 0,41,74,55.4054054054054
+10_occasioni,Q1,Spesso,Roma,codice 0,8,11,72.72727272727273
+10_occasioni,Q1,A volte,Roma,codice 0,26,39,66.66666666666667
+10_occasioni,Q1,Mai,Roma,codice 0,58,107,54.205607476635514
 10_occasioni,Q1,Spesso,Bari,codice 0,10,14,71.42857142857143
 10_occasioni,Q1,A volte,Bari,codice 0,5,24,20.833333333333332
 10_occasioni,Q1,Mai,Bari,codice 0,16,58,27.586206896551722
 10_occasioni,Q1,Spesso,Pisa,codice 0,1,2,50.0
 10_occasioni,Q1,A volte,Pisa,codice 0,4,7,57.142857142857146
 10_occasioni,Q1,Mai,Pisa,codice 0,5,12,41.666666666666664
-10_occasioni,Q3,Spesso,Roma,codice 0,6,7,85.71428571428571
-10_occasioni,Q3,A volte,Roma,codice 0,16,26,61.53846153846154
-10_occasioni,Q3,Mai,Roma,codice 0,49,73,67.12328767123287
+10_occasioni,Q3,Spesso,Roma,codice 0,6,10,60.0
+10_occasioni,Q3,A volte,Roma,codice 0,21,39,53.84615384615385
+10_occasioni,Q3,Mai,Roma,codice 0,67,106,63.20754716981132
 10_occasioni,Q3,Spesso,Bari,codice 0,11,14,78.57142857142857
 10_occasioni,Q3,A volte,Bari,codice 0,8,24,33.333333333333336
 10_occasioni,Q3,Mai,Bari,codice 0,28,58,48.275862068965516
 10_occasioni,Q3,Spesso,Pisa,codice 0,1,2,50.0
 10_occasioni,Q3,A volte,Pisa,codice 0,4,7,57.142857142857146
 10_occasioni,Q3,Mai,Pisa,codice 0,3,12,25.0
-10_occasioni,Q4,Spesso,Roma,codice 0,5,7,71.42857142857143
-10_occasioni,Q4,A volte,Roma,codice 0,20,26,76.92307692307692
-10_occasioni,Q4,Mai,Roma,codice 0,50,73,68.4931506849315
+10_occasioni,Q4,Spesso,Roma,codice 0,6,10,60.0
+10_occasioni,Q4,A volte,Roma,codice 0,28,39,71.7948717948718
+10_occasioni,Q4,Mai,Roma,codice 0,69,106,65.09433962264151
 10_occasioni,Q4,Spesso,Bari,codice 0,12,14,85.71428571428571
 10_occasioni,Q4,A volte,Bari,codice 0,9,24,37.5
 10_occasioni,Q4,Mai,Bari,codice 0,26,58,44.827586206896555
 10_occasioni,Q4,Spesso,Pisa,codice 0,2,2,100.0
 10_occasioni,Q4,A volte,Pisa,codice 0,3,7,42.857142857142854
 10_occasioni,Q4,Mai,Pisa,codice 0,6,12,50.0
-10_occasioni,Q5,Spesso,Roma,codice 0,7,8,87.5
-10_occasioni,Q5,A volte,Roma,codice 0,20,26,76.92307692307692
-10_occasioni,Q5,Mai,Roma,codice 0,48,74,64.86486486486487
+10_occasioni,Q5,Spesso,Roma,codice 0,8,11,72.72727272727273
+10_occasioni,Q5,A volte,Roma,codice 0,29,39,74.35897435897436
+10_occasioni,Q5,Mai,Roma,codice 0,66,107,61.6822429906542
 10_occasioni,Q5,Spesso,Bari,codice 0,11,14,78.57142857142857
 10_occasioni,Q5,A volte,Bari,codice 0,8,23,34.78260869565217
 10_occasioni,Q5,Mai,Bari,codice 0,25,58,43.10344827586207
 10_occasioni,Q5,Spesso,Pisa,codice 0,2,2,100.0
 10_occasioni,Q5,A volte,Pisa,codice 0,3,7,42.857142857142854
 10_occasioni,Q5,Mai,Pisa,codice 0,3,12,25.0
-11_familiarita,Q1,No,Roma,codice 0,35,52,67.3076923076923
-11_familiarita,Q1,Sì,Roma,codice 0,29,56,51.785714285714285
+11_familiarita,Q1,No,Roma,codice 0,49,77,63.63636363636363
+11_familiarita,Q1,Sì,Roma,codice 0,43,80,53.75
 11_familiarita,Q1,No,Bari,codice 0,28,74,37.83783783783784
 11_familiarita,Q1,Sì,Bari,codice 0,4,15,26.666666666666668
 11_familiarita,Q1,No,Pisa,codice 0,9,15,60.0
 11_familiarita,Q1,Sì,Pisa,codice 0,3,8,37.5
-11_familiarita,Q3,No,Roma,codice 0,32,50,64.0
-11_familiarita,Q3,Sì,Roma,codice 0,39,56,69.64285714285714
+11_familiarita,Q3,No,Roma,codice 0,43,75,57.333333333333336
+11_familiarita,Q3,Sì,Roma,codice 0,51,80,63.75
 11_familiarita,Q3,No,Bari,codice 0,41,74,55.4054054054054
 11_familiarita,Q3,Sì,Bari,codice 0,5,15,33.333333333333336
 11_familiarita,Q3,No,Pisa,codice 0,8,15,53.333333333333336
 11_familiarita,Q3,Sì,Pisa,codice 0,1,8,12.5
-11_familiarita,Q4,No,Roma,codice 0,35,51,68.62745098039215
-11_familiarita,Q4,Sì,Roma,codice 0,40,55,72.72727272727273
+11_familiarita,Q4,No,Roma,codice 0,49,76,64.47368421052632
+11_familiarita,Q4,Sì,Roma,codice 0,54,79,68.35443037974683
 11_familiarita,Q4,No,Bari,codice 0,38,74,51.351351351351354
 11_familiarita,Q4,Sì,Bari,codice 0,8,15,53.333333333333336
 11_familiarita,Q4,No,Pisa,codice 0,9,15,60.0
 11_familiarita,Q4,Sì,Pisa,codice 0,3,8,37.5
-11_familiarita,Q5,No,Roma,codice 0,35,52,67.3076923076923
-11_familiarita,Q5,Sì,Roma,codice 0,40,56,71.42857142857143
+11_familiarita,Q5,No,Roma,codice 0,50,77,64.93506493506493
+11_familiarita,Q5,Sì,Roma,codice 0,53,80,66.25
 11_familiarita,Q5,No,Bari,codice 0,36,74,48.648648648648646
 11_familiarita,Q5,Sì,Bari,codice 0,7,15,46.666666666666664
 11_familiarita,Q5,No,Pisa,codice 0,7,15,46.666666666666664

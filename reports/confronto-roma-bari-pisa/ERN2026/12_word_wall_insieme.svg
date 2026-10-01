@@ -1,329 +1,193 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="2600" height="1800" viewBox="0 0 2600 1800"><rect width="100%" height="100%" fill="white"/>
 <text x="85" y="107" font-family="DejaVu Sans" font-size="56" font-weight="bold" fill="#18304F">HEPscape! · LE PAROLE DI ROMA E BARI E PISA</text>
-<text x="85" y="167" font-family="DejaVu Sans" font-size="29" font-weight="normal" fill="#18304F">131 parole diverse · 168 risposte Q2 non vuote · Evento ERNEST - ERN 2026</text>
-<text x="85" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#234A8C">● Roma: 91 risposte</text>
-<text x="885" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#7BBA48">● Bari: 66 risposte</text>
-<text x="1685" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#5F8FC4">● Pisa: 11 risposte</text>
-<defs><clipPath id="kit0_0"><rect x="279" y="838" width="1288" height="183"/></clipPath></defs>
-<text x="279" y="1018" font-family="DejaVu Sans" font-size="242" font-weight="bold" fill="#234A8C" clip-path="url(#kit0_0)"><title>Roma: 41; Bari: 22; Pisa: 2; totale: 65</title>INTERESSANTE</text>
-<defs><clipPath id="kit0_1"><rect x="1567" y="838" width="691" height="183"/></clipPath></defs>
-<text x="279" y="1018" font-family="DejaVu Sans" font-size="242" font-weight="bold" fill="#7BBA48" clip-path="url(#kit0_1)"><title>Roma: 41; Bari: 22; Pisa: 2; totale: 65</title>INTERESSANTE</text>
-<defs><clipPath id="kit0_2"><rect x="2258" y="838" width="63" height="183"/></clipPath></defs>
-<text x="279" y="1018" font-family="DejaVu Sans" font-size="242" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit0_2)"><title>Roma: 41; Bari: 22; Pisa: 2; totale: 65</title>INTERESSANTE</text>
-<defs><clipPath id="kit1_0"><rect x="584" y="1040" width="930" height="144"/></clipPath></defs>
-<text x="584" y="1184" font-family="DejaVu Sans" font-size="197" font-weight="bold" fill="#234A8C" clip-path="url(#kit1_0)"><title>Roma: 29; Bari: 14; Pisa: 0; totale: 43</title>DIVERTENTE</text>
-<defs><clipPath id="kit1_1"><rect x="1514" y="1040" width="449" height="144"/></clipPath></defs>
-<text x="584" y="1184" font-family="DejaVu Sans" font-size="197" font-weight="bold" fill="#7BBA48" clip-path="url(#kit1_1)"><title>Roma: 29; Bari: 14; Pisa: 0; totale: 43</title>DIVERTENTE</text>
-<defs><clipPath id="kit2_0"><rect x="661" y="673" width="526" height="147"/></clipPath></defs>
-<text x="661" y="804" font-family="DejaVu Sans" font-size="177" font-weight="bold" fill="#234A8C" clip-path="url(#kit2_0)"><title>Roma: 14; Bari: 18; Pisa: 3; totale: 35</title>BELLO/BELLA</text>
-<defs><clipPath id="kit2_1"><rect x="1187" y="673" width="677" height="147"/></clipPath></defs>
-<text x="661" y="804" font-family="DejaVu Sans" font-size="177" font-weight="bold" fill="#7BBA48" clip-path="url(#kit2_1)"><title>Roma: 14; Bari: 18; Pisa: 3; totale: 35</title>BELLO/BELLA</text>
-<defs><clipPath id="kit2_2"><rect x="1864" y="673" width="113" height="147"/></clipPath></defs>
-<text x="661" y="804" font-family="DejaVu Sans" font-size="177" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit2_2)"><title>Roma: 14; Bari: 18; Pisa: 3; totale: 35</title>BELLO/BELLA</text>
-<defs><clipPath id="kit3_0"><rect x="753" y="1202" width="880" height="102"/></clipPath></defs>
-<text x="753" y="1302" font-family="DejaVu Sans" font-size="134" font-weight="bold" fill="#234A8C" clip-path="url(#kit3_0)"><title>Roma: 15; Bari: 5; Pisa: 0; totale: 20</title>COINVOLGENTE</text>
-<defs><clipPath id="kit3_1"><rect x="1633" y="1202" width="294" height="102"/></clipPath></defs>
-<text x="753" y="1302" font-family="DejaVu Sans" font-size="134" font-weight="bold" fill="#7BBA48" clip-path="url(#kit3_1)"><title>Roma: 15; Bari: 5; Pisa: 0; totale: 20</title>COINVOLGENTE</text>
-<defs><clipPath id="kit4_0"><rect x="917" y="564" width="654" height="91"/></clipPath></defs>
-<text x="917" y="645" font-family="DejaVu Sans" font-size="108" font-weight="bold" fill="#234A8C" clip-path="url(#kit4_0)"><title>Roma: 10; Bari: 3; Pisa: 0; totale: 13</title>ISTRUTTIVO/A</text>
-<defs><clipPath id="kit4_1"><rect x="1571" y="564" width="196" height="91"/></clipPath></defs>
-<text x="917" y="645" font-family="DejaVu Sans" font-size="108" font-weight="bold" fill="#7BBA48" clip-path="url(#kit4_1)"><title>Roma: 10; Bari: 3; Pisa: 0; totale: 13</title>ISTRUTTIVO/A</text>
-<defs><clipPath id="kit5_0"><rect x="1097" y="471" width="137" height="74"/></clipPath></defs>
-<text x="1097" y="544" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#234A8C" clip-path="url(#kit5_0)"><title>Roma: 2; Bari: 5; Pisa: 0; totale: 7</title>CURIOSITÀ</text>
-<defs><clipPath id="kit5_1"><rect x="1234" y="471" width="343" height="74"/></clipPath></defs>
-<text x="1097" y="544" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#7BBA48" clip-path="url(#kit5_1)"><title>Roma: 2; Bari: 5; Pisa: 0; totale: 7</title>CURIOSITÀ</text>
-<defs><clipPath id="kit6_0"><rect x="904" y="1324" width="291" height="66"/></clipPath></defs>
-<text x="904" y="1383" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#234A8C" clip-path="url(#kit6_0)"><title>Roma: 3; Bari: 4; Pisa: 0; totale: 7</title>INTERATTIVO/A</text>
-<defs><clipPath id="kit6_1"><rect x="1195" y="1324" width="389" height="66"/></clipPath></defs>
-<text x="904" y="1383" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#7BBA48" clip-path="url(#kit6_1)"><title>Roma: 3; Bari: 4; Pisa: 0; totale: 7</title>INTERATTIVO/A</text>
-<defs><clipPath id="kit7_0"><rect x="1033" y="387" width="333" height="66"/></clipPath></defs>
-<text x="1033" y="446" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#234A8C" clip-path="url(#kit7_0)"><title>Roma: 4; Bari: 2; Pisa: 1; totale: 7</title>SIMPATICO/A</text>
-<defs><clipPath id="kit7_1"><rect x="1366" y="387" width="166" height="66"/></clipPath></defs>
-<text x="1033" y="446" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#7BBA48" clip-path="url(#kit7_1)"><title>Roma: 4; Bari: 2; Pisa: 1; totale: 7</title>SIMPATICO/A</text>
-<defs><clipPath id="kit7_2"><rect x="1532" y="387" width="83" height="66"/></clipPath></defs>
-<text x="1033" y="446" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit7_2)"><title>Roma: 4; Bari: 2; Pisa: 1; totale: 7</title>SIMPATICO/A</text>
-<defs><clipPath id="kit8_0"><rect x="1005" y="1409" width="482" height="61"/></clipPath></defs>
-<text x="1005" y="1463" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#234A8C" clip-path="url(#kit8_0)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>FORMATIVO/A</text>
-<defs><clipPath id="kit8_1"><rect x="1487" y="1409" width="96" height="61"/></clipPath></defs>
-<text x="1005" y="1463" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#7BBA48" clip-path="url(#kit8_1)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>FORMATIVO/A</text>
-<defs><clipPath id="kit9_0"><rect x="480" y="587" width="167" height="56"/></clipPath></defs>
-<text x="480" y="637" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#234A8C" clip-path="url(#kit9_0)"><title>Roma: 2; Bari: 3; Pisa: 0; totale: 5</title>CURIOSO/A</text>
-<defs><clipPath id="kit9_1"><rect x="647" y="587" width="251" height="56"/></clipPath></defs>
-<text x="480" y="637" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#7BBA48" clip-path="url(#kit9_1)"><title>Roma: 2; Bari: 3; Pisa: 0; totale: 5</title>CURIOSO/A</text>
-<defs><clipPath id="kit10_0"><rect x="748" y="492" width="82" height="50"/></clipPath></defs>
-<text x="748" y="537" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit10_0)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
-<defs><clipPath id="kit10_1"><rect x="830" y="492" width="82" height="50"/></clipPath></defs>
-<text x="748" y="537" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit10_1)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
-<defs><clipPath id="kit10_2"><rect x="912" y="492" width="164" height="50"/></clipPath></defs>
-<text x="748" y="537" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit10_2)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
-<defs><clipPath id="kit11_0"><rect x="1597" y="489" width="430" height="46"/></clipPath></defs>
-<text x="1597" y="534" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit11_0)"><title>Roma: 3; Bari: 1; Pisa: 0; totale: 4</title>ENTUSIASMANTE</text>
-<defs><clipPath id="kit11_1"><rect x="2027" y="489" width="143" height="46"/></clipPath></defs>
-<text x="1597" y="534" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit11_1)"><title>Roma: 3; Bari: 1; Pisa: 0; totale: 4</title>ENTUSIASMANTE</text>
-<defs><clipPath id="kit12_0"><rect x="1787" y="593" width="247" height="50"/></clipPath></defs>
-<text x="1787" y="638" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit12_0)"><title>Roma: 2; Bari: 2; Pisa: 0; totale: 4</title>INNOVATIVO/A</text>
-<defs><clipPath id="kit12_1"><rect x="2034" y="593" width="247" height="50"/></clipPath></defs>
-<text x="1787" y="638" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit12_1)"><title>Roma: 2; Bari: 2; Pisa: 0; totale: 4</title>INNOVATIVO/A</text>
-<defs><clipPath id="kit13_0"><rect x="1610" y="1325" width="445" height="40"/></clipPath></defs>
-<text x="1610" y="1364" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit13_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>AFFASCINANTE</text>
-<defs><clipPath id="kit14_0"><rect x="244" y="776" width="396" height="44"/></clipPath></defs>
-<text x="244" y="815" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit14_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>EDUCATIVO/A</text>
-<defs><clipPath id="kit15_1"><rect x="1985" y="1061" width="256" height="49"/></clipPath></defs>
-<text x="1985" y="1109" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit15_1)"><title>Roma: 0; Bari: 3; Pisa: 0; totale: 3</title>FELICITÀ</text>
-<defs><clipPath id="kit16_0"><rect x="1995" y="764" width="74" height="49"/></clipPath></defs>
-<text x="1995" y="812" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit16_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NOVITÀ</text>
-<defs><clipPath id="kit16_1"><rect x="2069" y="764" width="148" height="49"/></clipPath></defs>
-<text x="1995" y="812" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit16_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NOVITÀ</text>
-<defs><clipPath id="kit17_0"><rect x="319" y="715" width="216" height="40"/></clipPath></defs>
-<text x="319" y="754" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit17_0)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>PIACEVOLE</text>
-<defs><clipPath id="kit17_1"><rect x="535" y="715" width="108" height="40"/></clipPath></defs>
-<text x="319" y="754" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit17_1)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>PIACEVOLE</text>
-<defs><clipPath id="kit18_0"><rect x="358" y="1214" width="250" height="40"/></clipPath></defs>
-<text x="358" y="1253" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit18_0)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>STIMOLANTE</text>
-<defs><clipPath id="kit18_1"><rect x="608" y="1214" width="125" height="40"/></clipPath></defs>
-<text x="358" y="1253" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit18_1)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>STIMOLANTE</text>
-<defs><clipPath id="kit19_0"><rect x="498" y="1324" width="126" height="44"/></clipPath></defs>
-<text x="498" y="1363" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit19_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>STUPENDO/A</text>
-<defs><clipPath id="kit19_1"><rect x="624" y="1324" width="252" height="44"/></clipPath></defs>
-<text x="498" y="1363" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit19_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>STUPENDO/A</text>
-<defs><clipPath id="kit20_0"><rect x="440" y="1039" width="39" height="40"/></clipPath></defs>
-<text x="440" y="1078" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit20_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>TOP</text>
-<defs><clipPath id="kit20_1"><rect x="479" y="1039" width="78" height="40"/></clipPath></defs>
-<text x="440" y="1078" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit20_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>TOP</text>
-<defs><clipPath id="kit21_1"><rect x="1984" y="1130" width="166" height="36"/></clipPath></defs>
-<text x="1984" y="1162" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit21_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>BELLISSIMO/A</text>
-<defs><clipPath id="kit21_2"><rect x="2150" y="1130" width="167" height="36"/></clipPath></defs>
-<text x="1984" y="1162" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit21_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>BELLISSIMO/A</text>
-<defs><clipPath id="kit22_1"><rect x="1995" y="706" width="228" height="32"/></clipPath></defs>
-<text x="1995" y="738" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit22_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>DIFFICILE</text>
-<defs><clipPath id="kit23_0"><rect x="652" y="436" width="349" height="36"/></clipPath></defs>
-<text x="652" y="468" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit23_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>FANTASTICO/A</text>
-<defs><clipPath id="kit24_0"><rect x="1615" y="1383" width="267" height="36"/></clipPath></defs>
-<text x="1615" y="1415" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit24_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>GIOCOSO/A</text>
-<defs><clipPath id="kit25_0"><rect x="1951" y="1202" width="324" height="36"/></clipPath></defs>
-<text x="1951" y="1234" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit25_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>IMMERSIVO/A</text>
-<defs><clipPath id="kit26_0"><rect x="352" y="664" width="124" height="31"/></clipPath></defs>
-<text x="352" y="695" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit26_0)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>IMPARARE</text>
-<defs><clipPath id="kit26_1"><rect x="476" y="664" width="124" height="31"/></clipPath></defs>
-<text x="352" y="695" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit26_1)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>IMPARARE</text>
-<defs><clipPath id="kit27_1"><rect x="1023" y="1490" width="421" height="32"/></clipPath></defs>
-<text x="1023" y="1522" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit27_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>INDIMENTICABILE</text>
-<defs><clipPath id="kit28_1"><rect x="300" y="1097" width="249" height="31"/></clipPath></defs>
-<text x="300" y="1128" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit28_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>INFANTILE</text>
-<defs><clipPath id="kit29_0"><rect x="1644" y="438" width="168" height="32"/></clipPath></defs>
-<text x="1644" y="470" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit29_0)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>INTELLIGENTE</text>
-<defs><clipPath id="kit29_1"><rect x="1812" y="438" width="167" height="32"/></clipPath></defs>
-<text x="1644" y="470" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit29_1)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>INTELLIGENTE</text>
-<defs><clipPath id="kit30_0"><rect x="697" y="1408" width="144" height="32"/></clipPath></defs>
-<text x="697" y="1440" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit30_0)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>INTRIGANTE</text>
-<defs><clipPath id="kit30_1"><rect x="841" y="1408" width="144" height="32"/></clipPath></defs>
-<text x="697" y="1440" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit30_1)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>INTRIGANTE</text>
-<defs><clipPath id="kit31_1"><rect x="476" y="533" width="237" height="36"/></clipPath></defs>
-<text x="476" y="565" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit31_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>NOIOSO/A</text>
-<defs><clipPath id="kit32_1"><rect x="1947" y="1271" width="222" height="36"/></clipPath></defs>
-<text x="1947" y="1303" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit32_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>NUOVO/A</text>
-<defs><clipPath id="kit33_2"><rect x="173" y="1152" width="392" height="36"/></clipPath></defs>
-<text x="173" y="1184" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit33_2)"><title>Roma: 0; Bari: 0; Pisa: 2; totale: 2</title>ORGANIZZATO/A</text>
-<defs><clipPath id="kit34_0"><rect x="417" y="1272" width="258" height="32"/></clipPath></defs>
-<text x="417" y="1304" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit34_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>ORIGINALE</text>
-<defs><clipPath id="kit35_1"><rect x="862" y="379" width="128" height="39"/></clipPath></defs>
-<text x="862" y="418" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit35_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>PERÒ</text>
-<defs><clipPath id="kit36_1"><rect x="1602" y="1442" width="137" height="36"/></clipPath></defs>
-<text x="1602" y="1474" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit36_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>PIACIUTO/A</text>
-<defs><clipPath id="kit36_2"><rect x="1739" y="1442" width="137" height="36"/></clipPath></defs>
-<text x="1602" y="1474" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit36_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>PIACIUTO/A</text>
-<defs><clipPath id="kit37_1"><rect x="1655" y="385" width="134" height="32"/></clipPath></defs>
-<text x="1655" y="417" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit37_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>POCO</text>
-<defs><clipPath id="kit38_1"><rect x="792" y="1460" width="181" height="31"/></clipPath></defs>
-<text x="792" y="1491" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit38_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>PUZZLE</text>
-<defs><clipPath id="kit39_1"><rect x="1498" y="1499" width="173" height="36"/></clipPath></defs>
-<text x="1498" y="1531" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit39_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SCIENTIFICO/A</text>
-<defs><clipPath id="kit39_2"><rect x="1671" y="1499" width="173" height="36"/></clipPath></defs>
-<text x="1498" y="1531" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit39_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SCIENTIFICO/A</text>
-<defs><clipPath id="kit40_1"><rect x="2237" y="783" width="68" height="32"/></clipPath></defs>
-<text x="2237" y="815" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit40_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SONO</text>
-<defs><clipPath id="kit40_2"><rect x="2305" y="783" width="69" height="32"/></clipPath></defs>
-<text x="2237" y="815" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit40_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SONO</text>
-<defs><clipPath id="kit41_1"><rect x="1904" y="1384" width="157" height="32"/></clipPath></defs>
-<text x="1904" y="1416" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit41_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>TUTTO</text>
-<defs><clipPath id="kit42_0"><rect x="641" y="379" width="200" height="36"/></clipPath></defs>
-<text x="641" y="411" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit42_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>UNICO/A</text>
-<defs><clipPath id="kit43_1"><rect x="1847" y="553" width="228" height="22"/></clipPath></defs>
-<text x="1847" y="575" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit43_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ABBASTANZA</text>
-<defs><clipPath id="kit44_0"><rect x="1216" y="346" width="253" height="22"/></clipPath></defs>
-<text x="1216" y="368" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit44_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>ACCATTIVANTE</text>
-<defs><clipPath id="kit45_1"><rect x="2073" y="666" width="42" height="22"/></clipPath></defs>
-<text x="2073" y="688" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit45_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>AL</text>
-<defs><clipPath id="kit46_1"><rect x="354" y="1057" width="61" height="22"/></clipPath></defs>
-<text x="354" y="1079" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit46_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ALL</text>
-<defs><clipPath id="kit47_1"><rect x="467" y="490" width="232" height="22"/></clipPath></defs>
-<text x="467" y="512" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit47_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ALTERNATIVA</text>
-<defs><clipPath id="kit48_1"><rect x="1072" y="346" width="116" height="22"/></clipPath></defs>
-<text x="1072" y="368" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit48_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ANCHE</text>
-<defs><clipPath id="kit49_0"><rect x="1525" y="344" width="285" height="22"/></clipPath></defs>
-<text x="1525" y="366" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit49_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>APPASSIONANTE</text>
-<defs><clipPath id="kit50_1"><rect x="2171" y="666" width="101" height="22"/></clipPath></defs>
-<text x="2171" y="688" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit50_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ASILO</text>
-<defs><clipPath id="kit51_0"><rect x="1155" y="1540" width="214" height="22"/></clipPath></defs>
-<text x="1155" y="1562" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit51_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>ASSICURARE</text>
-<defs><clipPath id="kit52_0"><rect x="291" y="623" width="162" height="22"/></clipPath></defs>
-<text x="291" y="645" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit52_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>AVVICINA</text>
-<defs><clipPath id="kit53_0"><rect x="463" y="1391" width="214" height="22"/></clipPath></defs>
-<text x="463" y="1413" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit53_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>AVVINCENTE</text>
-<defs><clipPath id="kit54_1"><rect x="2266" y="1058" width="185" height="22"/></clipPath></defs>
-<text x="2266" y="1080" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit54_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>BELISSIMO</text>
-<defs><clipPath id="kit55_2"><rect x="2244" y="736" width="113" height="22"/></clipPath></defs>
-<text x="2244" y="758" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit55_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>BUFFA</text>
-<defs><clipPath id="kit56_0"><rect x="1810" y="391" width="159" height="25"/></clipPath></defs>
-<text x="1810" y="413" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit56_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>BUONO/A</text>
-<defs><clipPath id="kit57_1"><rect x="879" y="1510" width="124" height="22"/></clipPath></defs>
-<text x="879" y="1532" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit57_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CACCIA</text>
-<defs><clipPath id="kit58_0"><rect x="330" y="562" width="124" height="22"/></clipPath></defs>
-<text x="330" y="584" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit58_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>CAPITO</text>
-<defs><clipPath id="kit59_1"><rect x="712" y="339" width="201" height="22"/></clipPath></defs>
-<text x="712" y="361" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit59_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CASCHETTO</text>
-<defs><clipPath id="kit60_0"><rect x="1394" y="1556" width="195" height="22"/></clipPath></defs>
-<text x="1394" y="1578" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit60_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>COMPLESSI</text>
-<defs><clipPath id="kit61_0"><rect x="799" y="1551" width="312" height="22"/></clipPath></defs>
-<text x="799" y="1573" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit61_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>CONCENTRAZIONE</text>
-<defs><clipPath id="kit62_0"><rect x="451" y="447" width="167" height="22"/></clipPath></defs>
-<text x="451" y="469" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit62_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>CONCETTI</text>
-<defs><clipPath id="kit63_1"><rect x="2118" y="553" width="213" height="22"/></clipPath></defs>
-<text x="2118" y="575" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit63_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CONOSCEVO</text>
-<defs><clipPath id="kit64_1"><rect x="2076" y="1329" width="117" height="22"/></clipPath></defs>
-<text x="2076" y="1351" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit64_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CORTO</text>
-<defs><clipPath id="kit65_1"><rect x="1897" y="1438" width="156" height="22"/></clipPath></defs>
-<text x="1897" y="1460" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit65_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CULTURA</text>
-<defs><clipPath id="kit66_1"><rect x="554" y="1460" width="194" height="22"/></clipPath></defs>
-<text x="554" y="1482" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit66_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DELUSIONE</text>
-<defs><clipPath id="kit67_1"><rect x="97" y="1065" width="181" height="22"/></clipPath></defs>
-<text x="97" y="1087" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit67_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DIDATTICA</text>
-<defs><clipPath id="kit68_1"><rect x="2339" y="956" width="171" height="22"/></clipPath></defs>
-<text x="2339" y="978" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit68_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DINAMICA</text>
-<defs><clipPath id="kit69_1"><rect x="2022" y="448" width="256" height="22"/></clipPath></defs>
-<text x="2022" y="470" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit69_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DIVERTIMENTO</text>
-<defs><clipPath id="kit70_2"><rect x="2189" y="1265" width="215" height="25"/></clipPath></defs>
-<text x="2189" y="1287" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit70_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>DIVERTITO/A</text>
-<defs><clipPath id="kit71_1"><rect x="1832" y="351" width="255" height="22"/></clipPath></defs>
-<text x="1832" y="373" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit71_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DIVULGAZIONE</text>
-<defs><clipPath id="kit72_0"><rect x="99" y="896" width="162" height="22"/></clipPath></defs>
-<text x="99" y="918" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit72_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>EFFICACE</text>
-<defs><clipPath id="kit73_0"><rect x="1608" y="1554" width="250" height="22"/></clipPath></defs>
-<text x="1608" y="1576" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit73_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>EMOZIONANTE</text>
-<defs><clipPath id="kit74_0"><rect x="121" y="663" width="213" height="22"/></clipPath></defs>
-<text x="121" y="685" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit74_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>ENERGETICA</text>
-<defs><clipPath id="kit75_1"><rect x="2340" y="894" width="68" height="22"/></clipPath></defs>
-<text x="2340" y="916" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit75_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ERA</text>
-<defs><clipPath id="kit76_1"><rect x="129" y="954" width="131" height="22"/></clipPath></defs>
-<text x="129" y="976" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit76_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ESCAPE</text>
-<defs><clipPath id="kit77_1"><rect x="589" y="1510" width="227" height="22"/></clipPath></defs>
-<text x="589" y="1532" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit77_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ESPERIMENTI</text>
-<defs><clipPath id="kit78_0"><rect x="192" y="735" width="108" height="22"/></clipPath></defs>
-<text x="192" y="757" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit78_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>FATTA</text>
-<defs><clipPath id="kit79_1"><rect x="2342" y="841" width="115" height="22"/></clipPath></defs>
-<text x="2342" y="863" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit79_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>FELICE</text>
-<defs><clipPath id="kit80_0"><rect x="149" y="843" width="111" height="22"/></clipPath></defs>
-<text x="149" y="865" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit80_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>FORTE</text>
-<defs><clipPath id="kit81_0"><rect x="256" y="1332" width="224" height="22"/></clipPath></defs>
-<text x="256" y="1354" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit81_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>FUTURISTICO</text>
-<defs><clipPath id="kit82_0"><rect x="2294" y="673" width="184" height="22"/></clipPath></defs>
-<text x="2294" y="695" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit82_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>GIOVANILE</text>
-<defs><clipPath id="kit83_1"><rect x="2339" y="1001" width="60" height="27"/></clipPath></defs>
-<text x="2339" y="1028" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit83_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>GIÀ</text>
-<defs><clipPath id="kit84_1"><rect x="2081" y="1369" width="218" height="25"/></clipPath></defs>
-<text x="2081" y="1391" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit84_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>INCLUSIVO/A</text>
-<defs><clipPath id="kit85_0"><rect x="348" y="397" width="274" height="25"/></clipPath></defs>
-<text x="348" y="419" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit85_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>INFORMATIVO/A</text>
-<defs><clipPath id="kit86_2"><rect x="99" y="1009" width="160" height="22"/></clipPath></defs>
-<text x="99" y="1031" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit86_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>INGRESSI</text>
-<defs><clipPath id="kit87_1"><rect x="101" y="1208" width="238" height="22"/></clipPath></defs>
-<text x="101" y="1230" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit87_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>INNOVAZIONE</text>
-<defs><clipPath id="kit88_0"><rect x="209" y="521" width="230" height="22"/></clipPath></defs>
-<text x="209" y="543" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit88_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>INSEGNATIVA</text>
-<defs><clipPath id="kit89_0"><rect x="1882" y="1497" width="277" height="22"/></clipPath></defs>
-<text x="1882" y="1519" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit89_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>INTRATTENITIVA</text>
-<defs><clipPath id="kit90_1"><rect x="2338" y="1101" width="127" height="22"/></clipPath></defs>
-<text x="2338" y="1123" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit90_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>LOGICA</text>
-<defs><clipPath id="kit91_0"><rect x="202" y="1286" width="192" height="22"/></clipPath></defs>
-<text x="202" y="1308" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit91_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>MAGNIFICA</text>
-<defs><clipPath id="kit92_0"><rect x="150" y="780" width="72" height="22"/></clipPath></defs>
-<text x="150" y="802" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit92_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>MAL</text>
-<defs><clipPath id="kit93_0"><rect x="2295" y="1192" width="157" height="22"/></clipPath></defs>
-<text x="2295" y="1214" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit93_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>MANIERA</text>
-<defs><clipPath id="kit94_0"><rect x="2394" y="786" width="104" height="22"/></clipPath></defs>
-<text x="2394" y="808" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit94_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>MANO</text>
-<defs><clipPath id="kit95_1"><rect x="1990" y="397" width="224" height="22"/></clipPath></defs>
-<text x="1990" y="419" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit95_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>MATEMATICA</text>
-<defs><clipPath id="kit96_1"><rect x="2192" y="502" width="226" height="22"/></clipPath></defs>
-<text x="2192" y="524" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit96_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>MATEMATICO</text>
-<defs><clipPath id="kit97_0"><rect x="2302" y="616" width="132" height="22"/></clipPath></defs>
-<text x="2302" y="638" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit97_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>MEGLIO</text>
-<defs><clipPath id="kit98_1"><rect x="2376" y="729" width="65" height="22"/></clipPath></defs>
-<text x="2376" y="751" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit98_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>MIA</text>
-<defs><clipPath id="kit99_0"><rect x="2363" y="1142" width="123" height="22"/></clipPath></defs>
-<text x="2363" y="1164" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit99_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>NIENTE</text>
-<defs><clipPath id="kit100_0"><rect x="2216" y="1308" width="168" height="25"/></clipPath></defs>
-<text x="2216" y="1330" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit100_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>OTTIMO/A</text>
-<defs><clipPath id="kit101_1"><rect x="538" y="339" width="134" height="22"/></clipPath></defs>
-<text x="538" y="361" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit101_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>PAROLE</text>
-<defs><clipPath id="kit102_0"><rect x="212" y="1376" width="233" height="22"/></clipPath></defs>
-<text x="212" y="1398" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit102_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>PARTICOLARE</text>
-<defs><clipPath id="kit103_1"><rect x="2429" y="900" width="57" height="27"/></clipPath></defs>
-<text x="2429" y="927" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit103_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>PIÙ</text>
-<defs><clipPath id="kit104_0"><rect x="123" y="614" width="145" height="22"/></clipPath></defs>
-<text x="123" y="636" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit104_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>PRECISA</text>
-<defs><clipPath id="kit105_1"><rect x="202" y="565" width="110" height="22"/></clipPath></defs>
-<text x="202" y="587" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit105_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>PRIMA</text>
-<defs><clipPath id="kit106_1"><rect x="2089" y="1414" width="180" height="22"/></clipPath></defs>
-<text x="2089" y="1436" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit106_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>PROSSIMA</text>
-<defs><clipPath id="kit107_1"><rect x="234" y="481" width="196" height="22"/></clipPath></defs>
-<text x="234" y="503" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit107_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>REALISTICA</text>
-<defs><clipPath id="kit108_0"><rect x="511" y="1552" width="244" height="22"/></clipPath></defs>
-<text x="511" y="1574" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit108_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>RICAPITOLARE</text>
-<defs><clipPath id="kit109_1"><rect x="419" y="1432" width="105" height="22"/></clipPath></defs>
-<text x="419" y="1454" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit109_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ROOM</text>
-<defs><clipPath id="kit110_0"><rect x="270" y="441" width="150" height="22"/></clipPath></defs>
-<text x="270" y="463" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit110_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>SCHIENA</text>
-<defs><clipPath id="kit111_1"><rect x="1886" y="1538" width="100" height="22"/></clipPath></defs>
-<text x="1886" y="1560" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit111_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>SEDIE</text>
-<defs><clipPath id="kit112_0"><rect x="2077" y="1456" width="169" height="22"/></clipPath></defs>
-<text x="2077" y="1478" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit112_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>SEGUONO</text>
-<defs><clipPath id="kit113_0"><rect x="363" y="1479" width="168" height="22"/></clipPath></defs>
-<text x="363" y="1501" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit113_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>SEMPLICE</text>
-<defs><clipPath id="kit114_1"><rect x="178" y="1421" width="223" height="22"/></clipPath></defs>
-<text x="178" y="1443" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit114_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>SPAVENTATA</text>
-<defs><clipPath id="kit115_0"><rect x="357" y="349" width="163" height="22"/></clipPath></defs>
-<text x="357" y="371" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit115_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>SPAZIALE</text>
-<defs><clipPath id="kit116_1"><rect x="2126" y="357" width="161" height="22"/></clipPath></defs>
-<text x="2126" y="379" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit116_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>SPECIALE</text>
-<defs><clipPath id="kit117_0"><rect x="1901" y="1578" width="226" height="22"/></clipPath></defs>
-<text x="1901" y="1600" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit117_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>STANCHEZZA</text>
-<defs><clipPath id="kit118_1"><rect x="2356" y="576" width="142" height="22"/></clipPath></defs>
-<text x="2356" y="598" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit118_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>STATICA</text>
-<defs><clipPath id="kit119_0"><rect x="2037" y="1537" width="262" height="22"/></clipPath></defs>
-<text x="2037" y="1559" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit119_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>STUPEFACENTE</text>
-<defs><clipPath id="kit120_1"><rect x="2296" y="450" width="181" height="22"/></clipPath></defs>
-<text x="2296" y="472" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit120_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>SUSPANCE</text>
-<defs><clipPath id="kit121_2"><rect x="2287" y="1428" width="210" height="22"/></clipPath></defs>
-<text x="2287" y="1450" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit121_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>TANTISSIMO</text>
-<defs><clipPath id="kit122_1"><rect x="2320" y="1361" width="114" height="22"/></clipPath></defs>
-<text x="2320" y="1383" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit122_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>TANTO</text>
-<defs><clipPath id="kit123_1"><rect x="2234" y="400" width="138" height="22"/></clipPath></defs>
-<text x="2234" y="422" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit123_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>TESORO</text>
-<defs><clipPath id="kit124_1"><rect x="345" y="1529" width="148" height="22"/></clipPath></defs>
-<text x="345" y="1551" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit124_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>TORNATI</text>
-<defs><clipPath id="kit125_0"><rect x="2402" y="1311" width="95" height="22"/></clipPath></defs>
-<text x="2402" y="1333" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit125_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>TUTTI</text>
-<defs><clipPath id="kit126_0"><rect x="95" y="497" width="95" height="22"/></clipPath></defs>
-<text x="95" y="519" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit126_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>UTILE</text>
-<defs><clipPath id="kit127_0"><rect x="209" y="1461" width="132" height="22"/></clipPath></defs>
-<text x="209" y="1483" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit127_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>VELOCE</text>
-<defs><clipPath id="kit128_1"><rect x="216" y="376" width="114" height="22"/></clipPath></defs>
-<text x="216" y="398" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit128_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>VISIVA</text>
-<defs><clipPath id="kit129_1"><rect x="139" y="429" width="112" height="22"/></clipPath></defs>
-<text x="139" y="451" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit129_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>VOLTA</text>
-<defs><clipPath id="kit130_1"><rect x="92" y="1281" width="92" height="22"/></clipPath></defs>
-<text x="92" y="1303" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit130_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>WOW</text>
+<text x="85" y="167" font-family="DejaVu Sans" font-size="29" font-weight="normal" fill="#18304F">61 parole diverse · 211 risposte Q2 non vuote · Evento ERNEST - ERN 2026</text>
+<text x="85.0" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#234A8C">● Roma: 134 risposte</text>
+<text x="895.0" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#7BBA48">● Bari: 66 risposte</text>
+<text x="1705.0" y="246" font-family="DejaVu Sans" font-size="33" font-weight="bold" fill="#5F8FC4">● Pisa: 11 risposte</text>
+<defs><clipPath id="kit0_0"><rect x="138" y="826" width="1659" height="208"/></clipPath></defs>
+<text x="138" y="1030" font-family="DejaVu Sans" font-size="275" font-weight="bold" fill="#234A8C" clip-path="url(#kit0_0)"><title>Roma: 60; Bari: 22; Pisa: 2; totale: 84</title>INTERESSANTE</text>
+<defs><clipPath id="kit0_1"><rect x="1797" y="826" width="609" height="208"/></clipPath></defs>
+<text x="138" y="1030" font-family="DejaVu Sans" font-size="275" font-weight="bold" fill="#7BBA48" clip-path="url(#kit0_1)"><title>Roma: 60; Bari: 22; Pisa: 2; totale: 84</title>INTERESSANTE</text>
+<defs><clipPath id="kit0_2"><rect x="2406" y="826" width="55" height="208"/></clipPath></defs>
+<text x="138" y="1030" font-family="DejaVu Sans" font-size="275" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit0_2)"><title>Roma: 60; Bari: 22; Pisa: 2; totale: 84</title>INTERESSANTE</text>
+<defs><clipPath id="kit1_0"><rect x="551" y="651" width="1075" height="157"/></clipPath></defs>
+<text x="551" y="808" font-family="DejaVu Sans" font-size="216" font-weight="bold" fill="#234A8C" clip-path="url(#kit1_0)"><title>Roma: 37; Bari: 15; Pisa: 0; totale: 52</title>DIVERTENTE</text>
+<defs><clipPath id="kit1_1"><rect x="1626" y="651" width="436" height="157"/></clipPath></defs>
+<text x="551" y="808" font-family="DejaVu Sans" font-size="216" font-weight="bold" fill="#7BBA48" clip-path="url(#kit1_1)"><title>Roma: 37; Bari: 15; Pisa: 0; totale: 52</title>DIVERTENTE</text>
+<defs><clipPath id="kit2_0"><rect x="498" y="1052" width="774" height="167"/></clipPath></defs>
+<text x="498" y="1200" font-family="DejaVu Sans" font-size="199" font-weight="bold" fill="#234A8C" clip-path="url(#kit2_0)"><title>Roma: 23; Bari: 18; Pisa: 3; totale: 44</title>BELLO/BELLA</text>
+<defs><clipPath id="kit2_1"><rect x="1272" y="1052" width="605" height="167"/></clipPath></defs>
+<text x="498" y="1200" font-family="DejaVu Sans" font-size="199" font-weight="bold" fill="#7BBA48" clip-path="url(#kit2_1)"><title>Roma: 23; Bari: 18; Pisa: 3; totale: 44</title>BELLO/BELLA</text>
+<defs><clipPath id="kit2_2"><rect x="1877" y="1052" width="101" height="167"/></clipPath></defs>
+<text x="498" y="1200" font-family="DejaVu Sans" font-size="199" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit2_2)"><title>Roma: 23; Bari: 18; Pisa: 3; totale: 44</title>BELLO/BELLA</text>
+<defs><clipPath id="kit3_0"><rect x="693" y="520" width="1052" height="113"/></clipPath></defs>
+<text x="693" y="631" font-family="DejaVu Sans" font-size="150" font-weight="bold" fill="#234A8C" clip-path="url(#kit3_0)"><title>Roma: 20; Bari: 5; Pisa: 0; totale: 25</title>COINVOLGENTE</text>
+<defs><clipPath id="kit3_1"><rect x="1745" y="520" width="263" height="113"/></clipPath></defs>
+<text x="693" y="631" font-family="DejaVu Sans" font-size="150" font-weight="bold" fill="#7BBA48" clip-path="url(#kit3_1)"><title>Roma: 20; Bari: 5; Pisa: 0; totale: 25</title>COINVOLGENTE</text>
+<defs><clipPath id="kit4_0"><rect x="822" y="1237" width="691" height="94"/></clipPath></defs>
+<text x="822" y="1321" font-family="DejaVu Sans" font-size="112" font-weight="bold" fill="#234A8C" clip-path="url(#kit4_0)"><title>Roma: 11; Bari: 3; Pisa: 0; totale: 14</title>ISTRUTTIVO/A</text>
+<defs><clipPath id="kit4_1"><rect x="1513" y="1237" width="189" height="94"/></clipPath></defs>
+<text x="822" y="1321" font-family="DejaVu Sans" font-size="112" font-weight="bold" fill="#7BBA48" clip-path="url(#kit4_1)"><title>Roma: 11; Bari: 3; Pisa: 0; totale: 14</title>ISTRUTTIVO/A</text>
+<defs><clipPath id="kit5_0"><rect x="957" y="1349" width="392" height="71"/></clipPath></defs>
+<text x="957" y="1412" font-family="DejaVu Sans" font-size="85" font-weight="bold" fill="#234A8C" clip-path="url(#kit5_0)"><title>Roma: 5; Bari: 2; Pisa: 1; totale: 8</title>SIMPATICO/A</text>
+<defs><clipPath id="kit5_1"><rect x="1349" y="1349" width="157" height="71"/></clipPath></defs>
+<text x="957" y="1412" font-family="DejaVu Sans" font-size="85" font-weight="bold" fill="#7BBA48" clip-path="url(#kit5_1)"><title>Roma: 5; Bari: 2; Pisa: 1; totale: 8</title>SIMPATICO/A</text>
+<defs><clipPath id="kit5_2"><rect x="1506" y="1349" width="78" height="71"/></clipPath></defs>
+<text x="957" y="1412" font-family="DejaVu Sans" font-size="85" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit5_2)"><title>Roma: 5; Bari: 2; Pisa: 1; totale: 8</title>SIMPATICO/A</text>
+<defs><clipPath id="kit6_0"><rect x="1143" y="428" width="137" height="74"/></clipPath></defs>
+<text x="1143" y="501" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#234A8C" clip-path="url(#kit6_0)"><title>Roma: 2; Bari: 5; Pisa: 0; totale: 7</title>CURIOSITÀ</text>
+<defs><clipPath id="kit6_1"><rect x="1280" y="428" width="343" height="74"/></clipPath></defs>
+<text x="1143" y="501" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#7BBA48" clip-path="url(#kit6_1)"><title>Roma: 2; Bari: 5; Pisa: 0; totale: 7</title>CURIOSITÀ</text>
+<defs><clipPath id="kit7_0"><rect x="906" y="1438" width="291" height="66"/></clipPath></defs>
+<text x="906" y="1497" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#234A8C" clip-path="url(#kit7_0)"><title>Roma: 3; Bari: 4; Pisa: 0; totale: 7</title>INTERATTIVO/A</text>
+<defs><clipPath id="kit7_1"><rect x="1197" y="1438" width="389" height="66"/></clipPath></defs>
+<text x="906" y="1497" font-family="DejaVu Sans" font-size="79" font-weight="bold" fill="#7BBA48" clip-path="url(#kit7_1)"><title>Roma: 3; Bari: 4; Pisa: 0; totale: 7</title>INTERATTIVO/A</text>
+<defs><clipPath id="kit8_0"><rect x="556" y="438" width="561" height="61"/></clipPath></defs>
+<text x="556" y="492" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#234A8C" clip-path="url(#kit8_0)"><title>Roma: 6; Bari: 0; Pisa: 0; totale: 6</title>EDUCATIVO/A</text>
+<defs><clipPath id="kit9_0"><rect x="984" y="355" width="584" height="55"/></clipPath></defs>
+<text x="984" y="409" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#234A8C" clip-path="url(#kit9_0)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>ENTUSIASMANTE</text>
+<defs><clipPath id="kit9_1"><rect x="1568" y="355" width="117" height="55"/></clipPath></defs>
+<text x="984" y="409" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#7BBA48" clip-path="url(#kit9_1)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>ENTUSIASMANTE</text>
+<defs><clipPath id="kit10_0"><rect x="1739" y="1239" width="482" height="61"/></clipPath></defs>
+<text x="1739" y="1293" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#234A8C" clip-path="url(#kit10_0)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>FORMATIVO/A</text>
+<defs><clipPath id="kit10_1"><rect x="2221" y="1239" width="96" height="61"/></clipPath></defs>
+<text x="1739" y="1293" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#7BBA48" clip-path="url(#kit10_1)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>FORMATIVO/A</text>
+<defs><clipPath id="kit11_0"><rect x="1603" y="1355" width="442" height="55"/></clipPath></defs>
+<text x="1603" y="1409" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#234A8C" clip-path="url(#kit11_0)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>STIMOLANTE</text>
+<defs><clipPath id="kit11_1"><rect x="2045" y="1355" width="88" height="55"/></clipPath></defs>
+<text x="1603" y="1409" font-family="DejaVu Sans" font-size="73" font-weight="bold" fill="#7BBA48" clip-path="url(#kit11_1)"><title>Roma: 5; Bari: 1; Pisa: 0; totale: 6</title>STIMOLANTE</text>
+<defs><clipPath id="kit12_0"><rect x="264" y="1238" width="212" height="56"/></clipPath></defs>
+<text x="264" y="1288" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#234A8C" clip-path="url(#kit12_0)"><title>Roma: 2; Bari: 2; Pisa: 1; totale: 5</title>BELLISSIMO/A</text>
+<defs><clipPath id="kit12_1"><rect x="476" y="1238" width="211" height="56"/></clipPath></defs>
+<text x="264" y="1288" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#7BBA48" clip-path="url(#kit12_1)"><title>Roma: 2; Bari: 2; Pisa: 1; totale: 5</title>BELLISSIMO/A</text>
+<defs><clipPath id="kit12_2"><rect x="687" y="1238" width="106" height="56"/></clipPath></defs>
+<text x="264" y="1288" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit12_2)"><title>Roma: 2; Bari: 2; Pisa: 1; totale: 5</title>BELLISSIMO/A</text>
+<defs><clipPath id="kit13_0"><rect x="2002" y="1059" width="167" height="56"/></clipPath></defs>
+<text x="2002" y="1109" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#234A8C" clip-path="url(#kit13_0)"><title>Roma: 2; Bari: 3; Pisa: 0; totale: 5</title>CURIOSO/A</text>
+<defs><clipPath id="kit13_1"><rect x="2169" y="1059" width="251" height="56"/></clipPath></defs>
+<text x="2002" y="1109" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#7BBA48" clip-path="url(#kit13_1)"><title>Roma: 2; Bari: 3; Pisa: 0; totale: 5</title>CURIOSO/A</text>
+<defs><clipPath id="kit14_0"><rect x="1679" y="446" width="553" height="56"/></clipPath></defs>
+<text x="1679" y="496" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#234A8C" clip-path="url(#kit14_0)"><title>Roma: 5; Bari: 0; Pisa: 0; totale: 5</title>FANTASTICO/A</text>
+<defs><clipPath id="kit15_0"><rect x="344" y="1351" width="332" height="56"/></clipPath></defs>
+<text x="344" y="1401" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#234A8C" clip-path="url(#kit15_0)"><title>Roma: 3; Bari: 2; Pisa: 0; totale: 5</title>INNOVATIVO/A</text>
+<defs><clipPath id="kit15_1"><rect x="676" y="1351" width="222" height="56"/></clipPath></defs>
+<text x="344" y="1401" font-family="DejaVu Sans" font-size="67" font-weight="bold" fill="#7BBA48" clip-path="url(#kit15_1)"><title>Roma: 3; Bari: 2; Pisa: 0; totale: 5</title>INNOVATIVO/A</text>
+<defs><clipPath id="kit16_0"><rect x="1998" y="1156" width="82" height="50"/></clipPath></defs>
+<text x="1998" y="1201" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit16_0)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
+<defs><clipPath id="kit16_1"><rect x="2080" y="1156" width="82" height="50"/></clipPath></defs>
+<text x="1998" y="1201" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit16_1)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
+<defs><clipPath id="kit16_2"><rect x="2162" y="1156" width="164" height="50"/></clipPath></defs>
+<text x="1998" y="1201" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit16_2)"><title>Roma: 1; Bari: 1; Pisa: 2; totale: 4</title>CARINO/A</text>
+<defs><clipPath id="kit17_0"><rect x="215" y="578" width="460" height="50"/></clipPath></defs>
+<text x="215" y="623" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit17_0)"><title>Roma: 4; Bari: 0; Pisa: 0; totale: 4</title>IMMERSIVO/A</text>
+<defs><clipPath id="kit18_0"><rect x="155" y="750" width="280" height="46"/></clipPath></defs>
+<text x="155" y="795" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit18_0)"><title>Roma: 3; Bari: 1; Pisa: 0; totale: 4</title>PIACEVOLE</text>
+<defs><clipPath id="kit18_1"><rect x="435" y="750" width="93" height="46"/></clipPath></defs>
+<text x="155" y="795" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit18_1)"><title>Roma: 3; Bari: 1; Pisa: 0; totale: 4</title>PIACEVOLE</text>
+<defs><clipPath id="kit19_0"><rect x="1610" y="1430" width="219" height="50"/></clipPath></defs>
+<text x="1610" y="1475" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#234A8C" clip-path="url(#kit19_0)"><title>Roma: 2; Bari: 2; Pisa: 0; totale: 4</title>STUPENDO/A</text>
+<defs><clipPath id="kit19_1"><rect x="1829" y="1430" width="219" height="50"/></clipPath></defs>
+<text x="1610" y="1475" font-family="DejaVu Sans" font-size="60" font-weight="bold" fill="#7BBA48" clip-path="url(#kit19_1)"><title>Roma: 2; Bari: 2; Pisa: 0; totale: 4</title>STUPENDO/A</text>
+<defs><clipPath id="kit20_0"><rect x="1088" y="1522" width="445" height="40"/></clipPath></defs>
+<text x="1088" y="1561" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit20_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>AFFASCINANTE</text>
+<defs><clipPath id="kit21_0"><rect x="96" y="686" width="432" height="40"/></clipPath></defs>
+<text x="96" y="725" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit21_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>EMOZIONANTE</text>
+<defs><clipPath id="kit22_1"><rect x="2081" y="755" width="256" height="49"/></clipPath></defs>
+<text x="2081" y="803" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit22_1)"><title>Roma: 0; Bari: 3; Pisa: 0; totale: 3</title>FELICITÀ</text>
+<defs><clipPath id="kit23_0"><rect x="434" y="379" width="172" height="40"/></clipPath></defs>
+<text x="434" y="418" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit23_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>INDIMENTICABILE</text>
+<defs><clipPath id="kit23_1"><rect x="606" y="379" width="345" height="40"/></clipPath></defs>
+<text x="434" y="418" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit23_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>INDIMENTICABILE</text>
+<defs><clipPath id="kit24_0"><rect x="2080" y="675" width="275" height="40"/></clipPath></defs>
+<text x="2080" y="714" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit24_0)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>INTELLIGENTE</text>
+<defs><clipPath id="kit24_1"><rect x="2355" y="675" width="138" height="40"/></clipPath></defs>
+<text x="2080" y="714" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit24_1)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>INTELLIGENTE</text>
+<defs><clipPath id="kit25_0"><rect x="121" y="1053" width="237" height="40"/></clipPath></defs>
+<text x="121" y="1092" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit25_0)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>INTRIGANTE</text>
+<defs><clipPath id="kit25_1"><rect x="358" y="1053" width="118" height="40"/></clipPath></defs>
+<text x="121" y="1092" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit25_1)"><title>Roma: 2; Bari: 1; Pisa: 0; totale: 3</title>INTRIGANTE</text>
+<defs><clipPath id="kit26_0"><rect x="258" y="1119" width="74" height="49"/></clipPath></defs>
+<text x="258" y="1167" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit26_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NOVITÀ</text>
+<defs><clipPath id="kit26_1"><rect x="332" y="1119" width="148" height="49"/></clipPath></defs>
+<text x="258" y="1167" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit26_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NOVITÀ</text>
+<defs><clipPath id="kit27_0"><rect x="2032" y="585" width="91" height="44"/></clipPath></defs>
+<text x="2032" y="624" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit27_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NUOVO/A</text>
+<defs><clipPath id="kit27_1"><rect x="2123" y="585" width="182" height="44"/></clipPath></defs>
+<text x="2032" y="624" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit27_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>NUOVO/A</text>
+<defs><clipPath id="kit28_0"><rect x="306" y="520" width="318" height="40"/></clipPath></defs>
+<text x="306" y="559" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit28_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>ORIGINALE</text>
+<defs><clipPath id="kit29_0"><rect x="751" y="1428" width="39" height="40"/></clipPath></defs>
+<text x="751" y="1467" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit29_0)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>TOP</text>
+<defs><clipPath id="kit29_1"><rect x="790" y="1428" width="78" height="40"/></clipPath></defs>
+<text x="751" y="1467" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#7BBA48" clip-path="url(#kit29_1)"><title>Roma: 1; Bari: 2; Pisa: 0; totale: 3</title>TOP</text>
+<defs><clipPath id="kit30_0"><rect x="1707" y="381" width="246" height="44"/></clipPath></defs>
+<text x="1707" y="420" font-family="DejaVu Sans" font-size="52" font-weight="bold" fill="#234A8C" clip-path="url(#kit30_0)"><title>Roma: 3; Bari: 0; Pisa: 0; totale: 3</title>UNICO/A</text>
+<defs><clipPath id="kit31_0"><rect x="1614" y="1500" width="401" height="32"/></clipPath></defs>
+<text x="1614" y="1532" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit31_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>APPASSIONANTE</text>
+<defs><clipPath id="kit32_1"><rect x="217" y="1187" width="228" height="32"/></clipPath></defs>
+<text x="217" y="1219" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit32_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>DIFFICILE</text>
+<defs><clipPath id="kit33_0"><rect x="2036" y="531" width="267" height="36"/></clipPath></defs>
+<text x="2036" y="563" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit33_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>GIOCOSO/A</text>
+<defs><clipPath id="kit34_0"><rect x="797" y="1525" width="124" height="31"/></clipPath></defs>
+<text x="797" y="1556" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit34_0)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>IMPARARE</text>
+<defs><clipPath id="kit34_1"><rect x="921" y="1525" width="124" height="31"/></clipPath></defs>
+<text x="797" y="1556" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit34_1)"><title>Roma: 1; Bari: 1; Pisa: 0; totale: 2</title>IMPARARE</text>
+<defs><clipPath id="kit35_1"><rect x="482" y="1441" width="249" height="31"/></clipPath></defs>
+<text x="482" y="1472" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit35_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>INFANTILE</text>
+<defs><clipPath id="kit36_0"><rect x="1594" y="1552" width="385" height="36"/></clipPath></defs>
+<text x="1594" y="1584" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit36_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>INFORMATIVO/A</text>
+<defs><clipPath id="kit37_1"><rect x="536" y="1490" width="237" height="36"/></clipPath></defs>
+<text x="536" y="1522" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit37_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>NOIOSO/A</text>
+<defs><clipPath id="kit38_2"><rect x="123" y="464" width="392" height="36"/></clipPath></defs>
+<text x="123" y="496" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit38_2)"><title>Roma: 0; Bari: 0; Pisa: 2; totale: 2</title>ORGANIZZATO/A</text>
+<defs><clipPath id="kit39_1"><rect x="1971" y="387" width="137" height="36"/></clipPath></defs>
+<text x="1971" y="419" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit39_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>PIACIUTO/A</text>
+<defs><clipPath id="kit39_2"><rect x="2108" y="387" width="137" height="36"/></clipPath></defs>
+<text x="1971" y="419" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit39_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>PIACIUTO/A</text>
+<defs><clipPath id="kit40_1"><rect x="2164" y="1320" width="181" height="31"/></clipPath></defs>
+<text x="2164" y="1351" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit40_1)"><title>Roma: 0; Bari: 2; Pisa: 0; totale: 2</title>PUZZLE</text>
+<defs><clipPath id="kit41_1"><rect x="2158" y="1372" width="173" height="36"/></clipPath></defs>
+<text x="2158" y="1404" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#7BBA48" clip-path="url(#kit41_1)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SCIENTIFICO/A</text>
+<defs><clipPath id="kit41_2"><rect x="2331" y="1372" width="173" height="36"/></clipPath></defs>
+<text x="2158" y="1404" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit41_2)"><title>Roma: 0; Bari: 1; Pisa: 1; totale: 2</title>SCIENTIFICO/A</text>
+<defs><clipPath id="kit42_0"><rect x="2084" y="1430" width="363" height="32"/></clipPath></defs>
+<text x="2084" y="1462" font-family="DejaVu Sans" font-size="42" font-weight="bold" fill="#234A8C" clip-path="url(#kit42_0)"><title>Roma: 2; Bari: 0; Pisa: 0; totale: 2</title>SENSAZIONALE</text>
+<defs><clipPath id="kit43_0"><rect x="686" y="339" width="253" height="22"/></clipPath></defs>
+<text x="686" y="361" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit43_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>ACCATTIVANTE</text>
+<defs><clipPath id="kit44_1"><rect x="795" y="1576" width="269" height="25"/></clipPath></defs>
+<text x="795" y="1598" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit44_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>ALTERNATIVO/A</text>
+<defs><clipPath id="kit45_0"><rect x="1738" y="339" width="214" height="22"/></clipPath></defs>
+<text x="1738" y="361" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit45_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>AVVINCENTE</text>
+<defs><clipPath id="kit46_2"><rect x="2361" y="756" width="150" height="25"/></clipPath></defs>
+<text x="2361" y="778" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit46_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>BUFFO/A</text>
+<defs><clipPath id="kit47_0"><rect x="2345" y="1140" width="159" height="25"/></clipPath></defs>
+<text x="2345" y="1162" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit47_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>BUONO/A</text>
+<defs><clipPath id="kit48_0"><rect x="521" y="1545" width="245" height="25"/></clipPath></defs>
+<text x="521" y="1567" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit48_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>COMPLESSO/A</text>
+<defs><clipPath id="kit49_0"><rect x="335" y="339" width="312" height="22"/></clipPath></defs>
+<text x="335" y="361" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit49_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>CONCENTRAZIONE</text>
+<defs><clipPath id="kit50_1"><rect x="2327" y="610" width="152" height="25"/></clipPath></defs>
+<text x="2327" y="632" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit50_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CORTO/A</text>
+<defs><clipPath id="kit51_1"><rect x="107" y="646" width="156" height="22"/></clipPath></defs>
+<text x="107" y="668" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit51_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>CULTURA</text>
+<defs><clipPath id="kit52_1"><rect x="2034" y="347" width="194" height="22"/></clipPath></defs>
+<text x="2034" y="369" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit52_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DELUSIONE</text>
+<defs><clipPath id="kit53_1"><rect x="2254" y="488" width="218" height="25"/></clipPath></defs>
+<text x="2254" y="510" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit53_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DIDATTICO/A</text>
+<defs><clipPath id="kit54_1"><rect x="116" y="1332" width="208" height="25"/></clipPath></defs>
+<text x="116" y="1354" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit54_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DINAMICO/A</text>
+<defs><clipPath id="kit55_2"><rect x="249" y="1436" width="215" height="25"/></clipPath></defs>
+<text x="249" y="1458" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#5F8FC4" clip-path="url(#kit55_2)"><title>Roma: 0; Bari: 0; Pisa: 1; totale: 1</title>DIVERTITO/A</text>
+<defs><clipPath id="kit56_1"><rect x="2066" y="1491" width="255" height="22"/></clipPath></defs>
+<text x="2066" y="1513" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit56_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>DIVULGAZIONE</text>
+<defs><clipPath id="kit57_1"><rect x="198" y="406" width="218" height="25"/></clipPath></defs>
+<text x="198" y="428" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#7BBA48" clip-path="url(#kit57_1)"><title>Roma: 0; Bari: 1; Pisa: 0; totale: 1</title>INCLUSIVO/A</text>
+<defs><clipPath id="kit58_0"><rect x="2339" y="1252" width="168" height="25"/></clipPath></defs>
+<text x="2339" y="1274" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit58_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>OTTIMO/A</text>
+<defs><clipPath id="kit59_0"><rect x="280" y="1498" width="233" height="22"/></clipPath></defs>
+<text x="280" y="1520" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit59_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>PARTICOLARE</text>
+<defs><clipPath id="kit60_0"><rect x="142" y="1122" width="95" height="22"/></clipPath></defs>
+<text x="142" y="1144" font-family="DejaVu Sans" font-size="30" font-weight="bold" fill="#234A8C" clip-path="url(#kit60_0)"><title>Roma: 1; Bari: 0; Pisa: 0; totale: 1</title>UTILE</text>
 <text x="85" y="1685" font-family="DejaVu Sans" font-size="26" font-weight="normal" fill="#18304F">Dimensione = radice del totale di schede che citano la parola; ogni parola conta una volta per scheda.</text>
 <text x="85" y="1730" font-family="DejaVu Sans" font-size="26" font-weight="normal" fill="#18304F">Quote colorate della larghezza = contributo di ciascun kit al totale. Conteggi grezzi, non percentuali normalizzate.</text>
 <text x="85" y="1773" font-family="DejaVu Sans" font-size="24" font-weight="normal" fill="#18304F">Varianti di genere e numero accorpate; una presenza per gruppo e scheda. Parole condivise mostrate una volta.</text></svg>
