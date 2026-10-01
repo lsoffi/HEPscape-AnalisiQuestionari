@@ -10,12 +10,19 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import LinearSegmentedColormap
 from .schema import OPTIONS
 
-COLORS = ["#234A8C", "#7BBA48", "#5F8FC4"]
+COLORS = ["#234A8C", "#7BBA48", "#5F8FC4", "#39754B"]
 
 
 def kit_colors(kits):
-    mapping = {"roma": COLORS[0], "bari": COLORS[1], "pisa": COLORS[2]}
-    return [mapping.get(k.casefold(), COLORS[i]) for i, k in enumerate(kits)]
+    mapping = {
+        "roma": COLORS[0],
+        "bari": COLORS[1],
+        "pisa": COLORS[2],
+        "perugia": COLORS[3],
+    }
+    return [
+        mapping.get(k.casefold(), COLORS[i % len(COLORS)]) for i, k in enumerate(kits)
+    ]
 
 
 OUTCOMES = [
@@ -87,10 +94,10 @@ def generate(groups, kits, output, event):
     def table(kind, q, group, kit, cat, x, n):
         records.append([kind, q, group, kit, cat, x, n, 100 * x / n if n else ""])
 
-    def stratified(g, slug, title, subtitle):
+    def stratified(g, slug, title, subtitle, outcomes=OUTCOMES):
         labels = OPTIONS[f"Q{g}"]
-        fig, axs = plt.subplots(2, 2, figsize=(16, 12))
-        for ax, (q, titleq) in zip(axs.flat, OUTCOMES):
+        fig, axs = plt.subplots(1 if len(outcomes) == 2 else 2, 2, figsize=(16, 12))
+        for ax, (q, titleq) in zip(axs.flat, outcomes):
             for j, (kit, rs) in enumerate(zip(kits, groups)):
                 for k, label in enumerate(labels):
                     subset = [r for r in rs if r[g] == k and r[q] != 999]
@@ -137,21 +144,29 @@ def generate(groups, kits, output, event):
         )
         save(fig, slug, title, subtitle)
 
-    stratified(
-        10,
-        "05_eta",
-        "Confronto nelle stesse fasce di età",
-        "Fasce originali Q10; esclusi i mancanti in età o esito. Nessuna standardizzazione complessiva.",
-    )
+    for part, outcomes in enumerate(
+        [OUTCOMES[:2], OUTCOMES[2:]] if len(kits) == 4 else [OUTCOMES], 1
+    ):
+        stratified(
+            10,
+            "05_eta" + (f"_{part}" if len(kits) == 4 else ""),
+            "Confronto nelle stesse fasce di età",
+            "Fasce originali Q10; esclusi i mancanti in età o esito. Nessuna standardizzazione complessiva.",
+            outcomes,
+        )
     # Presence per questionnaire, exact forms, same tokenization as existing report.
     texts = [[r[2] for r in rs if r[2] != 999] for rs in groups]
     counters = [Counter(t for s in ts for t in tokens(s)) for ts in texts]
     vocab = set().union(*counters)
     total = lambda w: sum(c[w] for c in counters)
     words = sorted(vocab, key=lambda w: (-total(w), w))[:20]
-    fig, ax = plt.subplots(figsize=(16, 12))
+    fig, word_axes = plt.subplots(
+        1, 2 if len(kits) == 4 else 1, figsize=(16, 12), squeeze=False
+    )
     for j, (kit, ts, c) in enumerate(zip(kits, texts, counters)):
         for i, w in enumerate(words):
+            ax = word_axes.flat[i // 10] if len(kits) == 4 else word_axes.flat[0]
+            i = i % 10 if len(kits) == 4 else i
             pct = 100 * c[w] / len(ts) if ts else 0
             ax.barh(i + (j - center) * step, pct, height=step * 0.9, color=colors[j])
             ax.text(
@@ -163,23 +178,23 @@ def generate(groups, kits, output, event):
             )
         for w in sorted(vocab):
             table("parole", "Q2", "forme accorpate", kit, w, c[w], len(ts))
-    ax.set_yticks(range(len(words)), words)
-    ax.invert_yaxis()
-    ax.set_xlim(
-        0,
-        max(
-            [
-                100 * c[w] / len(ts)
-                for c, ts in zip(counters, texts)
-                if ts
-                for w in words
-            ]
-            or [1]
-        )
-        * 1.3,
+    max_pct = max(
+        [100 * c[w] / len(ts) for c, ts in zip(counters, texts) if ts for w in words]
+        or [1]
     )
-    ax.set_xlabel("% delle risposte Q2 non vuote del kit")
-    fig.subplots_adjust(left=0.24, right=0.95, top=0.85, bottom=0.13)
+    for panel, ax in enumerate(word_axes.flat):
+        labels = words[panel * 10 : (panel + 1) * 10] if len(kits) == 4 else words
+        ax.set_yticks(range(len(labels)), labels, fontsize=9)
+        ax.invert_yaxis()
+        ax.set_xlim(0, max_pct * 1.35)
+        ax.set_xlabel("% delle risposte Q2 non vuote del kit")
+    fig.subplots_adjust(
+        left=0.16 if len(kits) == 4 else 0.24,
+        right=0.95,
+        top=0.85,
+        bottom=0.13,
+        wspace=0.65,
+    )
     fig.legend(
         [plt.Rectangle((0, 0), 1, 1, color=c) for c in colors],
         [f"{kit}: Q2 valide={len(ts)}" for kit, ts in zip(kits, texts)],
@@ -233,8 +248,13 @@ def generate(groups, kits, output, event):
         "Curiosità e interesse insieme",
         "Aumenti dichiarati dopo l’attività; “nessuno” comprende risposte uguali o inferiori a prima.",
     )
-    fig, axs = plt.subplots(1, len(kits), figsize=(18, 10))
-    for ax, kit, rs in zip(axs, kits, groups):
+    fig, axs = plt.subplots(
+        2 if len(kits) == 4 else 1,
+        2 if len(kits) == 4 else len(kits),
+        figsize=(18, 12 if len(kits) == 4 else 10),
+        squeeze=False,
+    )
+    for ax, kit, rs in zip(axs.flat, kits, groups):
         matrix = np.zeros((3, 3), dtype=int)
         for r in rs:
             if r[6] != 999 and r[1] != 999:
@@ -284,7 +304,9 @@ def generate(groups, kits, output, event):
         ax.set_xlabel("Q1 · Gradimento")
         ax.set_ylabel("Q6 · Facilità di partecipazione")
         ax.set_title(kit)
-    fig.subplots_adjust(left=0.12, right=0.97, top=0.82, bottom=0.18, wspace=0.65)
+    fig.subplots_adjust(
+        left=0.12, right=0.97, top=0.82, bottom=0.18, wspace=0.65, hspace=0.6
+    )
     save(
         fig,
         "09_facilita_gradimento",

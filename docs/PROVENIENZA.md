@@ -4,7 +4,7 @@
 
 109 schede del questionario ERNEST relative all’attività HEPscape!, trascritte e verificate con le correzioni confermate dal titolare dei dati. Città: Avezzano; origine del kit: Roma. La denominazione generale delle figure è «HEPscape! · Evento ERNEST – ERN 2026».
 
-- `data/ern2026/questionari.xlsx` è ora il workbook unico dei lotti Roma, Bari, Pisa e Perugia/Terni (276 schede); conserva risposte e codici delle 109 schede Roma.
+- `data/ern2026/questionari.xlsx` è ora il workbook unico dei lotti Roma, Bari, Pisa e Perugia/Terni (325 schede); conserva risposte e codici delle 109 schede Roma.
 - `data/ern2026/trascrizione_storica.json` conserva risposte, annotazioni e storia delle verifiche della sessione, con i percorsi personali ridotti ai soli nomi dei file.
 - `data/ern2026/lotti/roma.json` conserva il lotto Roma nel formato del nuovo programma. I codici provengono dal workbook verificato; non da una nuova interpretazione delle foto.
 - `kits/roma/HEPscape_ERN2026_slide_originali.pdf` è una copia della raccolta finale della sessione originale.
@@ -17,7 +17,7 @@ La raccolta rigenerata usa gli stessi dati e criteri di quella originale. Nei pa
 98 schede lette visivamente in chat dalla scansione `hepscape_bari_survey1.pdf`, una scheda per pagina. Kit Bari, location Bari, stesso Evento ERNEST - ERN 2026, confermati dall’utente. Gli 11 dubbi A–K sono stati risolti esplicitamente dall’utente il 30 settembre 2026; le altre risposte sono state controllate visivamente in chat, senza conferma umana individuale. Il campo `reviewed` indica il completamento di questo controllo: la provenienza distingue il metodo, e `review_log` conserva le 11 decisioni dell’utente.
 
 - `data/ern2026/lotti/bari.json`: 98 schede con pagina sorgente e storia delle correzioni.
-- `data/ern2026/questionari_verificati.json`: unione attuale dei quattro lotti (276 schede).
+- `data/ern2026/questionari_verificati.json`: unione attuale dei cinque lotti (325 schede).
 - `kits/bari/bari/ERN2026/`: report, grafici e tabelle filtrati sul kit Bari e location Bari.
 - Le risposte vuote confermate D (pagina 39, Q2) e J (pagina 74, Q8) sono `null` nel JSON e 999 nell’Excel. L’annotazione «PIÙ O MENO» della pagina 74 resta nelle note.
 
@@ -47,6 +47,14 @@ Per Q1 e Q3–Q7 si applica esclusivamente la conversione 2→0, 1→1, 0→2. Q
 Le altre risposte sono state controllate visivamente in chat, senza conferma umana individuale; `reviewed` indica il completamento di questo controllo. Il foglio delle risposte originali contiene la trascrizione delle opzioni selezionate e dei testi, non le immagini. `data/ern2026/lotti/perugia_terni.json` conserva i riferimenti alle pagine, l’hash del PDF e le note delle sei decisioni. Le scansioni e i ritagli non sono pubblicati.
 
 I risultati dedicati sono in `kits/perugia/terni/ERN2026/`. Il confronto Roma/Bari/Pisa conserva il proprio ambito di tre kit.
+
+## Integrazione Roma / Avezzano da tabella online
+
+49 risposte aggiuntive fornite dall’utente il 1 ottobre 2026, assegnate al kit Roma e alla location Avezzano. Totale Roma/Avezzano: 158 schede; totale del workbook: 325. La tabella è conservata in `data/ern2026/lotti/roma_avezzano_online_originale.tsv`, con i due livelli di intestazione e i testi su più righe. Il lotto convertito è `roma_avezzano_online.json`, distinto dalle 109 schede iniziali in `roma.json`.
+
+La conversione è deterministica: QID65→Q1, QID59→Q2, QID66–QID71→Q3–Q8, QID73→Q9, QID74→Q10, QID75→Q11. QID7 e QID76 conservano partecipazione e attività nei metadati. Le 49 righe indicano tutte partecipazione «Sì» e «Avezzano - HEPscape!». Sei Q2 sono vuote. Refusi, lingua e contenuti delle risposte aperte sono conservati senza correzioni editoriali. `reviewed` indica il controllo della corrispondenza con la tabella, non una rilettura di fotografie.
+
+Le nuove righe hanno ID `ROMA-AVZ-ONLINE-ERN2026-001`–`049`; i dati precedenti sono invariati. In assenza di identificativi individuali nella fonte non è possibile stabilire se una persona abbia compilato anche una scheda cartacea. L’aggiunta segue l’indicazione dell’utente che si tratta di dati aggiuntivi.
 
 ## Nuove foto
 

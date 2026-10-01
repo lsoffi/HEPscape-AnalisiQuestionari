@@ -57,7 +57,7 @@ def test_coding_order():
 
 def test_combined_dataset_matches_every_excel_cell(tmp_path):
     data = load(ROOT / "data/ern2026/questionari_verificati.json", require_review=True)
-    assert len(data["records"]) == 276
+    assert len(data["records"]) == 325
     roma = load(ROOT / "data/ern2026/lotti/roma.json", require_review=True)
     bari = load(ROOT / "data/ern2026/lotti/bari.json", require_review=True)
     assert len(roma["records"]) == 109
@@ -70,7 +70,11 @@ def test_combined_dataset_matches_every_excel_cell(tmp_path):
     for page, q, value in [(18, "Q6", 1), (20, "Q7", 1), (25, "Q1", 0),
                            (25, "Q6", 0), (26, "Q10", 2), (46, "Q2", "DIVERTENTE BELLO")]:
         assert perugia["records"][page - 1]["answers"][q] == value
-    assert data["records"] == roma["records"] + bari["records"] + pisa["records"] + perugia["records"]
+    online = load(ROOT / "data/ern2026/lotti/roma_avezzano_online.json", require_review=True)
+    assert len(online["records"]) == 49
+    assert sum(r["answers"]["Q2"] is None for r in online["records"]) == 6
+    assert all(r["kit"] == "Roma" and r["city"] == "Avezzano" for r in online["records"])
+    assert data["records"] == roma["records"] + bari["records"] + pisa["records"] + perugia["records"] + online["records"]
     target = tmp_path / "reproduced.xlsx"
     export_workbook(data, target)
     assert read_workbook(target) == read_workbook(
@@ -79,7 +83,7 @@ def test_combined_dataset_matches_every_excel_cell(tmp_path):
     wb = load_workbook(target)
     assert wb["Dati codificati"].freeze_panes == "B7"
     assert len(wb["Dati codificati"].data_validations.dataValidation) == 10
-    assert wb["Risposte originali"].max_row == 277
+    assert wb["Risposte originali"].max_row == 326
 
 
 @pytest.mark.parametrize("value", [3, -1, "0", True, 999])

@@ -31,6 +31,33 @@ def test_colors_follow_kit_identity():
     from hepscape.comparison import kit_colors
 
     assert kit_colors(["Pisa", "Roma", "Bari"]) == ["#5F8FC4", "#234A8C", "#7BBA48"]
+    assert kit_colors(["Roma", "Perugia", "Bari", "Pisa"]) == [
+        "#234A8C",
+        "#39754B",
+        "#7BBA48",
+        "#5F8FC4",
+    ]
+    assert kit_colors(["Pisa", "Bari", "Perugia", "Roma"]) == list(
+        reversed(kit_colors(["Roma", "Perugia", "Bari", "Pisa"]))
+    )
+
+
+def test_four_kit_wordwall_preserves_counts_and_colors(tmp_path):
+    import csv
+    from hepscape.comparison_wordwall import generate
+
+    kits = ["Roma", "Perugia", "Bari", "Pisa"]
+    texts = [["COMUNE " + k.upper()] for k in kits]
+    generate(texts, kits, tmp_path, "Test")
+    with (tmp_path / "word_wall_insieme.csv").open(encoding="utf-8-sig") as f:
+        words = {r["parola"]: r for r in csv.DictReader(f)}
+    assert words["COMUNE"]["totale"] == "4"
+    assert words["PERUGIA"]["Perugia"] == "1"
+    assert words["PERUGIA"]["Roma"] == "0"
+    for kit in kits:
+        assert float(words["COMUNE"][f"quota_{kit}"]) == 0.25
+    svg = (tmp_path / "12_word_wall_insieme.svg").read_text()
+    assert "#39754B" in svg and "Pisa: 1 risposte" in svg
 
 
 def test_three_kit_wordwall_preserves_exclusive_words(tmp_path):

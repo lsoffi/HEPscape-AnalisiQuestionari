@@ -70,7 +70,7 @@ def generate(texts, kits, output, event):
         85,
         55,
         "HEPscape! · LE PAROLE DI " + " E ".join(k.upper() for k in kits),
-        56,
+        45 if len(kits) == 4 else 56,
         bold=True,
     )
     text(
@@ -81,7 +81,12 @@ def generate(texts, kits, output, event):
     )
     for j, kit in enumerate(kits):
         text(
-            85 + j * 800, 215, f"● {kit}: {len(texts[j])} risposte", 33, colors[j], True
+            85 + j * ((W - 170) / len(kits)),
+            215,
+            f"● {kit}: {len(texts[j])} risposte",
+            29 if len(kits) == 4 else 33,
+            colors[j],
+            True,
         )
     for i, (word, n, size, x, y, bbox) in enumerate(placed):
         tw, th = bbox[2] - bbox[0], bbox[3] - bbox[1]

@@ -1,4 +1,4 @@
-HEPscape! - Analisi descrittiva di 109 questionari | Evento ERNEST - ERN 2026
+HEPscape! - Analisi descrittiva di 158 questionari | Evento ERNEST - ERN 2026
 Il campione riguarda esclusivamente HEPscape!, non tutte le attività dell’evento ERNEST.
 Palette dal sito https://web.infn.it/hepscape/: blu #234A8C / #335BA6, azzurro #5F8FC4, verde #7BBA48.
 Fonte: questionari.xlsx, foglio Dati codificati.

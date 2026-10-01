@@ -1,4 +1,4 @@
-"""Confronto descrittivo di tutte le domande chiuse fra due o tre kit."""
+"""Confronto descrittivo di tutte le domande chiuse fra due, tre o quattro kit."""
 
 import argparse
 import csv
@@ -34,10 +34,10 @@ def main():
     p.add_argument("--out", default="reports/confronto-roma-bari-pisa/ERN2026")
     p.add_argument("--event", default="Evento ERNEST - ERN 2026")
     args = p.parse_args()
-    if len(args.kits) not in (2, 3) or len(set(k.casefold() for k in args.kits)) != len(
-        args.kits
-    ):
-        p.error("Scegli due o tre kit distinti.")
+    if len(args.kits) not in (2, 3, 4) or len(
+        set(k.casefold() for k in args.kits)
+    ) != len(args.kits):
+        p.error("Scegli da due a quattro kit distinti.")
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     rows = read_workbook(args.workbook)
@@ -66,7 +66,9 @@ def main():
     table = []
     questions = list(TITLES)
     for start in range(0, len(questions), 4):
-        fig, axes = plt.subplots(2, 2, figsize=(16, 12))
+        fig, axes = plt.subplots(
+            1 if len(groups) == 4 and start == 8 else 2, 2, figsize=(16, 12)
+        )
         for ax, q in zip(axes.flat, questions[start : start + 4]):
             idx = int(q[1:])
             labels = OPTIONS[q]
@@ -89,7 +91,7 @@ def main():
                         y[k] + (j - center) * step,
                         f"{pc:.1f}%",
                         va="center",
-                        fontsize=8,
+                        fontsize=7 if len(groups) == 4 else 8,
                     )
                     table.append([q, kit, labels[k], count, n, len(rs) - n, pc])
             ax.set_yticks(y, labels)

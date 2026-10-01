@@ -6,12 +6,14 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
-Il workbook unico contiene **276 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 109 raccolti ad Avezzano con kit Roma, 98 a Bari con kit Bari, 23 a Pisa con kit Pisa e 46 a Terni con kit Perugia. Le risposte dei quattro kit sono selezionabili separatamente. Il lotto Terni è stato trascritto da `Survey1_Terni.pdf`; i sei punti dubbi sono stati chiariti in chat il 1 ottobre 2026. Il PDF originale non è pubblicato nel repository; i riferimenti alle pagine e le correzioni sono conservati nei dati.
+Il workbook unico contiene **325 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 158 raccolti ad Avezzano con kit Roma (109 schede cartacee e 49 risposte aggiuntive dalla tabella online), 98 a Bari con kit Bari, 23 a Pisa con kit Pisa e 46 a Terni con kit Perugia. Le risposte dei quattro kit sono selezionabili separatamente. Il lotto Terni è stato trascritto da `Survey1_Terni.pdf`; i sei punti dubbi sono stati chiariti in chat il 1 ottobre 2026. Il PDF originale non è pubblicato nel repository; i riferimenti alle pagine e le correzioni sono conservati nei dati.
 
+- [Workbook Roma / Avezzano, 158 schede](kits/roma/avezzano/ERN2026/questionari_Roma_Avezzano.xlsx)
 - [Workbook unico Roma + Bari + Pisa + Perugia](data/ern2026/questionari.xlsx)
 - [Report Perugia / Terni con copertina e word wall](kits/perugia/terni/ERN2026/HEPscape_raccolta_grafici.pdf)
 - [Workbook del lotto Perugia / Terni](kits/perugia/terni/ERN2026/questionari_Perugia_Terni.xlsx)
 - [Report Pisa / Pisa con copertina e word wall](kits/pisa/pisa/ERN2026/HEPscape_raccolta_grafici.pdf)
+- [Confronto Roma / Perugia / Bari / Pisa a quattro colori](reports/confronto-roma-perugia-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf)
 - [Confronto Roma / Bari / Pisa a tre colori](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf)
 - [Workbook del solo kit Pisa](kits/pisa/pisa/ERN2026/questionari_Pisa.xlsx)
 - [Report Bari / Bari con copertina e word wall](kits/bari/bari/ERN2026/HEPscape_raccolta_grafici.pdf)
@@ -146,9 +148,19 @@ Il **PDF inizia con una copertina con il logo ufficiale HEPscape!** che riporta 
 
 L’output contiene PDF, PNG/SVG, tabelle CSV, word wall, ZIP e `manifest.json` con selezione e numero di schede. I confronti tra città sono aggiunti quando ne sono presenti più di una. I risultati sono descrittivi: le differenze possono dipendere dal pubblico e dagli eventi, non solo dal kit.
 
+## Confronto Roma, Perugia, Bari e Pisa
+
+[PDF a quattro kit](reports/confronto-roma-perugia-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf): 325 schede, incluse le 49 risposte aggiuntive di Avezzano. Comprende tutte le domande chiuse, risposte mancanti, approfondimenti per età/occasioni/familiarità, curiosità e interesse congiunti, facilità e gradimento, parole Q2 e word wall comune. Le tavole rimosse dal confronto precedente restano escluse.
+
+```sh
+python scripts/confronta_kit.py data/ern2026/questionari.xlsx --kits Roma Perugia Bari Pisa --out reports/confronto-roma-perugia-bari-pisa/ERN2026
+```
+
+Roma (158 schede, Avezzano) è blu `#234A8C`, Perugia (46, Terni) verde scuro `#39754B`, Bari (98, Bari) verde `#7BBA48`, Pisa (23, Pisa) azzurro `#5F8FC4`. Il verde scuro aggiunge una quarta tonalità alla palette già adottata. Per leggibilità, gli esiti per età occupano due pagine e le 20 parole sono disposte su due pannelli. Nel word wall le dimensioni riflettono i conteggi complessivi; le porzioni colorate riflettono il contributo dei singoli kit, non percentuali normalizzate per numerosità.
+
 ## Confronto diretto Roma, Bari e Pisa
 
-Questo confronto comprende Roma, Bari e Pisa; il lotto Perugia/Terni è disponibile nel workbook unico e nel report dedicato, ma non è incluso in questo PDF.
+Questo confronto storico usa le 109 schede iniziali di Roma, Bari e Pisa; il lotto Perugia/Terni è disponibile nel workbook unico e nel report dedicato, ma non è incluso in questo PDF.
 
 [PDF di confronto a tre kit](reports/confronto-roma-bari-pisa/ERN2026/HEPscape_confronto_kit.pdf): tutte le 10 domande chiuse e risposte mancanti (inclusa Q2), con colori costanti per kit, percentuali e denominatori validi. PNG/SVG e tabella CSV sono nella stessa cartella.
 
@@ -162,7 +174,7 @@ Roma ha 109 schede raccolte ad Avezzano, Bari 98 raccolte a Bari e Pisa 23 racco
 
 Per Q2 le percentuali usano le risposte testuali non vuote del rispettivo kit e accorpano le varianti di genere e numero e contano ogni gruppo al massimo una volta per scheda, con le stesse stopword dei report esistenti. Q7 misura le occasioni di partecipazione e Q8 la familiarità didattica con il luogo: nessuna delle due misura direttamente precedenti esperienze HEPscape.
 
-I colori sono stabili anche cambiando l’ordine: blu Roma (#234A8C), verde Bari (#7BBA48), azzurro Pisa (#5F8FC4). La dimensione del carattere cresce con la radice del numero totale di schede che citano la parola. Ogni parola condivisa compare una sola volta: la larghezza delle porzioni colorate è proporzionale ai conteggi di ciascun kit. Si tratta di conteggi grezzi, quindi anche la diversa numerosità delle risposte Q2 contribuisce al risultato; per confrontare percentuali normalizzate restano le tavole precedenti. `word_wall_insieme.csv` conserva i conteggi e `approfondimenti.csv` i denominatori degli approfondimenti. La precedente tavola con gli intervalli è stata rimossa dal report. Lo script accetta due o tre kit distinti e seleziona tutte le righe dei kit richiesti; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
+I colori sono stabili anche cambiando l’ordine: blu Roma (#234A8C), verde Bari (#7BBA48), azzurro Pisa (#5F8FC4). La dimensione del carattere cresce con la radice del numero totale di schede che citano la parola. Ogni parola condivisa compare una sola volta: la larghezza delle porzioni colorate è proporzionale ai conteggi di ciascun kit. Si tratta di conteggi grezzi, quindi anche la diversa numerosità delle risposte Q2 contribuisce al risultato; per confrontare percentuali normalizzate restano le tavole precedenti. `word_wall_insieme.csv` conserva i conteggi e `approfondimenti.csv` i denominatori degli approfondimenti. La precedente tavola con gli intervalli è stata rimossa dal report. Lo script accetta da due a quattro kit distinti e seleziona tutte le righe dei kit richiesti; `--event` modifica soltanto il titolo e va adattato se il workbook comprende altri eventi.
 
 La precedente raccolta Roma/Bari resta disponibile in `reports/confronto-roma-bari/ERN2026/` come versione storica. Il report Pisa si rigenera con:
 
@@ -176,6 +188,16 @@ Per rigenerare il report Perugia / Terni:
 hepscape plots data/ern2026/questionari.xlsx --kit Perugia --city Terni --event "Evento ERNEST - ERN 2026" --out kits/perugia/terni/ERN2026
 ```
 
+## Importare una tabella testuale con intestazioni QID
+
+Per un’esportazione TSV con una prima riga QID e una seconda riga con i testi delle domande:
+
+```sh
+python scripts/importa_tabella_qid.py data/ern2026/lotti/roma_avezzano_online_originale.tsv --kit Roma --city Avezzano --event "Evento ERNEST - ERN 2026" --prefix ROMA-AVZ-ONLINE-ERN2026 --out work/roma_online.json
+```
+
+Lo script associa le colonne tramite QID, valida le risposte chiuse, conserva i testi originali e converte Q2 in maiuscolo. Le celle vuote diventano 999 nell’Excel. Non scarta automaticamente risposte identiche: la tabella non contiene identificativi individuali per riconoscere eventuali compilazioni duplicate. Per aggiungere un lotto, usare un prefisso nuovo; non reimportare le stesse risposte con ID diversi.
+
 ## 4. Unire lotti verificati dello stesso evento
 
 ```sh
@@ -183,10 +205,10 @@ hepscape merge data/ern2026/questionari_verificati.json work/roma-avezzano-02/ve
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
-I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json`, `data/ern2026/lotti/bari.json`, `data/ern2026/lotti/pisa.json` e `data/ern2026/lotti/perugia_terni.json`. Per ricreare il workbook unico:
+I lotti pubblicati sono conservati separatamente in `data/ern2026/lotti/roma.json`, `data/ern2026/lotti/bari.json`, `data/ern2026/lotti/pisa.json` `data/ern2026/lotti/perugia_terni.json` e `data/ern2026/lotti/roma_avezzano_online.json`. Per ricreare il workbook unico:
 
 ```sh
-hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json data/ern2026/lotti/pisa.json data/ern2026/lotti/perugia_terni.json --out work/uniti.json
+hepscape merge data/ern2026/lotti/roma.json data/ern2026/lotti/bari.json data/ern2026/lotti/pisa.json data/ern2026/lotti/perugia_terni.json data/ern2026/lotti/roma_avezzano_online.json --out work/uniti.json
 hepscape workbook work/uniti.json --out work/questionari_completi.xlsx
 ```
 
