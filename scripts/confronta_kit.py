@@ -12,6 +12,7 @@ from reportlab.pdfgen import canvas
 from hepscape.workbook import read_workbook
 from hepscape.schema import OPTIONS
 from hepscape.cover import draw_cover
+from hepscape.sample_summary import draw_sample_summary, sample_counts
 
 TITLES = {
     "Q1": "Gradimento",
@@ -191,10 +192,12 @@ def main():
         loc,
         args.event,
         sum(map(len, groups)),
-        len(figures) + 1,
+        len(figures) + 2,
     )
     c.showPage()
-    for i, path in enumerate(figures, 2):
+    draw_sample_summary(c, sample_counts(groups, [args.event] * len(groups)), len(figures) + 2)
+    c.showPage()
+    for i, path in enumerate(figures, 3):
         c.drawImage(
             str(path),
             0,
@@ -205,7 +208,7 @@ def main():
             anchor="c",
         )
         c.setFont("Helvetica", 9)
-        c.drawRightString(980, 12, f"{i} / {len(figures)+1}")
+        c.drawRightString(980, 12, f"{i} / {len(figures)+2}")
         c.showPage()
     c.save()
     print(pdf)

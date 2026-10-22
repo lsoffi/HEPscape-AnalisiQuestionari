@@ -13,6 +13,7 @@ from hepscape.workbook import read_workbook
 from hepscape.schema import OPTIONS
 from hepscape.words import grouped_tokens
 from hepscape.cover import draw_cover
+from hepscape.sample_summary import draw_sample_summary, sample_counts
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'reports/confronto-avezzano-potenza/kit-roma'
@@ -97,10 +98,11 @@ def main():
     (OUT/'manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n')
     pdf=OUT/'HEPscape_Avezzano_Potenza_kit_Roma.pdf'
     c=canvas.Canvas(str(pdf),pagesize=(1008,756))
-    draw_cover(c,'Roma','Avezzano e Potenza','ERN2026 / Lucania is comics',sum(map(len,groups)),len(figures)+2);c.showPage()
-    for i,path in enumerate(figures,2):
+    draw_cover(c,'Roma','Avezzano e Potenza','ERN2026 / Lucania is comics',sum(map(len,groups)),len(figures)+3);c.showPage()
+    draw_sample_summary(c,sample_counts(groups,['ERN2026','Lucania is comics']),len(figures)+3);c.showPage()
+    for i,path in enumerate(figures,3):
         c.drawImage(str(path),0,25,width=1008,height=710,preserveAspectRatio=True,anchor='c')
-        c.setFont('Helvetica',9);c.drawRightString(980,12,f'{i} / {len(figures)+2}');c.showPage()
+        c.setFont('Helvetica',9);c.drawRightString(980,12,f'{i} / {len(figures)+3}');c.showPage()
     c.setFillColorRGB(.094,.188,.310);c.setFont('Helvetica-Bold',28);c.drawString(55,680,'Metodo e limiti del confronto')
     lines=[
         'Selezione: solo kit Roma; Avezzano dal workbook ERN2026, Potenza dal workbook LIC2026.',
@@ -122,7 +124,7 @@ def main():
     ]
     c.setFont('Helvetica',13)
     for i,line in enumerate(lines):c.drawString(55,625-i*27,line)
-    c.setFont('Helvetica',9);c.drawRightString(980,12,f'{len(figures)+2} / {len(figures)+2}');c.showPage();c.save()
+    c.setFont('Helvetica',9);c.drawRightString(980,12,f'{len(figures)+3} / {len(figures)+3}');c.showPage();c.save()
     print(json.dumps(summary,ensure_ascii=False,indent=2));print(pdf)
 
 if __name__=='__main__':main()

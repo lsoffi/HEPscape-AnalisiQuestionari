@@ -2,6 +2,17 @@ import pytest
 from hepscape.comparison import wilson, difference_interval, tokens
 
 
+def test_sample_counts_separate_cities_and_include_blank_answers():
+    from hepscape.sample_summary import sample_counts
+
+    rows = [(str(i), *([999] * 11), city, "Roma")
+            for i, city in enumerate(["Avezzano", "Avezzano", "Potenza"])]
+    assert sample_counts([rows], ["Evento"]) == [
+        ("Roma", "Avezzano", "Evento", 2),
+        ("Roma", "Potenza", "Evento", 1),
+    ]
+
+
 def test_wilson_extremes_and_missing():
     assert wilson(0, 0) is None
     assert wilson(0, 10) == pytest.approx((0, 0.2775327998628892))
