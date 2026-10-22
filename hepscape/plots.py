@@ -510,7 +510,22 @@ def generate(
 
     kit_label = kit or "Tutti i kit"
     location_label = city or "Tutte le location"
-    draw_cover(c, kit_label, location_label, event, N, len(figs) + 2)
+    method_pages = [[]]
+    y = 675
+    for paragraph in (
+        method
+        + "\nAccorpamenti Q2: "
+        + ", ".join(k + " -> " + v for k, v in mapping.items())
+    ).splitlines():
+        for line in textwrap.wrap(paragraph, width=135):
+            if y < 48:
+                method_pages.append([])
+                y = 675
+            method_pages[-1].append((y, line.replace("’", "'")))
+            y -= 17
+        y -= 8
+    total_pages = 1 + len(figs) + len(method_pages)
+    draw_cover(c, kit_label, location_label, event, N, total_pages)
     c.showPage()
     for i, (name, title, subtitle, foot) in enumerate(figs, 2):
         im = Image.open(out / (name + ".png"))
@@ -524,23 +539,18 @@ def generate(
             height=h * scale,
         )
         c.setFont("Helvetica", 8)
-        c.drawRightString(985, 12, f"{i} / {len(figs)+2}")
+        c.drawRightString(985, 12, f"{i} / {total_pages}")
         c.showPage()
-    c.setFont("Helvetica-Bold", 18)
-    c.drawString(48, 704, "Metodo e lettura dei grafici")
-    c.setFont("Helvetica", 11)
-    y = 675
-    for paragraph in (
-        method
-        + "\nAccorpamenti Q2: "
-        + ", ".join(k + " -> " + v for k, v in mapping.items())
-    ).splitlines():
-        for line in textwrap.wrap(paragraph, width=135):
-            c.drawString(48, y, line.replace("’", "'"))
-            y -= 17
-        y -= 8
-    c.setFont("Helvetica", 8)
-    c.drawRightString(985, 12, f"{len(figs)+2} / {len(figs)+2}")
+    for page_index, lines in enumerate(method_pages):
+        if page_index:
+            c.showPage()
+        c.setFont("Helvetica-Bold", 18)
+        c.drawString(48, 704, "Metodo e lettura dei grafici" + (" (continua)" if page_index else ""))
+        c.setFont("Helvetica", 11)
+        for y, line in lines:
+            c.drawString(48, y, line)
+        c.setFont("Helvetica", 8)
+        c.drawRightString(985, 12, f"{len(figs)+2+page_index} / {total_pages}")
     c.save()
     thumbs = []
     for name, *_ in figs:

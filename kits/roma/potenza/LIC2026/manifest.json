@@ -9,7 +9,7 @@
     "kit": "Roma",
     "location": "Potenza"
   },
-  "questionnaires": 81,
+  "questionnaires": 113,
   "figures": [
     "01_risposte",
     "02_partecipanti",
@@ -65,7 +65,7 @@
   "workbook": "questionari.xlsx",
   "missing": [
     1,
-    10,
+    17,
     1,
     0,
     1,
@@ -76,5 +76,5 @@
     0,
     0
   ],
-  "valid_Q2": 71
+  "valid_Q2": 96
 }

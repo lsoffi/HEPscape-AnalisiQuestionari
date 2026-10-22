@@ -1,4 +1,4 @@
-HEPscape! - Analisi descrittiva di 81 questionari | Lucania is comics
+HEPscape! - Analisi descrittiva di 113 questionari | Lucania is comics
 Il campione riguarda esclusivamente HEPscape!, non tutte le attività dell’evento ERNEST.
 Palette dal sito https://web.infn.it/hepscape/: blu #234A8C / #335BA6, azzurro #5F8FC4, verde #7BBA48.
 Fonte: questionari.xlsx, foglio Dati codificati.

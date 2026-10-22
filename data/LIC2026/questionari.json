@@ -4063,6 +4063,1614 @@
         "scheda": "Numero manoscritto: 65",
         "Q5": "Risposta non compilata nella fotografia."
       }
+    },
+    {
+      "id": "LIC2026-IMG2537",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2537.JPG",
+      "source_sha256": "27d77079d4e002f17b48644c5324af01f61839742910170881f393738cea3e81",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 113",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2538",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2538.JPG",
+      "source_sha256": "5d4e3fd57b1964a99468da61d1eca8b27cef11539eaa756a0c3221ae80baa41a",
+      "answers": {
+        "Q1": 0,
+        "Q2": "DIVERTENTE - APPASSIONANTE",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 5,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "DIVERTENTE - APPASSIONANTE",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "Sì",
+        "Q9": "Maschile",
+        "Q10": "41–60",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 112"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2539",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2539.JPG",
+      "source_sha256": "a550714f2602bfd1b13fd98c81d98199ab82815ddada868299ac90d57f9a5e43",
+      "answers": {
+        "Q1": 0,
+        "Q2": "Interessante",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "Interessante",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "Sì",
+        "Q9": "Maschile",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 111"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2540",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2540.JPG",
+      "source_sha256": "c164d871be15983edc5452997c11a1d7b93a6d7739c749df99465fccd416c7e4",
+      "answers": {
+        "Q1": 1,
+        "Q2": "INTERESSANTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 5,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "INTERESSANTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "41–60",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 110"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2541",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2541.JPG",
+      "source_sha256": "4d34e94a3a687abf9f02eb2183e201f1b06a68d3680ec5273704c48009a207c9",
+      "answers": {
+        "Q1": 0,
+        "Q2": "COINVOLGENTE E INTERESSANTE",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 1,
+        "Q9": 0,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "COINVOLGENTE E INTERESSANTE",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "A volte",
+        "Q8": "Sì",
+        "Q9": "Femminile",
+        "Q10": "11–14",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 109"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2542",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2542.JPG",
+      "source_sha256": "d9d025c43f0bab24a095b9a1990e05bc8fb2797412dfcf05d05dbc6e73bc6936",
+      "answers": {
+        "Q1": 0,
+        "Q2": "CURIOSA SCIENTIFICA PROFESSIONALE",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 0,
+        "Q10": 5,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "CURIOSA SCIENTIFICA PROFESSIONALE",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "Sì",
+        "Q9": "Femminile",
+        "Q10": "41–60",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 108"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2543",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2543.JPG",
+      "source_sha256": "63ee7e81b39aa6ee78a2b6b4bf3caeb4ec77fd1431ffe1c05c33d41b26b21924",
+      "answers": {
+        "Q1": 1,
+        "Q2": "CARINA, INTERATTIVA, SIMPATICA",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 3,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "CARINA, INTERATTIVA, SIMPATICA",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "19–25",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 107"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2544",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2544.JPG",
+      "source_sha256": "cd5af2f60f719207d1f70d90ef192319ef04dd2d8abbb1f28590fcaee27c14ee",
+      "answers": {
+        "Q1": 0,
+        "Q2": "INTERESSANTE, CURIOSO, SORPRENDENTE",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 3,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "INTERESSANTE, CURIOSO, SORPRENDENTE",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "19–25",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 106"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2545",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2545.JPG",
+      "source_sha256": "23358be92ef19092640404e999aaebb6404d0e4e2f11a9cf5b4453a7ee32019d",
+      "answers": {
+        "Q1": 0,
+        "Q2": "STIMOLANTE ISTRUTTIVO DIVERTENTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 4,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "STIMOLANTE ISTRUTTIVO DIVERTENTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "26–40",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 105"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2546",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2546.JPG",
+      "source_sha256": "39c6e94b90f61a66ffdeda4605a7ec972053bfa3f4110036575f7ef54c4c2ad5",
+      "answers": {
+        "Q1": 1,
+        "Q2": "DIVERTENTE, SIMPATICA, ISTRUTTIVA",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 4,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "DIVERTENTE, SIMPATICA, ISTRUTTIVA",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "26–40",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 104"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2547",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2547.JPG",
+      "source_sha256": "8e4bc77eaa157abf78362346ab5b685b29178d1a5d787888353f6d013a4b43f3",
+      "answers": {
+        "Q1": 0,
+        "Q2": "Molto interessante",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 4,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "Molto interessante",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "26–40",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 103"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2548",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2548.JPG",
+      "source_sha256": "c2c312252916c60bf1df2a68edd1ff2f54559f9374e52a2fda95885f4643fa13",
+      "answers": {
+        "Q1": 1,
+        "Q2": "COINVOLGENTE, DIVERTENTE,",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "COINVOLGENTE, DIVERTENTE,",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "11–14",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 102"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2549",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2549.JPG",
+      "source_sha256": "47091d3b0b5b7461094d8a2503f62279b93a5b94baac4ad31154b9fc41a41881",
+      "answers": {
+        "Q1": 1,
+        "Q2": "BELLO, INTERESSANTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "BELLO, INTERESSANTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "11–14",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 101"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2550",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2550.JPG",
+      "source_sha256": "5a80b6ca87f516168f43ca2436772b5d04c5baf842ba381b44e85ff35cf54253",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 5,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "41–60",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 100",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2553",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2553.JPG",
+      "source_sha256": "0885cbfa28cfadc7a33ceb46d89c9ae012dd1a18ce848fecbb70fef5b46ca4fa",
+      "answers": {
+        "Q1": 0,
+        "Q2": "bella, interessante, coinvolgente",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 0,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "bella, interessante, coinvolgente",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "Meno di 11",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 99"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2554",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2554.JPG",
+      "source_sha256": "d0adecf6d4e98249d0896f70a0484e7442dabf233ecc7a565cc5ca52d9283339",
+      "answers": {
+        "Q1": 0,
+        "Q2": "RAGIONAMENTO, ATTENZIONE, SCOPERTA",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 1,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "RAGIONAMENTO, ATTENZIONE, SCOPERTA",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "11–14",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 98"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2555",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2555.JPG",
+      "source_sha256": "f23a95c43b636f6e5d334d913403d3853db807b3bac38ca002e770e08be501d5",
+      "answers": {
+        "Q1": 1,
+        "Q2": "DIVULGATIVA",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 4,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "DIVULGATIVA",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "26–40",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 97"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2556",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2556.JPG",
+      "source_sha256": "03c2cdf1e99a2adad78fa8de9cc0dc926322f997aebc490d758e8899fd386776",
+      "answers": {
+        "Q1": 1,
+        "Q2": "INTERATTIVA",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 3,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "INTERATTIVA",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "19–25",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 96"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2557",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2557.JPG",
+      "source_sha256": "26825845f8c55c08c415b09d2b155b65bee398d57c48d9611ef82bb02f283921",
+      "answers": {
+        "Q1": 1,
+        "Q2": "ORIGINALE, COINVOLGENTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "ORIGINALE, COINVOLGENTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 95"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2558",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2558.JPG",
+      "source_sha256": "e94299be53821ea5d29fa4f82ed428176c4e10d4b196e0fd9a2b60153e03e685",
+      "answers": {
+        "Q1": 1,
+        "Q2": "Interessante",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 3,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "Interessante",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "Sì, molto",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "19–25",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 94"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2559",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2559.JPG",
+      "source_sha256": "31d1e37d332654f351e6a7ee5b8baea08df62029fa70b4e839e09a9ac5cbd4a1",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 5,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "41–60",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 93",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2560",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2560.JPG",
+      "source_sha256": "9e58d1775e71d320082137d88175930906640d302bc8d57e3ba84e45b8ae2121",
+      "answers": {
+        "Q1": 0,
+        "Q2": "divertente, educativa",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 2,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "divertente, educativa",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Altro",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 92"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2561",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2561.JPG",
+      "source_sha256": "65007904d7d4036da4319672f7cc5a6185b0b4a7b4156f2c1e0db75d606e7462",
+      "answers": {
+        "Q1": 0,
+        "Q2": "DIVERTENTE, STIMOLANTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 5,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "DIVERTENTE, STIMOLANTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "41–60",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 91"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2562",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2562.JPG",
+      "source_sha256": "fd241a04c18dd4684b0ebbf3bed83814745dedd8b3d6ed56d8340881c8b37253",
+      "answers": {
+        "Q1": 2,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Non mi è piaciuta molto",
+        "Q2": "",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 90",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2563",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2563.JPG",
+      "source_sha256": "8f46d4b5bc95b6a0fce441dd5e8f7cad9a7f80cfe7ded8710a56402e43385bcc",
+      "answers": {
+        "Q1": 1,
+        "Q2": null,
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 2,
+        "Q10": 2,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Altro",
+        "Q10": "15–18",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 89",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2564",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2564.JPG",
+      "source_sha256": "03d9bd4ade77e328a4a5b973a99287274c07b7e92a8f3da9a4359373f5ffdac1",
+      "answers": {
+        "Q1": 1,
+        "Q2": "DIVERTENTE, COLLABORATIVA",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 3,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "DIVERTENTE, COLLABORATIVA",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "19–25",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 88"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2565",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2565.JPG",
+      "source_sha256": "4b782e4dfb539c17c60f3bd8b6830e6e51ae3d0fbe7ac4b325533e562ef3c71c",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 4,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "26–40",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 87",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2566",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2566.JPG",
+      "source_sha256": "213b51a94549ce53316edc360a4ceb3423a8f4ee1a698e046a97f89df3283922",
+      "answers": {
+        "Q1": 0,
+        "Q2": "DIVERTENTE EDUCATIVA",
+        "Q3": 0,
+        "Q4": 1,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 1,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "DIVERTENTE EDUCATIVA",
+        "Q3": "Sì, molto",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "11–14",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 86",
+        "duplicato": "IMG_2567.JPG fotografa la stessa scheda: conteggiata una sola volta."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2568",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2568.JPG",
+      "source_sha256": "7d145725bc8663f5fe29910c3a992d8e68c937767411dcd76a01e01c8e01407c",
+      "answers": {
+        "Q1": 0,
+        "Q2": "FIGO ASSAI",
+        "Q3": 1,
+        "Q4": 1,
+        "Q5": 1,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 1,
+        "Q10": 3,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "FIGO ASSAI",
+        "Q3": "Sì, un po’",
+        "Q4": "Curioso/a come prima",
+        "Q5": "Interessato/a come prima",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Maschile",
+        "Q10": "19–25",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto leggibile come 80; conservato senza rinumerare. Foto distinta dalle precedenti."
+      }
+    },
+    {
+      "id": "LIC2026-IMG2570",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2570.JPG",
+      "source_sha256": "bbdf67ee3dffb859c8ed0aebbdb931dec461b2324bbfeb5a29fafaabb4dd78ed",
+      "answers": {
+        "Q1": 0,
+        "Q2": "INGEGNERISTICA SUPER QUARK",
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 1,
+        "Q9": 1,
+        "Q10": 3,
+        "Q11": 1
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "INGEGNERISTICA SUPER QUARK",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "Sì",
+        "Q9": "Maschile",
+        "Q10": "19–25",
+        "Q11": "Sì"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 84"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2571",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2571.JPG",
+      "source_sha256": "cfe25e5742bac4e4f51ea4643c76d0d514ce1238a1499ca85cc1ae2e3b7c0e0e",
+      "answers": {
+        "Q1": 1,
+        "Q2": "BELLA CURIOSA DIVERTENTE",
+        "Q3": 1,
+        "Q4": 0,
+        "Q5": 1,
+        "Q6": 1,
+        "Q7": 1,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 1,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta",
+        "Q2": "BELLA CURIOSA DIVERTENTE",
+        "Q3": "Sì, un po’",
+        "Q4": "Più curioso/a",
+        "Q5": "Interessato/a come prima",
+        "Q6": "In parte",
+        "Q7": "A volte",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "11–14",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 83"
+      }
+    },
+    {
+      "id": "LIC2026-IMG2572",
+      "city": "Potenza",
+      "kit": "Roma",
+      "source": "IMG_2572.JPG",
+      "source_sha256": "33718fede21ff82b7fabb78f7cfdec0bc25126799694c199d54cbd07d77b1120",
+      "answers": {
+        "Q1": 0,
+        "Q2": null,
+        "Q3": 0,
+        "Q4": 0,
+        "Q5": 0,
+        "Q6": 0,
+        "Q7": 2,
+        "Q8": 0,
+        "Q9": 0,
+        "Q10": 5,
+        "Q11": 0
+      },
+      "originals": {
+        "Q1": "Mi è piaciuta tantissimo",
+        "Q2": "",
+        "Q3": "Sì, molto",
+        "Q4": "Più curioso/a",
+        "Q5": "Più interessato/a",
+        "Q6": "Sì, molto",
+        "Q7": "Mai",
+        "Q8": "No",
+        "Q9": "Femminile",
+        "Q10": "41–60",
+        "Q11": "No"
+      },
+      "reviewed": {
+        "Q1": true,
+        "Q2": true,
+        "Q3": true,
+        "Q4": true,
+        "Q5": true,
+        "Q6": true,
+        "Q7": true,
+        "Q8": true,
+        "Q9": true,
+        "Q10": true,
+        "Q11": true
+      },
+      "issues": {},
+      "notes": {
+        "scheda": "Numero manoscritto: 82; scheda distinta dalla precedente 82 (IMG_2423.JPG).",
+        "Q2": "Risposta non compilata nella fotografia."
+      }
     }
   ]
 }

@@ -1,8 +1,12 @@
 # Lucania is comics — LIC2026
 
-Raccolta trascritta: **81 foto distinte**: 63 del primo lotto e 18 aggiunte l’11 ottobre 2026 (IMG_2423.JPG–IMG_2440.JPG, numeri manoscritti 65–82). Il primo lotto comprendeva 63 foto rispetto alle 64 inizialmente previste; non è stata inventata la scheda mancante.
+Raccolta trascritta: **113 questionari distinti**: 63 del primo lotto, 18 aggiunti l’11 ottobre 2026 (IMG_2423.JPG–IMG_2440.JPG, numeri manoscritti 65–82) e 32 aggiunti il 22 ottobre 2026. Il primo lotto comprendeva 63 foto rispetto alle 64 inizialmente previste; non è stata inventata la scheda mancante.
 
-Nel nuovo lotto Q2 è vuota nelle schede 67 e 77, Q6 nella 67 e Q5 nella 65. Il commento a margine della scheda 71, «TROPPO VELOCE COI BIMBI», è conservato nelle note.
+Nel lotto dell’11 ottobre Q2 è vuota nelle schede 67 e 77, Q6 nella 67 e Q5 nella 65. Il commento a margine della scheda 71, «TROPPO VELOCE COI BIMBI», è conservato nelle note.
+
+Il lotto del 22 ottobre comprende 36 fotografie (IMG_2537.JPG–IMG_2572.JPG), tutte registrate nell’[inventario con impronte SHA256](lotto_2026-10-22.csv). Sono escluse le due pagine di sola informativa IMG_2551.JPG e IMG_2552.JPG, la foto duplicata IMG_2567.JPG (stessa scheda 86 di IMG_2566.JPG) e l’intera scheda 85, IMG_2569.JPG, su esplicita istruzione dell’utente. Nessuna risposta della scheda 85 entra nel dataset o nelle analisi.
+
+Le 32 nuove schede hanno tutte le risposte chiuse compilate. Q2 è vuota in IMG_2537, IMG_2550, IMG_2559, IMG_2562, IMG_2563, IMG_2565 e IMG_2572. Il numero di IMG_2568 è leggibile come 80: è conservato senza rinumerarlo. IMG_2572, numero 82, è una scheda distinta dalla precedente IMG_2423, anch’essa numerata 82. Gli ID basati sulle fotografie evitano di confondere numeri manoscritti ripetuti.
 
 - Città: **Potenza**
 - Origine del kit: **Roma** (stessa denominazione degli altri dataset)

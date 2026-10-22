@@ -2,33 +2,33 @@
 Q1,Avezzano,Mi è piaciuta tantissimo,92,158,0,58.22784810126582
 Q1,Avezzano,Mi è piaciuta,64,158,0,40.50632911392405
 Q1,Avezzano,Non mi è piaciuta molto,2,158,0,1.2658227848101267
-Q1,Potenza,Mi è piaciuta tantissimo,40,80,1,50.0
-Q1,Potenza,Mi è piaciuta,39,80,1,48.75
-Q1,Potenza,Non mi è piaciuta molto,1,80,1,1.25
+Q1,Potenza,Mi è piaciuta tantissimo,58,112,1,51.785714285714285
+Q1,Potenza,Mi è piaciuta,52,112,1,46.42857142857143
+Q1,Potenza,Non mi è piaciuta molto,2,112,1,1.7857142857142858
 Q3,Avezzano,"Sì, molto",94,155,3,60.645161290322584
 Q3,Avezzano,"Sì, un po’",58,155,3,37.41935483870968
 Q3,Avezzano,"No, per niente",3,155,3,1.935483870967742
-Q3,Potenza,"Sì, molto",43,80,1,53.75
-Q3,Potenza,"Sì, un po’",36,80,1,45.0
-Q3,Potenza,"No, per niente",1,80,1,1.25
+Q3,Potenza,"Sì, molto",58,112,1,51.785714285714285
+Q3,Potenza,"Sì, un po’",53,112,1,47.32142857142857
+Q3,Potenza,"No, per niente",1,112,1,0.8928571428571429
 Q4,Avezzano,Più curioso/a,103,155,3,66.45161290322581
 Q4,Avezzano,Curioso/a come prima,49,155,3,31.612903225806452
 Q4,Avezzano,Meno curioso/a,3,155,3,1.935483870967742
-Q4,Potenza,Più curioso/a,64,81,0,79.01234567901234
-Q4,Potenza,Curioso/a come prima,17,81,0,20.987654320987655
-Q4,Potenza,Meno curioso/a,0,81,0,0.0
+Q4,Potenza,Più curioso/a,83,113,0,73.45132743362832
+Q4,Potenza,Curioso/a come prima,30,113,0,26.548672566371682
+Q4,Potenza,Meno curioso/a,0,113,0,0.0
 Q5,Avezzano,Più interessato/a,103,157,1,65.60509554140127
 Q5,Avezzano,Interessato/a come prima,51,157,1,32.48407643312102
 Q5,Avezzano,Meno interessato/a,3,157,1,1.910828025477707
-Q5,Potenza,Più interessato/a,61,80,1,76.25
-Q5,Potenza,Interessato/a come prima,19,80,1,23.75
-Q5,Potenza,Meno interessato/a,0,80,1,0.0
+Q5,Potenza,Più interessato/a,81,112,1,72.32142857142857
+Q5,Potenza,Interessato/a come prima,31,112,1,27.678571428571427
+Q5,Potenza,Meno interessato/a,0,112,1,0.0
 Q6,Avezzano,"Sì, molto",118,156,2,75.64102564102564
 Q6,Avezzano,In parte,35,156,2,22.435897435897434
 Q6,Avezzano,No,3,156,2,1.9230769230769231
-Q6,Potenza,"Sì, molto",59,80,1,73.75
-Q6,Potenza,In parte,20,80,1,25.0
-Q6,Potenza,No,1,80,1,1.25
+Q6,Potenza,"Sì, molto",78,112,1,69.64285714285714
+Q6,Potenza,In parte,33,112,1,29.464285714285715
+Q6,Potenza,No,1,112,1,0.8928571428571429
 Q10,Avezzano,Meno di 11,17,156,2,10.897435897435898
 Q10,Avezzano,11–14,19,156,2,12.179487179487179
 Q10,Avezzano,15–18,60,156,2,38.46153846153846
@@ -37,33 +37,33 @@ Q10,Avezzano,26–40,11,156,2,7.051282051282051
 Q10,Avezzano,41–60,34,156,2,21.794871794871796
 Q10,Avezzano,Più di 60,7,156,2,4.487179487179487
 Q10,Avezzano,Preferisco non rispondere,0,156,2,0.0
-Q10,Potenza,Meno di 11,10,81,0,12.345679012345679
-Q10,Potenza,11–14,6,81,0,7.407407407407407
-Q10,Potenza,15–18,12,81,0,14.814814814814815
-Q10,Potenza,19–25,5,81,0,6.172839506172839
-Q10,Potenza,26–40,25,81,0,30.864197530864196
-Q10,Potenza,41–60,23,81,0,28.395061728395063
-Q10,Potenza,Più di 60,0,81,0,0.0
-Q10,Potenza,Preferisco non rispondere,0,81,0,0.0
+Q10,Potenza,Meno di 11,11,113,0,9.734513274336283
+Q10,Potenza,11–14,12,113,0,10.619469026548673
+Q10,Potenza,15–18,18,113,0,15.929203539823009
+Q10,Potenza,19–25,12,113,0,10.619469026548673
+Q10,Potenza,26–40,30,113,0,26.548672566371682
+Q10,Potenza,41–60,30,113,0,26.548672566371682
+Q10,Potenza,Più di 60,0,113,0,0.0
+Q10,Potenza,Preferisco non rispondere,0,113,0,0.0
 Q9,Avezzano,Femminile,72,155,3,46.45161290322581
 Q9,Avezzano,Maschile,74,155,3,47.74193548387097
 Q9,Avezzano,Altro,2,155,3,1.2903225806451613
 Q9,Avezzano,Preferisco non rispondere,7,155,3,4.516129032258065
-Q9,Potenza,Femminile,44,80,1,55.0
-Q9,Potenza,Maschile,33,80,1,41.25
-Q9,Potenza,Altro,0,80,1,0.0
-Q9,Potenza,Preferisco non rispondere,3,80,1,3.75
+Q9,Potenza,Femminile,61,112,1,54.464285714285715
+Q9,Potenza,Maschile,46,112,1,41.07142857142857
+Q9,Potenza,Altro,2,112,1,1.7857142857142858
+Q9,Potenza,Preferisco non rispondere,3,112,1,2.6785714285714284
 Q7,Avezzano,Spesso,11,157,1,7.006369426751593
 Q7,Avezzano,A volte,39,157,1,24.840764331210192
 Q7,Avezzano,Mai,107,157,1,68.15286624203821
-Q7,Potenza,Spesso,4,81,0,4.938271604938271
-Q7,Potenza,A volte,13,81,0,16.049382716049383
-Q7,Potenza,Mai,64,81,0,79.01234567901234
+Q7,Potenza,Spesso,4,113,0,3.5398230088495577
+Q7,Potenza,A volte,20,113,0,17.699115044247787
+Q7,Potenza,Mai,89,113,0,78.76106194690266
 Q8,Avezzano,No,77,157,1,49.044585987261144
 Q8,Avezzano,Sì,80,157,1,50.955414012738856
-Q8,Potenza,No,65,81,0,80.24691358024691
-Q8,Potenza,Sì,16,81,0,19.753086419753085
+Q8,Potenza,No,92,113,0,81.41592920353982
+Q8,Potenza,Sì,21,113,0,18.58407079646018
 Q11,Avezzano,No,60,157,1,38.21656050955414
 Q11,Avezzano,Sì,97,157,1,61.78343949044586
-Q11,Potenza,No,27,81,0,33.333333333333336
-Q11,Potenza,Sì,54,81,0,66.66666666666667
+Q11,Potenza,No,38,113,0,33.6283185840708
+Q11,Potenza,Sì,75,113,0,66.3716814159292

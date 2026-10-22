@@ -6,9 +6,9 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
-**Lucania is comics, Potenza, kit Roma:** [81 questionari trascritti](data/LIC2026/questionari.xlsx), [dati e note di revisione](data/LIC2026/README.md), [report con grafici](kits/roma/potenza/LIC2026/HEPscape_raccolta_grafici.pdf). La raccolta è separata da ERN2026; la colonna `evento` distingue i due eventi.
+**Lucania is comics, Potenza, kit Roma:** [113 questionari trascritti](data/LIC2026/questionari.xlsx), [dati e note di revisione](data/LIC2026/README.md), [report con grafici](kits/roma/potenza/LIC2026/HEPscape_raccolta_grafici.pdf). La raccolta è separata da ERN2026; la colonna `evento` distingue i due eventi.
 
-**Confronto Avezzano / Potenza, solo kit Roma:** [report PDF](reports/confronto-avezzano-potenza/kit-roma/HEPscape_Avezzano_Potenza_kit_Roma.pdf) e [risultati, tabelle e metodo](reports/confronto-avezzano-potenza/kit-roma/README.md), su 158 e 81 questionari rispettivamente.
+**Confronto Avezzano / Potenza, solo kit Roma:** [report PDF](reports/confronto-avezzano-potenza/kit-roma/HEPscape_Avezzano_Potenza_kit_Roma.pdf) e [risultati, tabelle e metodo](reports/confronto-avezzano-potenza/kit-roma/README.md), su 158 e 113 questionari rispettivamente.
 
 Il workbook unico contiene **325 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 158 raccolti ad Avezzano con kit Roma (109 schede cartacee e 49 risposte aggiuntive dalla tabella online), 98 a Bari con kit Bari, 23 a Pisa con kit Pisa e 46 a Terni con kit Perugia. Le risposte dei quattro kit sono selezionabili separatamente. Il lotto Terni è stato trascritto da `Survey1_Terni.pdf`; i sei punti dubbi sono stati chiariti in chat il 1 ottobre 2026. Il PDF originale non è pubblicato nel repository; i riferimenti alle pagine e le correzioni sono conservati nei dati.
 
@@ -266,4 +266,4 @@ Il codice originale è distribuito con [licenza MIT](LICENSE). La licenza del co
 
 Entrambi i fogli Excel includono la colonna `evento`, ricavata dal campo `event` del dataset. Nei workbook ERN2026 il valore è `ern2026`, per tutte le città. Le risposte e i codici restano invariati.
 
-La raccolta [LIC2026](data/LIC2026/README.md) contiene i **81 questionari** delle fotografie disponibili di **Lucania is comics**, città **Potenza**, kit **Roma**. I chiarimenti dell’utente sono conservati nelle note delle schede.
+La raccolta [LIC2026](data/LIC2026/README.md) contiene **113 questionari** di **Lucania is comics**, città **Potenza**, kit **Roma**. I chiarimenti dell’utente sono conservati nelle note delle schede; l’inventario del lotto del 22 ottobre documenta duplicati ed esclusioni.

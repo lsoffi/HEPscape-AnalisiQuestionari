@@ -178,7 +178,20 @@ def test_analysis_empty_q2_small_and_all_missing_groups(data, tmp_path):
     path = tmp_path / "empty.xlsx"
     export_workbook(data, path)
     generate(path, tmp_path / "report", "Test senza risposte", compare_kits=True)
-    assert len(PdfReader(tmp_path / "report/HEPscape_raccolta_grafici.pdf").pages) == 19
+    pdf = PdfReader(tmp_path / "report/HEPscape_raccolta_grafici.pdf")
+    assert len(pdf.pages) == 20
+    method_pages = [page for page in pdf.pages if "Metodo e lettura" in page.extract_text()]
+    assert len(method_pages) == 2
+    # All mapping entries must be present and drawn above the footer margin.
+    from hepscape.words import MAPPING
+    method_text = " ".join(" ".join(page.extract_text().split()) for page in method_pages)
+    for word, label in MAPPING.items():
+        assert f"{word} -> {label}" in method_text
+    for page in method_pages:
+        body_y = []
+        page.extract_text(visitor_text=lambda text, cm, tm, font, size:
+                          body_y.append(tm[5]) if text.strip() and size == 11 else None)
+        assert body_y and min(body_y) >= 48
     assert len(list((tmp_path / "report/grafici").glob("*.svg"))) == 17
     manifest = json.loads((tmp_path / "report/manifest.json").read_text())
     assert "15_citta_1" in manifest["figures"]

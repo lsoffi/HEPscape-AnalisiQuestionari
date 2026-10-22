@@ -169,9 +169,9 @@
     },
     {
       "city": "Potenza",
-      "n": 81,
+      "n": 113,
       "source": "data/LIC2026/questionari.xlsx",
-      "sha256": "2c7f5bad6892250da331b22177a1e81037d0f655fd86cbebc3ab690dcc0f4b66",
+      "sha256": "eb637ce6d23cd9b2263c8384bca6e46efbaab27e9f40278ffec109d99b3fb22c",
       "ids": [
         "LIC2026-IMG2354",
         "LIC2026-IMG2355",
@@ -253,7 +253,39 @@
         "LIC2026-IMG2437",
         "LIC2026-IMG2438",
         "LIC2026-IMG2439",
-        "LIC2026-IMG2440"
+        "LIC2026-IMG2440",
+        "LIC2026-IMG2537",
+        "LIC2026-IMG2538",
+        "LIC2026-IMG2539",
+        "LIC2026-IMG2540",
+        "LIC2026-IMG2541",
+        "LIC2026-IMG2542",
+        "LIC2026-IMG2543",
+        "LIC2026-IMG2544",
+        "LIC2026-IMG2545",
+        "LIC2026-IMG2546",
+        "LIC2026-IMG2547",
+        "LIC2026-IMG2548",
+        "LIC2026-IMG2549",
+        "LIC2026-IMG2550",
+        "LIC2026-IMG2553",
+        "LIC2026-IMG2554",
+        "LIC2026-IMG2555",
+        "LIC2026-IMG2556",
+        "LIC2026-IMG2557",
+        "LIC2026-IMG2558",
+        "LIC2026-IMG2559",
+        "LIC2026-IMG2560",
+        "LIC2026-IMG2561",
+        "LIC2026-IMG2562",
+        "LIC2026-IMG2563",
+        "LIC2026-IMG2564",
+        "LIC2026-IMG2565",
+        "LIC2026-IMG2566",
+        "LIC2026-IMG2568",
+        "LIC2026-IMG2570",
+        "LIC2026-IMG2571",
+        "LIC2026-IMG2572"
       ]
     }
   ],
@@ -262,36 +294,36 @@
       "domanda": "Q1",
       "indicatore": "Gradimento: tantissimo",
       "Avezzano": 58.22784810126582,
-      "Potenza": 50.0,
-      "differenza_punti_Potenza_meno_Avezzano": -8.22784810126582
+      "Potenza": 51.785714285714285,
+      "differenza_punti_Potenza_meno_Avezzano": -6.442133815551536
     },
     {
       "domanda": "Q3",
       "indicatore": "Apprendimento: sì, molto",
       "Avezzano": 60.645161290322584,
-      "Potenza": 53.75,
-      "differenza_punti_Potenza_meno_Avezzano": -6.895161290322584
+      "Potenza": 51.785714285714285,
+      "differenza_punti_Potenza_meno_Avezzano": -8.859447004608299
     },
     {
       "domanda": "Q4",
       "indicatore": "Più curiosità",
       "Avezzano": 66.45161290322581,
-      "Potenza": 79.01234567901234,
-      "differenza_punti_Potenza_meno_Avezzano": 12.560732775786533
+      "Potenza": 73.45132743362832,
+      "differenza_punti_Potenza_meno_Avezzano": 6.999714530402514
     },
     {
       "domanda": "Q5",
       "indicatore": "Più interesse",
       "Avezzano": 65.60509554140127,
-      "Potenza": 76.25,
-      "differenza_punti_Potenza_meno_Avezzano": 10.644904458598731
+      "Potenza": 72.32142857142857,
+      "differenza_punti_Potenza_meno_Avezzano": 6.7163330300273
     },
     {
       "domanda": "Q6",
       "indicatore": "Facilità: sì, molto",
       "Avezzano": 75.64102564102564,
-      "Potenza": 73.75,
-      "differenza_punti_Potenza_meno_Avezzano": -1.8910256410256352
+      "Potenza": 69.64285714285714,
+      "differenza_punti_Potenza_meno_Avezzano": -5.998168498168496
     }
   ]
 }
