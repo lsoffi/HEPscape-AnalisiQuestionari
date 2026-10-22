@@ -65,6 +65,11 @@ def parser():
         help="Titolo del report, non un filtro sui dati",
     )
     pl.add_argument(
+        "--no-city-comparisons",
+        action="store_true",
+        help="Omette i confronti tra città dal report aggregato",
+    )
+    pl.add_argument(
         "--compare-kits",
         action="store_true",
         help="Aggiunge confronti descrittivi tra kit se sono presenti almeno due kit",
@@ -133,6 +138,7 @@ def run(args):
             kit=kit,
             city=city,
             compare_kits=args.compare_kits,
+            compare_cities=not args.no_city_comparisons,
         )
         print(f"Risultati salvati in: {output.resolve()}")
     return 0

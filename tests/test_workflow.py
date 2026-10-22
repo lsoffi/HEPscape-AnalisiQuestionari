@@ -284,14 +284,16 @@ def test_all_kits_report_without_comparisons(data, tmp_path):
     from hepscape.plots import generate
 
     second = copy.deepcopy(data["records"][0])
-    second.update(id="BARI-01", kit="Bari")
+    second.update(id="BARI-01", kit="Bari", city="Bari")
     data["records"].append(second)
     source = tmp_path / "all.xlsx"
     export_workbook(data, source)
-    generate(source, tmp_path / "all")
+    generate(source, tmp_path / "all", compare_cities=False)
     report = json.loads((tmp_path / "all/manifest.json").read_text())
     assert report["questionnaires"] == 2
     assert report["compare_kits"] is False
+    assert report["compare_cities"] is False
+    assert not any(name.startswith("15_citta") for name in report["figures"])
     assert not any(name.startswith("16_kit") for name in report["figures"])
     assert report["event"] == "Raccolta HEPscape"
 

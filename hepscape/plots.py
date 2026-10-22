@@ -19,6 +19,8 @@ def generate(
     kit=None,
     city=None,
     compare_kits=False,
+    compare_cities=True,
+    source_description=None,
 ):
     base = Path(output)
     out = base / "grafici"
@@ -178,7 +180,8 @@ def generate(
         f,
         "03_accesso",
         "Occasioni, familiarità e provenienza",
-        f"Città: {len(set(r[12] for r in rows))}; kit: {len(set(r[13] for r in rows))}. Metadati letti dal workbook.",
+        (f"Città: {len(set(r[12] for r in rows))}; kit: {len(set(r[13] for r in rows))}. Metadati letti dal workbook."
+         if compare_cities else "Risposte aggregate di tutti i questionari selezionati."),
     )
     f, ax = plt.subplots(figsize=(14, 7))
     miss = [sum(r[q] == 999 for r in rows) for q in range(1, 12)]
@@ -417,6 +420,8 @@ def generate(
 
     # Add comparisons only when more than one city/kit is actually present.
     for g, slug, name in [(12, "15_citta", "città"), (13, "16_kit", "origine del kit")]:
+        if g == 12 and not compare_cities:
+            continue
         if g == 13 and not compare_kits:
             continue
         categories = sorted(set(r[g] for r in rows))
@@ -487,7 +492,9 @@ def generate(
             for typ, c in [("esatta", exact), ("accorpata", normal)]
             for t, n in c.most_common()
         )
-    method = f"""HEPscape! - Analisi descrittiva di {N} questionari | {event}\nIl campione riguarda esclusivamente HEPscape!, non tutte le attività dell’evento ERNEST.\nPalette dal sito https://web.infn.it/hepscape/: blu #234A8C / #335BA6, azzurro #5F8FC4, verde #7BBA48.\nFonte: {Path(workbook).name}, foglio Dati codificati.\nUna riga per scheda. Città e origine kit sono lette dalle rispettive colonne del workbook.\nI codici sono categorie, non punteggi su cui calcolare medie. 999 escluso dai denominatori validi.\nNei confronti si escludono le schede mancanti in una delle due variabili. n è indicato per gruppo.\nNon sono stati effettuati test di significatività, selezioni di risultati in base a p-value o inferenze causali.\nGruppi piccoli (<10 risposte) contrassegnati da asterisco; risultati esplorativi non generalizzabili automaticamente.\nQ4 e Q5 misurano cambiamenti dichiarati: non esistono misure pre-attività.\nQ2: conteggio di presenza per scheda; BELLA BELLA conta una volta. Rimosse annotazioni editoriali tra parentesi quadre e stopword.\nLe forme esatte non correggono refusi. Nelle forme accorpate si uniscono solo le voci della mappa sotto; EDUCATTIVA è ricondotta a EDUCATIVO/A.\nI dati originali non sono stati modificati. Nessuna classificazione automatica di sentiment.\n"""
+    method = f"""HEPscape! - Analisi descrittiva di {N} questionari | {event}\nIl campione riguarda esclusivamente HEPscape!, non tutte le attività degli eventi di raccolta.\nPalette dal sito https://web.infn.it/hepscape/: blu #234A8C / #335BA6, azzurro #5F8FC4, verde #7BBA48.\nFonte: {source_description or Path(workbook).name}, foglio Dati codificati.\nUna riga per scheda. Città e origine kit sono lette dalle rispettive colonne del workbook.\nI codici sono categorie, non punteggi su cui calcolare medie. 999 escluso dai denominatori validi.\nNei confronti si escludono le schede mancanti in una delle due variabili. n è indicato per gruppo.\nNon sono stati effettuati test di significatività, selezioni di risultati in base a p-value o inferenze causali.\nGruppi piccoli (<10 risposte) contrassegnati da asterisco; risultati esplorativi non generalizzabili automaticamente.\nQ4 e Q5 misurano cambiamenti dichiarati: non esistono misure pre-attività.\nQ2: conteggio di presenza per scheda; BELLA BELLA conta una volta. Rimosse annotazioni editoriali tra parentesi quadre e stopword.\nLe forme esatte non correggono refusi. Nelle forme accorpate si uniscono solo le voci della mappa sotto; EDUCATTIVA è ricondotta a EDUCATIVO/A.\nI dati originali non sono stati modificati. Nessuna classificazione automatica di sentiment.\n"""
+    if not compare_cities and not compare_kits:
+        method += "Analisi aggregata senza suddivisioni per kit o città. Ogni questionario ha lo stesso peso.\n"
     (out / "metodo.txt").write_text(
         method
         + "\nStopword: "
@@ -582,6 +589,7 @@ def generate(
                 "event": event,
                 "selection": {"kit": kit, "city": city},
                 "compare_kits": compare_kits,
+                "compare_cities": compare_cities,
                 "cover": {"kit": kit_label, "location": location_label},
                 "questionnaires": N,
                 "figures": [name for name, *_ in figs],

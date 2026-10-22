@@ -6,6 +6,8 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
+**Report complessivo, 438 questionari:** [PDF unico](reports/complessivo/HEPscape_raccolta_grafici.pdf), con tutte le risposte ERN2026 e Lucania is comics aggregate, senza confronti per kit o città. Ogni scheda pesa allo stesso modo; le risposte mancanti sono escluse dai denominatori validi. Include tutte le domande, approfondimenti e parole Q2. Si rigenera con `python scripts/report_complessivo.py`; le due fonti canoniche e i relativi conteggi sono registrati nel manifest del report.
+
 **Lucania is comics, Potenza, kit Roma:** [113 questionari trascritti](data/LIC2026/questionari.xlsx), [dati e note di revisione](data/LIC2026/README.md), [report con grafici](kits/roma/potenza/LIC2026/HEPscape_raccolta_grafici.pdf). La raccolta è separata da ERN2026; la colonna `evento` distingue i due eventi.
 
 **Confronto Avezzano / Potenza, solo kit Roma:** [report PDF](reports/confronto-avezzano-potenza/kit-roma/HEPscape_Avezzano_Potenza_kit_Roma.pdf) e [risultati, tabelle e metodo](reports/confronto-avezzano-potenza/kit-roma/README.md), su 158 e 113 questionari rispettivamente.
