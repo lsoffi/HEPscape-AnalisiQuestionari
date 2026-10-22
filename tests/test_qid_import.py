@@ -9,7 +9,7 @@ SOURCE = ROOT / 'data/ern2026/lotti/roma_avezzano_online_originale.tsv'
 
 
 def test_published_qid_lot_reproduces_all_answers():
-    data = convert(SOURCE, 'Roma', 'Avezzano', 'Evento ERNEST - ERN 2026', 'ROMA-AVZ-ONLINE-ERN2026')
+    data = convert(SOURCE, 'Roma', 'Avezzano', 'ern2026', 'ROMA-AVZ-ONLINE-ERN2026')
     assert data == load(ROOT / 'data/ern2026/lotti/roma_avezzano_online.json', True)
     assert len(data['records']) == 49
     assert data['records'][0]['answers']['Q7'] == 0

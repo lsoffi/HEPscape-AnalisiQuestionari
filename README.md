@@ -6,6 +6,10 @@ Le fotografie si caricano nella propria conversazione con ChatGPT, come abbiamo 
 
 ## Risultati già pronti
 
+**Lucania is comics, Potenza, kit Roma:** [81 questionari trascritti](data/LIC2026/questionari.xlsx), [dati e note di revisione](data/LIC2026/README.md), [report con grafici](kits/roma/potenza/LIC2026/HEPscape_raccolta_grafici.pdf). La raccolta è separata da ERN2026; la colonna `evento` distingue i due eventi.
+
+**Confronto Avezzano / Potenza, solo kit Roma:** [report PDF](reports/confronto-avezzano-potenza/kit-roma/HEPscape_Avezzano_Potenza_kit_Roma.pdf) e [risultati, tabelle e metodo](reports/confronto-avezzano-potenza/kit-roma/README.md), su 158 e 81 questionari rispettivamente.
+
 Il workbook unico contiene **325 questionari HEPscape! dell’evento ERNEST – ERN 2026**: 158 raccolti ad Avezzano con kit Roma (109 schede cartacee e 49 risposte aggiuntive dalla tabella online), 98 a Bari con kit Bari, 23 a Pisa con kit Pisa e 46 a Terni con kit Perugia. Le risposte dei quattro kit sono selezionabili separatamente. Il lotto Terni è stato trascritto da `Survey1_Terni.pdf`; i sei punti dubbi sono stati chiariti in chat il 1 ottobre 2026. Il PDF originale non è pubblicato nel repository; i riferimenti alle pagine e le correzioni sono conservati nei dati.
 
 - [Workbook Roma / Avezzano, 158 schede](kits/roma/avezzano/ERN2026/questionari_Roma_Avezzano.xlsx)
@@ -70,7 +74,7 @@ Le colonne obbligatorie sono `ID,Foto,Q1,Q2,Q3,Q4,Q5,Q6,Q7,Q8,Q9,Q10,Q11`. Il se
 Esempio: kit Roma, evento ad Avezzano. Avvia questo comando su una sola riga:
 
 ```sh
-hepscape import-chat work/trascrizione.csv --out work/roma-avezzano-02 --kit Roma --city Avezzano --event "Evento ERNEST - ERN 2026"
+hepscape import-chat work/trascrizione.csv --out work/roma-avezzano-02 --kit Roma --city Avezzano --event "ern2026"
 ```
 
 Sostituisci città, kit, evento e percorsi per il tuo lotto. Il CSV deve contenere un solo lotto con questi metadati comuni; importa separatamente lotti di città, kit o eventi diversi. La destinazione deve essere nuova o vuota. L’importazione è interamente locale.
@@ -193,7 +197,7 @@ hepscape plots data/ern2026/questionari.xlsx --kit Perugia --city Terni --event 
 Per un’esportazione TSV con una prima riga QID e una seconda riga con i testi delle domande:
 
 ```sh
-python scripts/importa_tabella_qid.py data/ern2026/lotti/roma_avezzano_online_originale.tsv --kit Roma --city Avezzano --event "Evento ERNEST - ERN 2026" --prefix ROMA-AVZ-ONLINE-ERN2026 --out work/roma_online.json
+python scripts/importa_tabella_qid.py data/ern2026/lotti/roma_avezzano_online_originale.tsv --kit Roma --city Avezzano --event "ern2026" --prefix ROMA-AVZ-ONLINE-ERN2026 --out work/roma_online.json
 ```
 
 Lo script associa le colonne tramite QID, valida le risposte chiuse, conserva i testi originali e converte Q2 in maiuscolo. Le celle vuote diventano 999 nell’Excel. Non scarta automaticamente risposte identiche: la tabella non contiene identificativi individuali per riconoscere eventuali compilazioni duplicate. Per aggiungere un lotto, usare un prefisso nuovo; non reimportare le stesse risposte con ID diversi.
@@ -257,3 +261,9 @@ I programmi del repository lavorano in locale e non inviano foto o trascrizioni 
 Il repository contiene i lotti Roma, Bari e Pisa autorizzati, senza fotografie originali né scansione PDF dei questionari. `photos/` e `work/` sono escluse da Git; i report sotto `kits/` e `reports/` non vengono pubblicati automaticamente: la pubblicazione richiede un caricamento esplicito. Prima di condividere nuovi lotti controlla eventuali nomi o informazioni personali nelle risposte libere.
 
 Il codice originale è distribuito con [licenza MIT](LICENSE). La licenza del codice non concede diritti aggiuntivi sui dati, sulle foto o sul marchio HEPscape!. La [provenienza](docs/PROVENIENZA.md) descrive il lotto iniziale.
+
+## Evento nei workbook
+
+Entrambi i fogli Excel includono la colonna `evento`, ricavata dal campo `event` del dataset. Nei workbook ERN2026 il valore è `ern2026`, per tutte le città. Le risposte e i codici restano invariati.
+
+La raccolta [LIC2026](data/LIC2026/README.md) contiene i **81 questionari** delle fotografie disponibili di **Lucania is comics**, città **Potenza**, kit **Roma**. I chiarimenti dell’utente sono conservati nelle note delle schede.

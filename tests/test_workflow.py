@@ -84,6 +84,10 @@ def test_combined_dataset_matches_every_excel_cell(tmp_path):
     assert wb["Dati codificati"].freeze_panes == "B7"
     assert len(wb["Dati codificati"].data_validations.dataValidation) == 10
     assert wb["Risposte originali"].max_row == 326
+    for sheet_name, header_row, column in [("Dati codificati", 6, 15), ("Risposte originali", 1, 19)]:
+        sheet = wb[sheet_name]
+        assert sheet.cell(header_row, column).value == "evento"
+        assert all(sheet.cell(row, column).value == "ern2026" for row in range(header_row + 1, sheet.max_row + 1))
 
 
 @pytest.mark.parametrize("value", [3, -1, "0", True, 999])

@@ -36,9 +36,9 @@ def export_workbook(data, path, *, draft=False):
         f"HEPscape! | {data['event']} | {n} questionari"
         + (" | BOZZA DA VERIFICARE" if draft else ""),
     )
-    ws.merge_cells("A1:N1")
+    ws.merge_cells("A1:O1")
     ws.row_dimensions[1].height = 30
-    headers = ["ID", *QUESTIONS, "Città", "Origine del kit"]
+    headers = ["ID", *QUESTIONS, "Città", "Origine del kit", "evento"]
     for col, h in enumerate(headers, 1):
         put(ws, 2, col, QUESTIONS.get(h, h))
         legend = "999 = risposta mancante"
@@ -65,6 +65,7 @@ def export_workbook(data, path, *, draft=False):
         "Origine del kit",
         "Revisione",
         "SHA256 foto",
+        "evento",
     ]
     for col, h in enumerate(raw_headers, 1):
         put(raw, 1, col, h)
@@ -77,7 +78,7 @@ def export_workbook(data, path, *, draft=False):
                 if draft and q in r.get("issues", {}) and not r["reviewed"][q]
                 else coded(q, r["answers"][q])
             )
-        values += [r["city"], r["kit"]]
+        values += [r["city"], r["kit"], data["event"]]
         for col, value in enumerate(values, 1):
             put(ws, index, col, value)
         originals = [r.get("originals", {}).get(q, "") for q in QUESTIONS]
@@ -91,14 +92,15 @@ def export_workbook(data, path, *, draft=False):
             r["kit"],
             "Confermata" if all(r["reviewed"].values()) else "Da verificare",
             r.get("source_sha256", ""),
+            data["event"],
         ]
         for col, value in enumerate(vals, 1):
             put(raw, index - 5, col, value)
         ws.row_dimensions[index].height = max(34, len(str(values[2])) // 43 * 16 + 20)
         raw.row_dimensions[index - 5].height = max(40, len(notes) // 45 * 16 + 20)
     for sheet, header_row, last_row, last_col in [
-        (ws, 6, n + 6, 14),
-        (raw, 1, n + 1, 18),
+        (ws, 6, n + 6, 15),
+        (raw, 1, n + 1, 19),
     ]:
         sheet.sheet_view.showGridLines = False
         sheet.freeze_panes = f"B{header_row+1}"
